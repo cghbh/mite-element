@@ -3,6 +3,8 @@
 
 #### 基本用法
 
+ 在一组备选项中进行单选 。
+
 <radio></radio>
 
 ```js
@@ -26,6 +28,8 @@ export default {
 ```
 
 #### 单选框组
+
+ 适用于在多个互斥的选项中选择的场景 。
 
 <radio-group></radio-group>
 
