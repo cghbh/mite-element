@@ -1,6 +1,7 @@
 module.exports = {
 	title: "LayUI",
 	description: 'Vue Components Library',
+	base: '/lay-ui/',
 	themeConfig: {
 	    nav: [
 	      { text: '首页', link: '/' },
