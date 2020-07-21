@@ -7,7 +7,9 @@ import router from './router/index.js'
 
 import Icon from 'UI/icon/index.js'
 import Button from 'UI/button/index.js'
-Vue.use(Icon).use(Button)
+import Radio from 'UI/radio/index.js'
+import RadioGroup from 'UI/radio-group/index.js'
+Vue.use(Icon).use(Button).use(Radio).use(RadioGroup)
 
 new Vue ({
   router,

@@ -1,15 +1,15 @@
 ---
 home: true
 heroText: LayUI
-tagline: Vue开发中最常用组件的集合
+tagline: 一套简洁的基于Vue的组件库
 actionText: 快速上手 →
 actionLink: /components/
 features:
 - title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+  details: 设计简洁直观的操作流程，语言表达清晰且表意明确。
+- title: 高内聚、低耦合
+  details: 组件的封装遵循高内聚、低耦合的标准，除去必要的参数传递之外，所有内容都尽可能集中封装在组件内部。
+- title: 界面美观
+  details: 界面美观，同时也能做到简洁直白。
 footer: MIT Licensed | Copyright © 2020-present ChenGang
 ---

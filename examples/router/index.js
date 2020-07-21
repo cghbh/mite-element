@@ -5,6 +5,8 @@ Vue.use(VueRouter)
 // 导入所有的组件 
 import Icon from '../views/Icon.vue'
 import Button from '../views/Button.vue'
+import Radio from '../views/Radio.vue'
+import RadioGroup from '../views/RadioGroup.vue'
 
 const routes = [
 	{
@@ -16,6 +18,16 @@ const routes = [
 		path: '/button',
 		name: 'button',
 		component: Button
+	},
+	{
+		path: '/radio',
+		name: 'radio',
+		component: Radio
+	},
+	{
+		path: '/radio-group',
+		name: 'radio-group',
+		component: RadioGroup
 	}
 ]
 

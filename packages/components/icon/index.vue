@@ -23,7 +23,8 @@ export default {
 }
 </script>
 
-<style type="text/css">
+<style type="text/css" scoped>
+@import './index.scss';
 .icon {
 	width: 18px;
 	height: 18px;
