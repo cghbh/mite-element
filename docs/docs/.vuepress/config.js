@@ -12,7 +12,7 @@ module.exports = {
 	      { text: 'GitHub', link: 'https://github.com/cghbh/lay-ui' },
 	    ],
 	    sidebar: {
-	    	'/components/': ['', 'base', 'form', 'message', 'data']
+	    	'/components/': ['', 'base', 'form', 'message', 'data', 'other']
 	    }
   }
 }
