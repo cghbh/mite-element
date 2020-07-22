@@ -182,4 +182,6 @@ export default {
 | disabled |   是否禁用   |          boolean          |   —    | default |
 
 ## Form 表单
-
+## Input 输入框
+## InputNumber 计数器
+## Table 表格
