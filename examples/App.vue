@@ -18,11 +18,20 @@
 		<div>
 			<router-link to="/checkbox-group">CheckboxGroup复选框组件</router-link>
 		</div>
+		<div>
+			<router-link to="/message">点我弹出Message</router-link>
+		</div>
 		<router-view></router-view>
 	</div>
 </template>
 
 <script>
+export default {
+	mounted () {
+		console.log(this)
+		console.log(this.$el)
+	}
+}
 </script>
 
 <style scoped>

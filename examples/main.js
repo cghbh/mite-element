@@ -11,12 +11,14 @@ import Radio from 'UI/radio/index.js'
 import RadioGroup from 'UI/radio-group/index.js'
 import Checkbox from 'UI/checkbox/index.js'
 import CheckboxGroup from 'UI/checkbox-group/index.js'
+import Message from 'UI/message/index.js'
 Vue.use(Icon)
    .use(Button)
    .use(Radio)
    .use(RadioGroup)
    .use(Checkbox)
    .use(CheckboxGroup)
+   .use(Message)
 
 new Vue ({
   router,

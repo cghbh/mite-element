@@ -57,6 +57,7 @@ export default {
 	methods: {
 		handleClick (e) {
 			console.log(e.target)
+			console.log(this.$el, '$el')
 		}
 	}
 }

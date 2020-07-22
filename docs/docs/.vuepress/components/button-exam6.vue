@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .button-exam6 {
 	margin-top: 25px;
 	margin-bottom: 25px;

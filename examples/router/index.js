@@ -9,6 +9,7 @@ import Radio from '../views/Radio.vue'
 import RadioGroup from '../views/RadioGroup.vue'
 import Checkbox from '../views/Checkbox.vue'
 import CheckboxGroup from '../views/CheckboxGroup.vue'
+import Message from '../views/Message.vue'
 
 const routes = [
 	{
@@ -40,6 +41,11 @@ const routes = [
 		path: '/checkbox-group',
 		name: 'checkbox-group',
 		component: CheckboxGroup
+	},
+	{
+		path: '/message',
+		name: 'message',
+		component: Message
 	}
 ]
 

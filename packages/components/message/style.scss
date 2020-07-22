@@ -1,0 +1,94 @@
+.lay-message {
+  width: 380px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ebeef5;
+  position: fixed;
+  z-index: 99999;
+  line-height: 20px;
+  transition: top 0.5s;
+  background-color: #edf2fc;
+  padding: 15px 15px 15px 20px;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.message-fade-enter,
+.message-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.message-fade-enter-active,
+.message-fade-leave-active {
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.lay-message--success {
+  background-color: #f0f9eb;
+  border-color: #e1f3d8;
+}
+
+.lay-message--success .lay-message__content {
+  color: #67c23a;
+}
+
+.lay-message--warning {
+  background-color: #fdf6ec;
+  border-color: #faecd8;
+}
+
+.lay-message--warning .lay-message__content {
+  color: #e6a23c;
+}
+
+.lay-message--error {
+  background-color: #fef0f0;
+  border-color: #fde2e2;
+}
+
+.lay-message--error .lay-message__content {
+  color: #f56c6c;
+}
+
+.lay-message--info .lay-message__content {
+  color: #909399;
+}
+.lay-message-content {
+  font-size: 14px;
+}
+
+.is-content-center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.is-message-center {
+  left: 50%;
+  margin-left: -190px;
+}
+.is-message-left {
+  left: 16px;
+}
+.is-message-right {
+  right: 16px;
+}
+.lay-message-svg {
+  width: 14px;
+  height: 14px;
+}
