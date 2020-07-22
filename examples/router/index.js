@@ -7,6 +7,8 @@ import Icon from '../views/Icon.vue'
 import Button from '../views/Button.vue'
 import Radio from '../views/Radio.vue'
 import RadioGroup from '../views/RadioGroup.vue'
+import Checkbox from '../views/Checkbox.vue'
+import CheckboxGroup from '../views/CheckboxGroup.vue'
 
 const routes = [
 	{
@@ -28,6 +30,16 @@ const routes = [
 		path: '/radio-group',
 		name: 'radio-group',
 		component: RadioGroup
+	},
+	{
+		path: '/checkbox',
+		name: 'checkbox',
+		component: Checkbox
+	},
+	{
+		path: '/checkbox-group',
+		name: 'checkbox-group',
+		component: CheckboxGroup
 	}
 ]
 

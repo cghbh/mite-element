@@ -12,6 +12,12 @@
 		<div>
 			<router-link to="/radio-group">RadioGroup单选框组件</router-link>
 		</div>
+		<div>
+			<router-link to="/checkbox">Checkbox复选框组件</router-link>
+		</div>
+		<div>
+			<router-link to="/checkbox-group">CheckboxGroup复选框组件</router-link>
+		</div>
 		<router-view></router-view>
 	</div>
 </template>
