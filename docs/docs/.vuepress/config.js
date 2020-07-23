@@ -1,7 +1,7 @@
 module.exports = {
 	title: "LayUI",
 	description: 'Vue Components Library',
-	base: '/',
+	base: '/lay-ui/',
 	head: [
 		['link', {
 			rel: 'icon',
