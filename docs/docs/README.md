@@ -3,7 +3,7 @@ home: true
 heroText: LayUI
 tagline: 一套简洁的基于Vue的组件库
 actionText: 快速上手 →
-actionLink: /components/
+actionLink: /install/
 features:
 - title: 简洁至上
   details: 设计简洁直观的操作流程，语言表达清晰且表意明确。

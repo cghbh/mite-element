@@ -1,7 +1,7 @@
 module.exports = {
 	title: "LayUI",
 	description: 'Vue Components Library',
-	base: '/lay-ui/',
+	base: '/',
 	head: [
 		['link', {
 			rel: 'icon',
@@ -15,7 +15,7 @@ module.exports = {
 			},
 			{
 				text: '组件',
-				link: '/components/'
+				link: '/install/'
 			},
 			{
 				text: 'GitHub',
@@ -25,7 +25,6 @@ module.exports = {
 		sidebar: [
 			{
 				title: '开发指南', // 必要的
-				// path: '/components/', // 可选的, 标题的跳转链接，应为绝对路径且必须存在
 				collapsable: false, // 可选的, 默认值是 true,
 				sidebarDepth: 0, // 可选的, 默认值是 1
 				children: [
@@ -35,7 +34,6 @@ module.exports = {
 			},
 			{
 				title: '基础组件', // 必要的
-				// path: '/base/', // 可选的, 标题的跳转链接，应为绝对路径且必须存在
 				collapsable: false, // 可选的, 默认值是 true,
 				sidebarDepth: 0, // 可选的, 默认值是 1
 				children: [
