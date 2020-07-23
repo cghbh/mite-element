@@ -12,6 +12,7 @@ import RadioGroup from 'UI/radio-group/index.js'
 import Checkbox from 'UI/checkbox/index.js'
 import CheckboxGroup from 'UI/checkbox-group/index.js'
 import Message from 'UI/message/index.js'
+import MessageBox from 'UI/message-box/index.js'
 Vue.use(Icon)
    .use(Button)
    .use(Radio)
@@ -19,6 +20,7 @@ Vue.use(Icon)
    .use(Checkbox)
    .use(CheckboxGroup)
    .use(Message)
+   .use(MessageBox)
 
 new Vue ({
   router,

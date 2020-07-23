@@ -1,0 +1,61 @@
+.mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .6);
+  overflow: auto;
+  z-index: 9999;
+}
+
+.lay-message-box {
+  display: inline-block;
+  width: 420px;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ebeef5;
+  font-size: 18px;
+  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  text-align: left;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.lay-message-box-title {
+  padding-left: 0;
+  margin: 15px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 1;
+  color: #303133;
+}
+
+.lay-message-box-content {
+  padding: 10px 15px 15px 15px;
+  color: #606266;
+  font-size: 14px;
+}
+
+.lay-message-box-footer{
+  text-align: right;
+  padding-right: 10px;
+}
+
+.message-fade-enter,
+.message-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.message-fade-enter-active,
+.message-fade-leave-active {
+  transition: opacity 0.5s, transform 0.5s;
+}

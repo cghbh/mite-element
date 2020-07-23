@@ -21,6 +21,9 @@
 		<div>
 			<router-link to="/message">点我弹出Message</router-link>
 		</div>
+		<div>
+			<router-link to="/message-box">点我弹出MessageBox</router-link>
+		</div>
 		<router-view></router-view>
 	</div>
 </template>
