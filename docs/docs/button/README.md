@@ -2,7 +2,7 @@
 #### 基础用法
 <button-exam1></button-exam1>
 
-```javascript
+```vue
 <lay-button>默认按钮</lay-button>
 <lay-button type="warning">warning按钮</lay-button>
 <lay-button type="danger">danger按钮</lay-button>
@@ -11,11 +11,11 @@
 ```
 #### 禁用状态
 
->  按钮不可用状态。
+按钮不可用状态。
 
 <button-exam2></button-exam2>
 
-```js
+```vue
 <lay-button disabled>默认按钮</lay-button>
 <lay-button disabled type="warning">warning按钮</lay-button>
 <lay-button disabled type="danger">danger按钮</lay-button>
@@ -24,9 +24,12 @@
 ```
 
 #### 图标按钮
+
+ 带图标的按钮可增强辨识度（有文字）或节省空间（无文字）。 
+
 <button-exam3></button-exam3>
 
-```js
+```vue
 <lay-button icon="loading">默认</lay-button>
 <lay-button type="primary" icon="info"></lay-button>
 <lay-button type="warning" icon="star">警告</lay-button>
@@ -38,9 +41,11 @@
 
 #### 圆角按钮
 
+圆润化的圆角按钮。
+
 <button-exam4></button-exam4>
 
-```js
+```vue
 <lay-button round>默认圆角</lay-button>
 <lay-button type="warning" round>警告圆角</lay-button>
 <lay-button type="danger" round>危险圆角</lay-button>
@@ -52,9 +57,11 @@
 
 #### 不同尺寸
 
+ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景下选择合适的按钮尺寸。 
+
 <button-exam5></button-exam5>
 
-```js
+```vue
 <lay-button type="primary" round>默认按钮</lay-button>
 <lay-button type="primary" size="medium" round>中型按钮</lay-button>
 <lay-button type="primary" size="small" round>小型按钮</lay-button>
@@ -63,9 +70,11 @@
 
 #### 点击事件
 
+点击按钮之后的事件，避免在组件上面直接使用原生的click事件。
+
 <button-exam6></button-exam6>
 
-```js
+```vue
 <lay-button type="primary" @click="handleClick">默认按钮</lay-button>
 ```
 ### Attributes

@@ -186,3 +186,16 @@ export default {
 }
 </script>
 ```
+
+
+
+### Attributes
+
+|   参数    |         说明         |  类型   |              可选值               | 默认值 |
+| :-------: | :------------------: | :-----: | :-------------------------------: | :----: |
+|  message  |       消息文字       | string  |                 —                 |   —    |
+|   type    |         主题         | string  | info / success / danger / warning |  info  |
+| duration  |    显示时间，毫秒    | number  |                 —                 |  3000  |
+| showClose |     显示关闭按钮     | boolean |                 —                 | false  |
+|  center   |     文字是否居中     | boolean |                 —                 | false  |
+| position  | 消息提示框出现的位置 | string  |       center / right / left       | center |

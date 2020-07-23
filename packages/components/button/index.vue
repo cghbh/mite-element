@@ -50,7 +50,10 @@ export default {
 	},
 	methods: {
 		handleClick (e) {
-			// 派发点击事件
+			// 派发点击事件,如果是禁止点击的事件那么就不允许派发事件
+			if(this.disabled) {
+				return false
+			}
 			this.$emit('click', e)
 		}
 	}

@@ -1,16 +1,33 @@
 <template>
 	<div class="button-exam6">
-		<lay-button type="primary" @click="handleClick">默认按钮</lay-button>
+		<lay-button type="success" @click="handleClick">点我有惊喜</lay-button>
+		<lay-button type="info" disabled @click="handleClickDisabled">点坏鼠标也没有</lay-button>
 	</div>
 </template>
 
 <script>
+import Vue from 'vue'
 import LayButton from '../../../../packages/components/button/index.js'
+import LayMessage from '../../../../packages/components/message/index.js'
+Vue.use(LayMessage)
 export default {
   name:'my-button',
 	methods: {
 		handleClick () {
-			alert('我是点击事件！')
+			this.$message({
+				message: '你要的惊喜在这里哟！',
+				type: 'success',
+				duration: 2000,
+				position: 'right'
+			})
+		},
+		handleClickDisabled() {
+			this.$message({
+				message: '你要的惊喜在这里哟！',
+				type: 'success',
+				duration: 2000,
+				position: 'right'
+			})
 		}
 	},
 	components: {

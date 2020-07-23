@@ -112,9 +112,18 @@ export default {
 </script>
 ```
 
-#### Attributes
+### Checkbox Attributes
 
-|   参数   |     说明     |           类型            | 可选值 | 默认值  |
-| :------: | :----------: | :-----------------------: | :----: | :-----: |
-|  label   | 选中状态的值 | string / number / boolean |   —    |    —    |
-| disabled |   是否禁用   |          boolean          |   —    | default |
+|      参数       |     说明     |           类型            | 可选值 | 默认值  |
+| :-------------: | :----------: | :-----------------------: | :----: | :-----: |
+| value / v-model | 选中状态的值 | array / boolean / string  |   —    |    —    |
+|      label      | 选中状态的值 | number / boolean / string |   —    | default |
+|    disabled     |   是否禁用   |          boolean          |   —    |  false  |
+
+
+
+### Checkbox-group Attributes
+
+|      参数       |  说明  | 类型  | 可选值 | 默认值 |
+| :-------------: | :----: | :---: | :----: | :----: |
+| value / v-model | 绑定值 | array |   —    |   —    |

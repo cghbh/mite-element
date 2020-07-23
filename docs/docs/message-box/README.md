@@ -73,5 +73,11 @@ export default {
 
 
 
-## Toast 提示
-## Modal 复杂弹框
+### Attributes
+
+|   参数   |        说明        |   类型   |     可选值      |  默认值  |
+| :------: | :----------------: | :------: | :-------------: | :------: |
+|  title   |        标题        |  string  |        —        | 温馨提示 |
+| content  |      正文内容      |  string  |        —        |    —     |
+|   onOk   | 确认按钮的回调函数 | function |        —        |    —     |
+| onCancel | 取消按钮的回调函数 | function |        —        |    —     |
