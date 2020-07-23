@@ -8,7 +8,7 @@
   position: fixed;
   z-index: 99999;
   line-height: 20px;
-  transition: top 0.5s;
+  transition: top .8s;
   background-color: #edf2fc;
   padding: 15px 15px 15px 20px;
   display: flex;
@@ -91,4 +91,30 @@
 .lay-message-svg {
   width: 14px;
   height: 14px;
+}
+
+
+.lay-message-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*  color: red;*/
+}
+
+.lay-info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+
+}
+
+.is-success-message {
+  color: #67C23A;
+}
+.is-error-message {
+  color: #F56C6C;
+}
+.is-warning-message {
+  color: #E6A23C;
 }

@@ -17,7 +17,8 @@ export default {
 		showMessage() {
 			this.$message({
 				position: 'right',
-				message: `我是消息提示组件，但是我不能自动关闭！`
+				message: `我是消息提示弹框，但是我不能自动关闭！`,
+				autoClose: false
 			})
 		}
 	}

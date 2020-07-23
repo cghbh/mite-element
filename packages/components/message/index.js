@@ -127,6 +127,7 @@ export default {
 
     Vue.prototype.$message = function(options) {
       let instance = generateInstance(options)
+      console.log(instance.position, 'instances position')
       instances.push(instance)
     }
   },

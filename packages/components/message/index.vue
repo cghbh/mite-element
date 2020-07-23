@@ -1,11 +1,18 @@
 <template>
 	<transition name="message-fade">
 		<div class="lay-message" v-if="visible" :class="{'is-content-center': center, 'is-message-center': isCenter, 'is-message-right': isRight, 'is-message-left': isLeft }" :style="computedStyle">
-			<div class="lay-message-content">
+			<div class="lay-message-content" :class="{'is-success-message': isSuccessMessage, 'is-error-message': isErrorMessage, 'is-warning-message': isWarningMessage }">
+				<span class="lay-info-icon" :class="{'is-success-message': isSuccessMessage, 'is-error-message': isErrorMessage, 'is-warning-message': isWarningMessage }">
+					<lay-icon icon="error" v-if="isErrorMessage"></lay-icon>
+					<lay-icon icon="success" v-else-if="isSuccessMessage"></lay-icon>
+					<lay-icon icon="warning" v-else-if="isWarningMessage"></lay-icon>
+					<lay-icon icon="info" v-else></lay-icon>
+				</span>
 				{{ message }}
-				<span @click="closeMessage" class="close-btn">
-					<!-- <lay-icon icon="close"></lay-icon> -->
-					<svg t="1595411366477" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2772" width="200" height="200"><path d="M503.466667 467.285333l319.829333-319.829333a25.6 25.6 0 1 1 36.181333 36.181333l-319.829333 319.829334 319.829333 319.829333a25.6 25.6 0 1 1-36.181333 36.181333l-319.829333-319.829333-319.829334 319.829333a25.6 25.6 0 1 1-36.181333-36.181333l319.829333-319.829333-319.829333-319.829334a25.6 25.6 0 1 1 36.181333-36.181333l319.829334 319.829333z" p-id="2773"></path></svg>
+				<!-- 如果自动关闭功能关闭的话，那么showClose就该开启 -->
+				<span @click="closeMessage" class="close-btn" v-if="!autoClose || showClose">
+					
+					<svg class="lay-message-svg icon" t="1595411366477" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2772" width="200" height="200"><path d="M503.466667 467.285333l319.829333-319.829333a25.6 25.6 0 1 1 36.181333 36.181333l-319.829333 319.829334 319.829333 319.829333a25.6 25.6 0 1 1-36.181333 36.181333l-319.829333-319.829333-319.829334 319.829333a25.6 25.6 0 1 1-36.181333-36.181333l319.829333-319.829333-319.829333-319.829334a25.6 25.6 0 1 1 36.181333-36.181333l319.829334 319.829333z" p-id="2773"></path></svg>
 				</span>
 			</div>
 		</div>
@@ -13,7 +20,8 @@
 </template>
 
 <script>
-// import LayIcon from '../icon/index.vue'
+import LayIcon from '../icon/index.vue'
+console.log(LayIcon, 'LayIcon')
 export default {
 	props: {
 		message: {
@@ -26,6 +34,22 @@ export default {
 		position: {
 			type: String,
 			default: 'center'
+		},
+		duration: {
+			type: Number,
+			default: 3000
+		},
+		autoClose: {
+			type: Boolean,
+			default: true
+		},
+		type: {
+			type: String,
+			default: ''
+		},
+		showClose: {
+			type: Boolean,
+			default: false
 		}
 	},
 	data () {
@@ -35,14 +59,18 @@ export default {
 		}
 	},
 	components: {
-		// LayIcon
+		LayIcon
 	},
 	mounted () {
+		console.log(this.type, 'this.type')
 		// 注意：$el指向的是当前组件的DOM元素
 		this.createElement()
+		// 如果要求自动关闭的话，就执行这个函数
+		if (this.autoClose) {
+			this.startTimer()
+		}
 	},
 	beforeDestroy() {
-		console.log('test---001destroy')
 		this.$el.parentNode.removeChild(this.$el)
 	},
 	methods: {
@@ -50,12 +78,18 @@ export default {
 			this.visible = true
 			// 把当前的DOM元素追加到body里面去
 			document.body.appendChild(this.$el)
-			this.$nextTick(() => {
-				console.log(this.verticalTop)
-			})
 		},
 		closeMessage () {
 			this.visible = false
+		},
+		startTimer () {
+			let timer = setTimeout(() => {
+				this.visible = false
+			}, this.duration)
+			this.$once('hook: beforeDestroy', () => {
+				clearTimeout(timer)
+				timer = null
+			})
 		}
 	},
 	computed: {
@@ -74,6 +108,15 @@ export default {
 		},
 		isRight () {
 			return this.position === 'right'
+		},
+		isSuccessMessage () {
+			return this.type === 'success'
+		},
+		isWarningMessage () {
+			return this.type === 'warning'
+		},
+		isErrorMessage () {
+			return this.type === 'error'
 		}
 	},
 	watch: {
@@ -96,5 +139,9 @@ export default {
 .close-btn /deep/ .icon {
 	width: 16px;
 	height: 16px;
+}
+.lay-info-icon /deep/ .icon svg {
+	width: 100%;
+	height: 100%;
 }
 </style>
