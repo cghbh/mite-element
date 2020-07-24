@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router/index.js'
-
+import 'animate.css'
+// import './assets/animate.css'
 // import 'animate.css'
 // import 'normalize.css'
 
@@ -13,6 +14,7 @@ import Checkbox from 'UI/checkbox/index.js'
 import CheckboxGroup from 'UI/checkbox-group/index.js'
 import Message from 'UI/message/index.js'
 import MessageBox from 'UI/message-box/index.js'
+import Modal from 'UI/modal/index.js'
 Vue.use(Icon)
    .use(Button)
    .use(Radio)
@@ -21,6 +23,7 @@ Vue.use(Icon)
    .use(CheckboxGroup)
    .use(Message)
    .use(MessageBox)
+   .use(Modal)
 
 new Vue ({
   router,

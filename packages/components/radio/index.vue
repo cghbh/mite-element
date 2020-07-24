@@ -53,10 +53,6 @@ export default {
 		isGroup () {
 			return this.radioGroup !== ''
 		}
-	},
-	mounted () {
-		console.log(this.radioGroup.value, 'radioGroup')
-		console.log(this.isGroup, 'isGroup')
 	}
 }
 </script>

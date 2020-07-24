@@ -61,7 +61,6 @@ module.exports = {
 				children: [
 					{title: 'Message 消息提示', path:'/message/'},
 					{title: 'MessageBox 弹框', path:'/message-box/'},
-					{title: 'Toast 提示', path:'/toast/'},
 					{title: 'Modal 复杂弹框', path:'/modal/'}
 				]
 			}

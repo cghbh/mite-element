@@ -24,6 +24,9 @@
 		<div>
 			<router-link to="/message-box">点我弹出MessageBox</router-link>
 		</div>
+		<div>
+			<router-link to="/modal">我是Modal</router-link>
+		</div>
 		<router-view></router-view>
 	</div>
 </template>

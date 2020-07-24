@@ -21,7 +21,6 @@
 
 <script>
 import LayIcon from '../icon/index.vue'
-console.log(LayIcon, 'LayIcon')
 export default {
 	props: {
 		message: {

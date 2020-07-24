@@ -11,6 +11,7 @@ import Checkbox from '../views/Checkbox.vue'
 import CheckboxGroup from '../views/CheckboxGroup.vue'
 import Message from '../views/Message.vue'
 import MessageBox from '../views/MessageBox.vue'
+import Modal from '../views/Modal.vue'
 
 const routes = [
 	{
@@ -52,6 +53,11 @@ const routes = [
 		path: '/message-box',
 		name: 'message-box',
 		component: MessageBox
+	},
+	{
+		path: '/modal',
+		component: Modal,
+		name: 'modal'
 	}
 ]
 

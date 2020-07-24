@@ -33,7 +33,7 @@ export default {
 			type: String,
 			default: 'confirm'
 		},
-		// 传过来两个事假，一个是点击取消，一个是点击继续的操作
+		// 传过来两个事件，一个是点击取消，一个是点击继续的操作
 		onOk: {
 			type: Function
 		},
@@ -63,9 +63,7 @@ export default {
 		clickHandle(value) {
 			if (value === 'cancel') {
 				this.onCancel()
-				console.log(this.$el, '$el------cliock')
 			} else if(value === 'confirm') {
-				console.log(this.$el, '$el-----conform')
 				this.onOk()
 			}
 			this.close()
@@ -77,7 +75,6 @@ export default {
 	},
 	beforeDestroy () {
 		const value = this.$el.parentNode.removeChild(this.$el)
-		console.log(value, 'remove value')
 	},
 	watch: {
 		visible(newVal) {
@@ -96,6 +93,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 @import './style.scss'
 </style>
