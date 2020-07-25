@@ -25,8 +25,9 @@ Vue.use(Button).use(Icon)
 // 或者是下面的这样的
 Vue.use(Button)
 Vue.use(Icon)
-
-LICENCE
-MIT
 ```
+
+### LICENSE
+
+[MIT](https://github.com/cghbh/lay-ui/blob/master/LICENSE)
 
