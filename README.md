@@ -2,7 +2,7 @@
 
 ### 文档说明链接
 
-[LayUI组件库文档说明地址](https://github.com/cghbh/lay-ui)
+[LayUI组件库文档说明地址]( https://cghbh.github.io/lay-ui/)
 
 ### 安装
 
@@ -13,8 +13,7 @@ npm install lay-ui -S
 ```js
 import Vue from 'vue'
 import LayUI from 'lay-ui'
-// 如果需要使用Modal的动画，请执行下面的代码
-npm install animate.css -S
+// 如果需要使用Modal的动画，请npm install animate.css -S
 // 在main.js导入animated.css
 import 'animate.css'
 
