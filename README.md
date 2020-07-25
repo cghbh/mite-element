@@ -10,7 +10,7 @@ npm install lay-ui -S
 
 ### 快速上手
 
-```
+```js
 import Vue from 'vue'
 import LayUI from 'lay-ui'
 // 如果需要使用Modal的动画，请执行下面的代码
