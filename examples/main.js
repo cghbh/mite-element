@@ -15,6 +15,7 @@ import CheckboxGroup from 'UI/checkbox-group/index.js'
 import Message from 'UI/message/index.js'
 import MessageBox from 'UI/message-box/index.js'
 import Modal from 'UI/modal/index.js'
+import Input from 'UI/input/index.js'
 Vue.use(Icon)
    .use(Button)
    .use(Radio)
@@ -24,6 +25,7 @@ Vue.use(Icon)
    .use(Message)
    .use(MessageBox)
    .use(Modal)
+   .use(Input)
 
 new Vue ({
   router,

@@ -1,7 +1,7 @@
 <template>
-	<label class="lay-radio" :class="{'is-disabled': !disabled}">
+	<label class="lay-radio">
 		<span class="lay-radio-outer" >
-			<span class="lay-radio-inner" :class="{ 'is-checked': isChecked, 'is-disabled': !disabled }"></span>
+			<span class="lay-radio-inner" :class="{ 'is-checked': isChecked }"></span>
 			<input 
 			  type="radio" 
 			  class="lay-radio-native" 
@@ -26,10 +26,6 @@ export default {
 		},
 		label: {
 			type: [String, Number]
-		},
-		disabled: {
-			type: Boolean,
-			default: false
 		}
 	},
 	computed: {

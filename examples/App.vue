@@ -27,6 +27,9 @@
 		<div>
 			<router-link to="/modal">我是Modal</router-link>
 		</div>
+		<div>
+			<router-link to="/input">我是Input输入框组件</router-link>
+		</div>
 		<router-view></router-view>
 	</div>
 </template>

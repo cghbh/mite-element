@@ -1,0 +1,192 @@
+.lay-input {
+  -webkit-appearance: none;
+  background-color: #fff;
+  background-image: none;
+  bordelay-radius: 4px;
+  border: 1px solid #dcdfe6;
+  box-sizing: bordelay-box;
+  color: #606266;
+  display: inline-block;
+  font-size: inherit;
+  height: 40px;
+  line-height: 40px;
+  outline: none;
+  padding: 0 15px;
+  transition: bordelay-color .2s cubic-bezier(.645, .045, .355, 1);
+  width: 100%;
+  border-radius: 5px;
+}
+
+.lay-input::placeholder {
+	color: #aaa;
+	font-size: 14px;
+}
+
+.lay-input.is-disabled {
+  background-color: #f5f7fa;
+  bordelay-color: #e4e7ed;
+  color: #c0c4cc;
+  cursor: not-allowed;
+}
+
+.lay-input.is-center {
+  text-align: center;
+}
+
+.lay-input:hover {
+  border-color: #c0c4cc;
+}
+
+.lay-input:focus {
+  outline: none;
+  border-color: #409eff;
+}
+
+.lay-input::-webkit-scrollbar {
+  z-index: 11;
+  width: 6px;
+}
+
+.lay-input::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+
+.lay-input::-webkit-scrollbalay-thumb {
+  bordelay-radius: 5px;
+  width: 6px;
+  background: #b4bccc;
+}
+
+.lay-input::-webkit-scrollbalay-corner {
+  background: #fff;
+}
+
+.lay-input::-webkit-scrollbalay-track {
+  background: #fff;
+}
+
+.lay-input::-webkit-scrollbalay-track-piece {
+  background: #fff;
+  width: 6px;
+}
+
+.lay-textarea {
+  display: block;
+  resize: vertical;
+  padding: 5px 15px;
+  line-height: 1.5;
+  box-sizing: bordelay-box;
+  width: 100%;
+  font-size: inherit;
+  color: #606266;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #dcdfe6;
+  border-radius: 5px;
+  transition: bordelay-color .2s cubic-bezier(.645, .045, .355, 1)
+}
+
+.lay-textarea::placeholder {
+	color: #aaa;
+	font-size: 14px;
+}
+
+.lay-textarea:focus {
+  outline: none;
+  border-color: #409eff;
+}
+
+.lay-input-prepend,
+.lay-input-append {
+  background-color: #f5f7fa;
+  color: #909399;
+  display: flex;
+  align-items: center;
+  border: 1px solid #dcdfe6;
+  border-radius: 0px;
+  padding: 0 10px;
+  width: 1px;
+  white-space: nowrap;
+  width: max-content;
+}
+
+
+.has-prepend .lay-input {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: none;
+}
+
+.has-append .lay-input {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: none;
+}
+
+.has-prepend .lay-input-prepend {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.has-prepend .lay-input-append {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.has-append .lay-input-append {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.lay-input-medium {
+  height: 36px;
+  line-height: 36px;
+}
+
+.lay-input-medium::placeholder {
+	font-size: 13px;
+}
+
+.lay-input-small {
+  height: 32px;
+  line-height: 32px;
+}
+
+.lay-input-small::placeholder {
+	font-size: 12px;
+}
+
+.inline-container {
+  width: 100%;
+  display: inline-flex;
+  position: relative;
+}
+
+.lay-input-outer {
+  width: 100%;
+  position: relative;
+}
+
+.lay-input-clear {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  cursor: pointer;
+}
+
+.btn-close-icon {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #888;
+	width: 16px!important;
+	height: 16px!important;
+	border: 1px solid #bbb;
+	border-radius: 50%;
+	padding: 3px;
+	box-sizing: border-box;
+	cursor: pointer;
+}

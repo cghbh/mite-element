@@ -30,4 +30,3 @@ Vue.use(Icon)
 ### LICENSE
 
 [MIT](https://github.com/cghbh/lay-ui/blob/master/LICENSE)
-
