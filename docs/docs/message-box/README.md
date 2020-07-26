@@ -7,9 +7,7 @@
 <message-box-one></message-box-one>
 
 ```vue
-<template>
-	<lay-button @click="showMessageBox" type="primary">点击打开MessageBox</lay-button>
-</template>
+<lay-button @click="showMessageBox" type="primary">点击打开MessageBox</lay-button>
 
 <script>
 export default {
@@ -39,9 +37,7 @@ export default {
 <message-box-two></message-box-two>
 
 ```vue
-<template>
-	<lay-button @click="showMessageBox" type="primary">确认消息框</lay-button>
-</template>
+<lay-button @click="showMessageBox" type="primary">确认消息框</lay-button>
 
 <script>
 export default {

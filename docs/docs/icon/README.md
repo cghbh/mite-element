@@ -6,7 +6,7 @@
 在下面的图标集合里面直接使用最后面的图标名称即可，传递到icon参数上
 <lay-icon-based></lay-icon-based>
 
-```js
+```vue
 <lay-icon icon="loading2"></lay-icon>
 <lay-icon icon="info"></lay-icon>
 <lay-icon icon="s-tools"></lay-icon>

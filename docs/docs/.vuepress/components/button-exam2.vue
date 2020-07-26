@@ -11,7 +11,6 @@
 <script>
 import LayButton from '../../../../packages/components/button/index.js'
 export default {
-  name:'my-button2',
 	components: {
 		LayButton
 	}

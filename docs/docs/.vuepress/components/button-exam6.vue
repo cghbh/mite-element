@@ -11,7 +11,6 @@ import LayButton from '../../../../packages/components/button/index.js'
 import LayMessage from '../../../../packages/components/message/index.js'
 Vue.use(LayMessage)
 export default {
-  name:'my-button',
 	methods: {
 		handleClick () {
 			this.$message({

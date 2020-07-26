@@ -11,9 +11,7 @@
 <modal-base></modal-base>
 
 ```vue
-<template>
-	<lay-button @click="showModal" type="primary">打开复杂弹框</lay-button>
-</template>
+<lay-button @click="showModal" type="primary">打开复杂弹框</lay-button>
 
 <script>
 export default {
@@ -44,9 +42,7 @@ export default {
 <modal-animate></modal-animate>
 
 ```vue
-<template>
-	<lay-button @click="showModal" type="primary">动画出场</lay-button>
-</template>
+<lay-button @click="showModal" type="primary">动画出场</lay-button>
 
 <script>
 Vue.use(LayMessage).use(LayModal)
@@ -81,9 +77,7 @@ export default {
 <modal-template></modal-template>
 
 ```vue
-<template>
-	<lay-button @click="showModal" type="primary">将组件作为参数传递</lay-button>
-</template>
+<lay-button @click="showModal" type="primary">将组件作为参数传递</lay-button>
 
 <script>
 import ModalTest from './modaltest.vue'
@@ -118,9 +112,7 @@ export default {
 <modal-button></modal-button>
 
 ```vue
-<template>
-	<lay-button @click="showModal" type="success">有按钮的Modal弹框</lay-button>
-</template>
+<lay-button @click="showModal" type="success">有按钮的Modal弹框</lay-button>
 
 <script>
 export default {
@@ -162,9 +154,7 @@ export default {
 <modal-template-params></modal-template-params>
 
 ```vue
-<template>
-	<lay-button @click="showModal" type="primary">传递参数到template组件</lay-button>
-</template>
+<lay-button @click="showModal" type="primary">传递参数到template组件</lay-button>
 
 <script>
 export default {

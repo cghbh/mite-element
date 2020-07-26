@@ -11,9 +11,8 @@
 <checkbox1></checkbox1>
 
 ```vue
-<template>
-	<lay-checkbox label="选项一" v-model="checked">选项一</lay-checkbox>
-</template>
+<lay-checkbox label="选项一" v-model="checked">选项一</lay-checkbox>
+
 <script>
 export default {
 	data () {
@@ -30,14 +29,10 @@ export default {
 <checkbox2></checkbox2>
 
 ```vue
-<template>
-	<div class="checkbox">
-	  <lay-checkbox label="选项A" v-model="checkedList">选项A</lay-checkbox>
-	  <lay-checkbox label="选项B" v-model="checkedList">选项B</lay-checkbox>
-	  <lay-checkbox label="选项C" v-model="checkedList">选项C</lay-checkbox>
-	  <lay-checkbox label="选项D" v-model="checkedList">选项D</lay-checkbox>
-	</div>
-</template>
+<lay-checkbox label="选项A" v-model="checkedList">选项A</lay-checkbox>
+<lay-checkbox label="选项B" v-model="checkedList">选项B</lay-checkbox>
+<lay-checkbox label="选项C" v-model="checkedList">选项C</lay-checkbox>
+<lay-checkbox label="选项D" v-model="checkedList">选项D</lay-checkbox>
 
 <script>
 export default {
@@ -64,14 +59,12 @@ export default {
 <checkbox-group></checkbox-group>
 
 ```vue
-<template>
-	<lay-checkbox-group v-model="checkedList">
-		<lay-checkbox label="选项A">选项A</lay-checkbox>
-		<lay-checkbox label="选项B">选项B</lay-checkbox>
-		<lay-checkbox label="选项C">选项C</lay-checkbox>
-		<lay-checkbox label="选项D">选项D</lay-checkbox>
-	</lay-checkbox-group>
-</template>
+<lay-checkbox-group v-model="checkedList">
+	<lay-checkbox label="选项A">选项A</lay-checkbox>
+	<lay-checkbox label="选项B">选项B</lay-checkbox>
+	<lay-checkbox label="选项C">选项C</lay-checkbox>
+	<lay-checkbox label="选项D">选项D</lay-checkbox>
+</lay-checkbox-group>
 
 <script>
 export default {
@@ -91,15 +84,13 @@ export default {
 <checkbox-disabled></checkbox-disabled>
 
 ```vue
-<template>
-	<lay-checkbox-group v-model="checkedList">
-		<lay-checkbox label="选项A">选项A</lay-checkbox>
-		<lay-checkbox disabled label="选项B">选项B</lay-checkbox>
-		<lay-checkbox label="选项C">选项C</lay-checkbox>
-		<lay-checkbox disabled label="选项D">选项D</lay-checkbox>
-		<lay-checkbox label="选项E">选项E</lay-checkbox>
-	</lay-checkbox-group>
-</template>
+<lay-checkbox-group v-model="checkedList">
+	<lay-checkbox label="选项A">选项A</lay-checkbox>
+	<lay-checkbox disabled label="选项B">选项B</lay-checkbox>
+	<lay-checkbox label="选项C">选项C</lay-checkbox>
+	<lay-checkbox disabled label="选项D">选项D</lay-checkbox>
+	<lay-checkbox label="选项E">选项E</lay-checkbox>
+</lay-checkbox-group>
 
 <script>
 export default {

@@ -9,9 +9,7 @@
 <message-based></message-based>
 
 ```vue
-<template>
-	<lay-button @click="showMessage" type="primary">打开消息提示</lay-button>
-</template>
+<lay-button @click="showMessage" type="primary">打开消息提示</lay-button>
 
 <script>
 export default {
@@ -36,12 +34,10 @@ export default {
 <message-status></message-status>
 
 ```vue
-<template>
-	<lay-button @click="showDefaultMessage" icon="info">消息</lay-button>
-	<lay-button @click="showSuccessMessage" type="success" icon="success">成功</lay-button>
-	<lay-button @click="showWarningMessage" type="warning" icon="warning">警告</lay-button>
-	<lay-button @click="showErrorMessage" type="danger" icon="error">错误</lay-button>
-</template>
+<lay-button @click="showDefaultMessage" icon="info">消息</lay-button>
+<lay-button @click="showSuccessMessage" type="success" icon="success">成功</lay-button>
+<lay-button @click="showWarningMessage" type="warning" icon="warning">警告</lay-button>
+<lay-button @click="showErrorMessage" type="danger" icon="error">错误</lay-button>
 
 <script>
 export default {
@@ -85,9 +81,7 @@ export default {
 <message-close></message-close>
 
 ```vue
-<template>
-	<lay-button @click="showMessage" type="primary">可关闭</lay-button>
-</template>
+<lay-button @click="showMessage" type="primary">可关闭</lay-button>
 
 <script>
 
@@ -113,9 +107,7 @@ export default {
 <message-one></message-one>
 
 ```vue
-<template>
-	<lay-button @click="showMessage" type="primary">不可自动关闭</lay-button>
-</template>
+<lay-button @click="showMessage" type="primary">不可自动关闭</lay-button>
 
 <script>
 export default {
@@ -139,11 +131,9 @@ export default {
 <message4></message4>
 
 ```vue
-<template>
-	<lay-button @click="showMessagePosition('left')">左边</lay-button>
-	<lay-button @click="showMessagePosition('center')">中间</lay-button>
-	<lay-button @click="showMessagePosition('right')">右边</lay-button>
-</template>
+<lay-button @click="showMessagePosition('left')">左边</lay-button>
+<lay-button @click="showMessagePosition('center')">中间</lay-button>
+<lay-button @click="showMessagePosition('right')">右边</lay-button>
 
 <script>
 export default {
@@ -167,9 +157,7 @@ export default {
 <message-center></message-center>
 
 ```vue
-<template>
-	<lay-button @click="showMessage" type="primary">文字居中消息</lay-button>
-</template>
+<lay-button @click="showMessage" type="primary">文字居中消息</lay-button>
 
 <script>
 export default {

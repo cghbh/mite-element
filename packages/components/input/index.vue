@@ -1,14 +1,22 @@
 <template>
-	<div class="inline-container">
+	<div class="inline-container" :class="appendClass">
 		<template v-if="type==='text'">
+			<div class="lay-input-prepend" v-if="$slots.prepend">
+				<slot name="prepend"></slot>
+			</div>
 			<input
 				class="lay-input" 
 				type="text"
 				v-bind="$attrs"
 				v-model="inputValue"
+				:disabled="disabled"
 				v-on="myListeners"
-				:class="sizeClass"
+				:class="styleClass"
+				:maxlength="maxlength"
 			>
+			<div class="lay-input-append" v-if="$slots.append">
+				<slot name="append"></slot>
+			</div>
 			<!-- <div> -->
 			<lay-icon v-if="showClearable" @click.native="clearInputValue" class="btn-close-icon" icon="close"></lay-icon>
 			<!-- </div> -->
@@ -42,6 +50,7 @@ export default {
 				return ['textarea', 'text'].includes(value)
 			}
 		},
+		// 输入框的大小控制
 		size: {
 			type: String,
 			default: '',
@@ -49,9 +58,24 @@ export default {
 				return ['', 'medium', 'small'].includes(value)
 			}
 		},
+		// 是否可以清除内容
 		clearable: {
 			type: Boolean,
 			default: false
+		},
+		// 输入框文字居中控制
+		center: {
+			type: Boolean,
+			default: false
+		},
+		// 禁用
+		disabled: {
+			type: Boolean,
+			default: false
+		},
+		maxlength: {
+			type: Number,
+			default: 100
 		}
 	},
 	components: {
@@ -76,14 +100,23 @@ export default {
 				input: event => this.$emit('input', event.target.value)
 			})
 		},
-		sizeClass() {
+		styleClass() {
 			return {
-				[`lay-input-${this.size}`]: this.size
+				[`lay-input-${this.size}`]: this.size,
+				[`is-center`]: this.center,
+				[`is-disabled`]: this.disabled
 			}
 		},
 		// 当前的内容为空的时候，隐藏可清除按钮
 		showClearable() {
 			return this.clearable && this.inputValue !== ''
+		},
+		// 计算前缀和后缀的样式
+		appendClass() {
+			return {
+				'has-prepend': this.$slots.prepend,
+				'has-append': this.$slots.append
+			}
 		}
 	},
 	mounted() {

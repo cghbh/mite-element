@@ -15,6 +15,8 @@
   transition: bordelay-color .2s cubic-bezier(.645, .045, .355, 1);
   width: 100%;
   border-radius: 5px;
+  font-size: 15px;
+  color: #000;
 }
 
 .lay-input::placeholder {
@@ -77,8 +79,8 @@
   line-height: 1.5;
   box-sizing: bordelay-box;
   width: 100%;
-  font-size: inherit;
-  color: #606266;
+  font-size: 15px;
+  color: #000;
   background-color: #fff;
   background-image: none;
   border: 1px solid #dcdfe6;
@@ -110,27 +112,32 @@
   width: max-content;
 }
 
+.lay-input-prepend {
+	border-right: none;
+}
 
 .has-prepend .lay-input {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  border-left: none;
 }
 
 .has-append .lay-input {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-right: none;
 }
 
 .has-prepend .lay-input-prepend {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
+.lay-input-append {
+	border-left: none;
+}
 
 .has-prepend .lay-input-append {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-left: none;
 }
 
 .has-append .lay-input-append {
