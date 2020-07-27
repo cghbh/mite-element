@@ -118,9 +118,6 @@ export default {
 				'has-append': this.$slots.append
 			}
 		}
-	},
-	mounted() {
-		console.log(this.$listeners, 'lisnters')
 	}
 }
 </script>

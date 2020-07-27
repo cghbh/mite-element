@@ -153,26 +153,17 @@ export default {
 <input7></input7>
 
 ```vue
-<template>
-	<div class="input-complex">
-		<div class="input-container">
-			<lay-input v-model="value" center placeholder="请输入内容">
-				<template slot="prepend">Http://</template>
-			</lay-input>
-		</div>
-		<div class="input-container">
-			<lay-input v-model="value" center placeholder="请输入内容">
-				<template slot="append">.com</template>
-			</lay-input>
-		</div>
-		<div class="input-container">
-			<lay-input v-model="value" center placeholder="请输入内容">
-				<template slot="prepend">Http://</template>
-				<template slot="append">.com</template>
-			</lay-input>
-		</div>
-	</div>
-</template>
+<lay-input v-model="value" center placeholder="请输入内容">
+	<template slot="prepend">Http://</template>
+</lay-input>
+	<lay-input v-model="value" center placeholder="请输入内容">
+	<template slot="append">.com</template>
+</lay-input>
+<lay-input v-model="value" center placeholder="请输入内容">
+	<template slot="prepend">Http://</template>
+	<template slot="append">.com</template>
+</lay-input>
+
 
 <script>
 export default {
@@ -185,3 +176,15 @@ export default {
 </script>
 ```
 
+#### Attributes
+
+|      参数       |      说明      |  类型   |     可选值      |   默认值   |
+| :-------------: | :------------: | :-----: | :-------------: | :--------: |
+| value / v-model |     绑定值     | string  |        —        |     —      |
+|   placeholder   | 输入框占位文本 | string  |        —        | 请输入内容 |
+|    maxlength    |  最大输入长度  | number  |        —        |     —      |
+|    disabled     |      禁用      | boolean |  true / false   |   false    |
+|    clearable    |   文字可清空   | boolean |  true / false   |   false    |
+|     center      |    文字居中    | boolean |  true / false   |   false    |
+|      type       |   输入框类型   | string  | text / textarea |    text    |
+|      size       |   输入框尺寸   | string  | medium / small  |     —      |

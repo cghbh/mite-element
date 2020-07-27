@@ -30,6 +30,9 @@
 		<div>
 			<router-link to="/input">我是Input输入框组件</router-link>
 		</div>
+		<div>
+			<router-link to="/input-number">我是InputNumber计数器组件</router-link>
+		</div>
 		<router-view></router-view>
 	</div>
 </template>
