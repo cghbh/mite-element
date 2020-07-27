@@ -17,6 +17,7 @@ import MessageBox from 'UI/message-box/index.js'
 import Modal from 'UI/modal/index.js'
 import Input from 'UI/input/index.js'
 import InputNumber from 'UI/input-number/index.js'
+import Form from 'UI/form/index.js'
 Vue.use(Icon)
    .use(Button)
    .use(Radio)
@@ -28,6 +29,7 @@ Vue.use(Icon)
    .use(Modal)
    .use(Input)
    .use(InputNumber)
+   .use(Form)
 
 new Vue ({
   router,

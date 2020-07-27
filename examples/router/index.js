@@ -14,6 +14,7 @@ import MessageBox from '../views/MessageBox.vue'
 import Modal from '../views/Modal.vue'
 import Input from '../views/Input.vue'
 import InputNumber from '../views/InputNumber.vue'
+import Form from '../views/Form.vue'
 
 const routes = [
 	{
@@ -70,6 +71,11 @@ const routes = [
 		path: '/input-number',
 		component: InputNumber,
 		name: 'input-number'
+	},
+	{
+		path: '/form',
+		component: Form,
+		name: 'form'
 	}
 ]
 
