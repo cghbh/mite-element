@@ -15,6 +15,7 @@ import Modal from '../views/Modal.vue'
 import Input from '../views/Input.vue'
 import InputNumber from '../views/InputNumber.vue'
 import Form from '../views/Form.vue'
+import Tabs from '../views/Tabs.vue'
 
 const routes = [
 	{
@@ -76,6 +77,11 @@ const routes = [
 		path: '/form',
 		component: Form,
 		name: 'form'
+	},
+	{
+		path: '/tabs',
+		component: Tabs,
+		name: 'tabs'
 	}
 ]
 
