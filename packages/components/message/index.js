@@ -72,12 +72,9 @@ let index = 0
 export default {
   install(Vue) {
     function computedVerticalTop(position) {
-    	console.log(position, 'position')
       let filterInstances = instances.filter(
         (instance) => instance.position === position
       )
-
-      console.log(filterInstances, 'filterInstances')
 
       return filterInstances.reduce((acc, cul) => {
         return cul.$el.offsetHeight + acc + verticalTop
@@ -127,7 +124,6 @@ export default {
 
     Vue.prototype.$message = function(options) {
       let instance = generateInstance(options)
-      console.log(instance.position, 'instances position')
       instances.push(instance)
     }
   },

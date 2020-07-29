@@ -13,13 +13,12 @@
 				v-on="myListeners"
 				:class="styleClass"
 				:maxlength="maxlength"
+				@blur="validateData"
 			>
 			<div class="lay-input-append" v-if="$slots.append">
 				<slot name="append"></slot>
 			</div>
-			<!-- <div> -->
 			<lay-icon v-if="showClearable" @click.native="clearInputValue" class="btn-close-icon" icon="close"></lay-icon>
-			<!-- </div> -->
 		</template>
 		<template v-else>
 			<textarea
@@ -27,6 +26,7 @@
 				v-bind="$attrs"
 				v-model="inputValue"
 				v-on="myListeners"
+				@blur="validateData"
 			>
 			</textarea>
 		</template>
@@ -37,6 +37,7 @@
 import LayIcon from '../icon/index.vue'
 export default {
 	name: 'lay-input',
+	inject: ['LayForm', 'LayFormItem'],
 	props: {
 		value: {
 			type: [String, Number],
@@ -84,6 +85,11 @@ export default {
 	methods: {
 		clearInputValue() {
 			this.inputValue = ''
+		},
+		// 当失去焦点的时候，开始校验表单传递过来的数据
+		validateData() {
+			// 向他的上级组件派发事件，本质上派发者和监听者是一个人
+			this.LayFormItem.$emit('validate')
 		}
 	},
 	computed: {

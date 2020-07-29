@@ -2,9 +2,6 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router/index.js'
 import 'animate.css'
-// import './assets/animate.css'
-// import 'animate.css'
-// import 'normalize.css'
 
 import Icon from 'UI/icon/index'
 import Button from 'UI/button/index'
@@ -18,6 +15,7 @@ import Modal from 'UI/modal/index'
 import Input from 'UI/input/index'
 import InputNumber from 'UI/input-number/index'
 import Form from 'UI/form/index'
+import FormItem from 'UI/form-item/index'
 import Tabs from 'UI/tabs/index.js'
 import TabsItem from 'UI/tabs-item/index'
 Vue.use(Icon)
@@ -32,6 +30,7 @@ Vue.use(Icon)
    .use(Input)
    .use(InputNumber)
    .use(Form)
+   .use(FormItem)
    .use(Tabs)
    .use(TabsItem)
 

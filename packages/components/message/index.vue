@@ -61,7 +61,6 @@ export default {
 		LayIcon
 	},
 	mounted () {
-		console.log(this.type, 'this.type')
 		// 注意：$el指向的是当前组件的DOM元素
 		this.createElement()
 		// 如果要求自动关闭的话，就执行这个函数
@@ -93,7 +92,6 @@ export default {
 	},
 	computed: {
 		computedStyle() {
-			console.log(this.verticalTop)
 			return {
 				top: this.verticalTop + 'px'
 			}

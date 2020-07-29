@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="lay-input-number">
 		<lay-input @change="handleChange" center v-model.number="inputNumber" :disabled="disabled">
 			<div class="icon-containe" :class="{ 'is-disabled': disabled || forbidSub }" slot="prepend" @click="changeInputValue('sub')">
 				<svg t="1595815656422" class="icon-sub" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="16001" width="200" height="200"><path d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z" p-id="16002" fill="#515151"></path></svg>
@@ -105,5 +105,8 @@ export default {
 .icon-plus {
 	width: 100%;
 	height: 100%;
+}
+.lay-input-number /deep/ .lay-input {
+	width: 50px!important;
 }
 </style>
