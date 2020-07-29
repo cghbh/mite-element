@@ -11,7 +11,8 @@
 </template>
 
 <script>
-import Schema from 'async-validator'
+// import Schema from 'async-validator'
+import Schema from '../../assets/js/validate.js'
 export default {
 	name: 'lay-form-item',
 	inject: ['LayForm'],

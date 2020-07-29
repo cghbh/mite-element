@@ -1,6 +1,6 @@
 <template>
 	<div class="input-number2">
-		<lay-input-number v-model="value" disabled></lay-input-number>
+		<lay-input-number :step="1" v-model="value" disabled></lay-input-number>
 	</div>
 </template>
 

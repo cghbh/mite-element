@@ -37,7 +37,14 @@
 import LayIcon from '../icon/index.vue'
 export default {
 	name: 'lay-input',
-	inject: ['LayForm', 'LayFormItem'],
+	inject: {
+		LayForm: {
+			default: null
+		},
+		LayFormItem: {
+			default: null
+		}
+	},
 	props: {
 		value: {
 			type: [String, Number],
