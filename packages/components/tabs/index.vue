@@ -4,8 +4,8 @@
 			<!-- this.$slots.default[0].text -->
 			<div class="lay-tabs-nav-contain" @click="tabClick">
 				<div class="lay-tabs-nav-border" ref="border"></div>
-				<template @listens="getListen">
-					<slot datavalue="123"></slot>
+				<template>
+					<slot></slot>
 				</template>
 			</div>
 		</div>
@@ -14,9 +14,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
-const bus = new Vue()
-Vue.prototype.$bus = bus
 export default {
 	name: 'lay-tabs',
 	provide () {
@@ -66,14 +63,15 @@ export default {
 			// console.log(this.item, 'item')
 			// console.log(this.tabs.activeKey, 'activeKey')
 			// this.$emit('tab-click', '哈哈哈哈')
-		},
+		},   
 		getListen(e) {
 			console.log(e)
 		}
 	},
 	mounted() {
 		this.$on('testemit', (data) => {
-			console.log(data, '哈哈哈哈，我接受到了')
+			// console.log(data, '哈哈哈哈，我接受到了')
+			this.displayValue = data
 		})
 	}
 }

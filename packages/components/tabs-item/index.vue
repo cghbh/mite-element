@@ -1,6 +1,7 @@
 <template>
 	<div>
-		<div @click="tabClick" class="lay-tabs-nav-item">{{ label }}--{{ datavalue }}</div>
+		<div @click="tabClick" class="lay-tabs-nav-item">{{ label }}</div>
+		<slot v-if="false"></slot>
 	</div>
 </template>
 
@@ -20,9 +21,8 @@ export default {
 	},
 	methods: {
 		tabClick() {
-			// this.$emit('@listens', '123')
-			// this.$emit('testemit', 666)
-			this.tabs.$emit('testemit', 6666)
+			this.tabs.$emit('testemit', this.$slots.default[0].text)
+			console.log(this.$slots.default[0].text)
 		}
 		// tabClick(e) {
 		// 	if(e.target.className.includes( 'lay-tabs-nav-item')){

@@ -6,7 +6,9 @@
 			<lay-tabs-item label="角色管理" item="item2">我是角色管理的内容</lay-tabs-item>
 			<lay-tabs-item label="用户管理" item="item3">我是用户管理的内容</lay-tabs-item>
 			<lay-tabs-item label="定时任务补偿" item="item4">我是定时任务补偿的内容</lay-tabs-item>
-			<lay-tabs-item label="哈哈哈" item="item5">哈哈哈哈</lay-tabs-item>
+			<lay-tabs-item label="哈哈哈" item="item5">
+				哈哈哈
+			</lay-tabs-item>
 		</lay-tabs>
 	</div>
 </template>
