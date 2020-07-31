@@ -1,18 +1,18 @@
 <template>
 	<div class="button-exam3">
-		<lay-button icon="loading">默认</lay-button>
-		<lay-button type="primary" icon="info"></lay-button>
-		<lay-button type="warning" icon="star">警告</lay-button>
-		<lay-button type="danger" icon="bell">危险</lay-button>
-		<lay-button type="success" icon="success">成功</lay-button>
+		<de-button icon="loading">默认</de-button>
+		<de-button type="primary" icon="info"></de-button>
+		<de-button type="warning" icon="star">警告</de-button>
+		<de-button type="danger" icon="bell">危险</de-button>
+		<de-button type="success" icon="success">成功</de-button>
 	</div>
 </template>
 
 <script>
-import LayButton from '../../../../packages/components/button/index.js'
+import DeButton from '../../../../packages/components/button/index.js'
 export default {
 	components: {
-		LayButton
+		DeButton
 	}
 }
 </script>

@@ -1,14 +1,14 @@
 <template>
 	<div class="checkbox">
-	  <lay-checkbox label="选项一" v-model="checked">选项一</lay-checkbox>
+	  <de-checkbox label="选项一" v-model="checked">选项一</de-checkbox>
 	</div>
 </template>
 
 <script>
-import LayCheckbox from '../../../../packages/components/checkbox/index.js'
+import DeCheckbox from '../../../../packages/components/checkbox/index.js'
 export default {
 	components: {
-		LayCheckbox
+		DeCheckbox
 	},
 	data () {
 		return {

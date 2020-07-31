@@ -1,20 +1,20 @@
 <template>
-	<lay-checkbox-group v-model="checkedList">
-		<lay-checkbox label="选项A">选项A</lay-checkbox>
-		<lay-checkbox disabled label="选项B">选项B</lay-checkbox>
-		<lay-checkbox label="选项C">选项C</lay-checkbox>
-		<lay-checkbox disabled label="选项D">选项D</lay-checkbox>
-		<lay-checkbox label="选项E">选项E</lay-checkbox>
-	</lay-checkbox-group>
+	<de-checkbox-group v-model="checkedList">
+		<de-checkbox label="选项A">选项A</de-checkbox>
+		<de-checkbox disabled label="选项B">选项B</de-checkbox>
+		<de-checkbox label="选项C">选项C</de-checkbox>
+		<de-checkbox disabled label="选项D">选项D</de-checkbox>
+		<de-checkbox label="选项E">选项E</de-checkbox>
+	</de-checkbox-group>
 </template>
 
 <script>
-import LayCheckbox from '../../../../packages/components/checkbox/index.js'
-import LayCheckboxGroup from '../../../../packages/components/checkbox-group/index.js'
+import DeCheckbox from '../../../../packages/components/checkbox/index.js'
+import DeCheckboxGroup from '../../../../packages/components/checkbox-group/index.js'
 export default {
 	components: {
-		LayCheckbox,
-		LayCheckboxGroup
+		DeCheckbox,
+		DeCheckboxGroup
 	},
 	data () {
 		return {

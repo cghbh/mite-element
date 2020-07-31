@@ -11,7 +11,7 @@
 <checkbox1></checkbox1>
 
 ```vue
-<lay-checkbox label="选项一" v-model="checked">选项一</lay-checkbox>
+<de-checkbox label="选项一" v-model="checked">选项一</de-checkbox>
 
 <script>
 export default {
@@ -29,10 +29,10 @@ export default {
 <checkbox2></checkbox2>
 
 ```vue
-<lay-checkbox label="选项A" v-model="checkedList">选项A</lay-checkbox>
-<lay-checkbox label="选项B" v-model="checkedList">选项B</lay-checkbox>
-<lay-checkbox label="选项C" v-model="checkedList">选项C</lay-checkbox>
-<lay-checkbox label="选项D" v-model="checkedList">选项D</lay-checkbox>
+<de-checkbox label="选项A" v-model="checkedList">选项A</de-checkbox>
+<de-checkbox label="选项B" v-model="checkedList">选项B</de-checkbox>
+<de-checkbox label="选项C" v-model="checkedList">选项C</de-checkbox>
+<de-checkbox label="选项D" v-model="checkedList">选项D</de-checkbox>
 
 <script>
 export default {
@@ -59,12 +59,12 @@ export default {
 <checkbox-group></checkbox-group>
 
 ```vue
-<lay-checkbox-group v-model="checkedList">
-	<lay-checkbox label="选项A">选项A</lay-checkbox>
-	<lay-checkbox label="选项B">选项B</lay-checkbox>
-	<lay-checkbox label="选项C">选项C</lay-checkbox>
-	<lay-checkbox label="选项D">选项D</lay-checkbox>
-</lay-checkbox-group>
+<de-checkbox-group v-model="checkedList">
+	<de-checkbox label="选项A">选项A</de-checkbox>
+	<de-checkbox label="选项B">选项B</de-checkbox>
+	<de-checkbox label="选项C">选项C</de-checkbox>
+	<de-checkbox label="选项D">选项D</de-checkbox>
+</de-checkbox-group>
 
 <script>
 export default {
@@ -84,13 +84,13 @@ export default {
 <checkbox-disabled></checkbox-disabled>
 
 ```vue
-<lay-checkbox-group v-model="checkedList">
-	<lay-checkbox label="选项A">选项A</lay-checkbox>
-	<lay-checkbox disabled label="选项B">选项B</lay-checkbox>
-	<lay-checkbox label="选项C">选项C</lay-checkbox>
-	<lay-checkbox disabled label="选项D">选项D</lay-checkbox>
-	<lay-checkbox label="选项E">选项E</lay-checkbox>
-</lay-checkbox-group>
+<de-checkbox-group v-model="checkedList">
+	<de-checkbox label="选项A">选项A</de-checkbox>
+	<de-checkbox disabled label="选项B">选项B</de-checkbox>
+	<de-checkbox label="选项C">选项C</de-checkbox>
+	<de-checkbox disabled label="选项D">选项D</de-checkbox>
+	<de-checkbox label="选项E">选项E</de-checkbox>
+</de-checkbox-group>
 
 <script>
 export default {

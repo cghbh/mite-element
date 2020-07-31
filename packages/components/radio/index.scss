@@ -1,4 +1,4 @@
-.lay-radio-outer {
+.de-radio-outer {
   white-space: nowrap;
   outline: none;
   display: inline-block;
@@ -7,7 +7,7 @@
   vertical-align: middle;
 }
 
-.lay-radio-inner {
+.de-radio-inner {
   border: 1px solid #dcdfe6;
   border-radius: 100%;
   width: 14px;
@@ -19,12 +19,12 @@
   box-sizing: border-box;
 }
 
-.lay-radio-inner.is-checked {
+.de-radio-inner.is-checked {
   border-color: #409eff;
   background: #409eff;
 }
 
-.lay-radio-inner::after {
+.de-radio-inner::after {
   width: 4px;
   height: 4px;
   border-radius: 100%;
@@ -37,26 +37,26 @@
   transition: transform 0.15s ease-in;
 }
 
-.lay-radio-inner.is-checked::after {
+.de-radio-inner.is-checked::after {
   transform: translate(-50%, -50%) scale(1);
 }
 
-.lay-radio-label {
+.de-radio-label {
   margin-left: 4px;
   font-size: 14px;
 
 }
 
-.lay-radio {
+.de-radio {
   margin-right: 20px;
   cursor: pointer;
 }
 
-.lay-radio:last-child {
+.de-radio:last-child {
   margin-right: 0;
 }
 
-.lay-radio-native {
+.de-radio-native {
   opacity: 0;
   display: none;
 }

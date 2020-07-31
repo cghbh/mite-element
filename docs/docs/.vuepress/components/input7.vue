@@ -1,29 +1,29 @@
 <template>
 	<div class="input7">
 		<div class="input-container">
-			<lay-input v-model="value" center placeholder="请输入内容">
+			<de-input v-model="value" center placeholder="请输入内容">
 				<template slot="prepend">Http://</template>
-			</lay-input>
+			</de-input>
 		</div>
 		<div class="input-container">
-			<lay-input v-model="value" center placeholder="请输入内容">
+			<de-input v-model="value" center placeholder="请输入内容">
 				<template slot="append">.com</template>
-			</lay-input>
+			</de-input>
 		</div>
 		<div class="input-container">
-			<lay-input v-model="value" center placeholder="请输入内容">
+			<de-input v-model="value" center placeholder="请输入内容">
 				<template slot="prepend">Http://</template>
 				<template slot="append">.com</template>
-			</lay-input>
+			</de-input>
 		</div>
 	</div>
 </template>
 
 <script>
-import LayInput from '../../../../packages/components/input/index.js'
+import DeInput from '../../../../packages/components/input/index.js'
 export default {
 	components: {
-		LayInput
+		DeInput
 	},
 	data() {
 		return {

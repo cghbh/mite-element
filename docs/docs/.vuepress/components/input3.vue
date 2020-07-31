@@ -1,17 +1,17 @@
 <template>
 	<div class="input3">
 		<div class="input3-discribe">input模式</div>
-		<lay-input v-model="value1" placeholder="请输入内容"></lay-input>
+		<de-input v-model="value1" placeholder="请输入内容"></de-input>
 		<div class="input3-discribe">textarea模式</div>
-		<lay-input v-model="value2" placeholder="请输入一长段内容" type="textarea"></lay-input>
+		<de-input v-model="value2" placeholder="请输入一长段内容" type="textarea"></de-input>
 	</div>
 </template>
 
 <script>
-import LayInput from '../../../../packages/components/input/index.js'
+import DeInput from '../../../../packages/components/input/index.js'
 export default {
 	components: {
-		LayInput
+		DeInput
 	},
 	data() {
 		return {

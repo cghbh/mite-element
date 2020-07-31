@@ -9,7 +9,7 @@
 <message-based></message-based>
 
 ```vue
-<lay-button @click="showMessage" type="primary">打开消息提示</lay-button>
+<de-button @click="showMessage" type="primary">打开消息提示</de-button>
 
 <script>
 export default {
@@ -34,10 +34,10 @@ export default {
 <message-status></message-status>
 
 ```vue
-<lay-button @click="showDefaultMessage" icon="info">消息</lay-button>
-<lay-button @click="showSuccessMessage" type="success" icon="success">成功</lay-button>
-<lay-button @click="showWarningMessage" type="warning" icon="warning">警告</lay-button>
-<lay-button @click="showErrorMessage" type="danger" icon="error">错误</lay-button>
+<de-button @click="showDefaultMessage" icon="info">消息</de-button>
+<de-button @click="showSuccessMessage" type="success" icon="success">成功</de-button>
+<de-button @click="showWarningMessage" type="warning" icon="warning">警告</de-button>
+<de-button @click="showErrorMessage" type="danger" icon="error">错误</de-button>
 
 <script>
 export default {
@@ -81,7 +81,7 @@ export default {
 <message-close></message-close>
 
 ```vue
-<lay-button @click="showMessage" type="primary">可关闭</lay-button>
+<de-button @click="showMessage" type="primary">可关闭</de-button>
 
 <script>
 
@@ -107,7 +107,7 @@ export default {
 <message-one></message-one>
 
 ```vue
-<lay-button @click="showMessage" type="primary">不可自动关闭</lay-button>
+<de-button @click="showMessage" type="primary">不可自动关闭</de-button>
 
 <script>
 export default {
@@ -131,9 +131,9 @@ export default {
 <message4></message4>
 
 ```vue
-<lay-button @click="showMessagePosition('left')">左边</lay-button>
-<lay-button @click="showMessagePosition('center')">中间</lay-button>
-<lay-button @click="showMessagePosition('right')">右边</lay-button>
+<de-button @click="showMessagePosition('left')">左边</de-button>
+<de-button @click="showMessagePosition('center')">中间</de-button>
+<de-button @click="showMessagePosition('right')">右边</de-button>
 
 <script>
 export default {
@@ -157,7 +157,7 @@ export default {
 <message-center></message-center>
 
 ```vue
-<lay-button @click="showMessage" type="primary">文字居中消息</lay-button>
+<de-button @click="showMessage" type="primary">文字居中消息</de-button>
 
 <script>
 export default {

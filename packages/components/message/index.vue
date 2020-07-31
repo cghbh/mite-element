@@ -1,18 +1,18 @@
 <template>
 	<transition name="message-fade">
-		<div class="lay-message" v-if="visible" :class="{'is-content-center': center, 'is-message-center': isCenter, 'is-message-right': isRight, 'is-message-left': isLeft }" :style="computedStyle">
-			<div class="lay-message-content" :class="{'is-success-message': isSuccessMessage, 'is-error-message': isErrorMessage, 'is-warning-message': isWarningMessage }">
-				<span class="lay-info-icon" :class="{'is-success-message': isSuccessMessage, 'is-error-message': isErrorMessage, 'is-warning-message': isWarningMessage }">
-					<lay-icon icon="error" v-if="isErrorMessage"></lay-icon>
-					<lay-icon icon="success" v-else-if="isSuccessMessage"></lay-icon>
-					<lay-icon icon="warning" v-else-if="isWarningMessage"></lay-icon>
-					<lay-icon icon="info" v-else></lay-icon>
+		<div class="de-message" v-if="visible" :class="{'is-content-center': center, 'is-message-center': isCenter, 'is-message-right': isRight, 'is-message-left': isLeft }" :style="computedStyle">
+			<div class="de-message-content" :class="{'is-success-message': isSuccessMessage, 'is-error-message': isErrorMessage, 'is-warning-message': isWarningMessage }">
+				<span class="de-info-icon" :class="{'is-success-message': isSuccessMessage, 'is-error-message': isErrorMessage, 'is-warning-message': isWarningMessage }">
+					<de-icon icon="error" v-if="isErrorMessage"></de-icon>
+					<de-icon icon="success" v-else-if="isSuccessMessage"></de-icon>
+					<de-icon icon="warning" v-else-if="isWarningMessage"></de-icon>
+					<de-icon icon="info" v-else></de-icon>
 				</span>
 				{{ message }}
 				<!-- 如果自动关闭功能关闭的话，那么showClose就该开启 -->
 				<span @click="closeMessage" class="close-btn" v-if="!autoClose || showClose">
 					
-					<svg class="lay-message-svg icon" t="1595411366477" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2772" width="200" height="200"><path d="M503.466667 467.285333l319.829333-319.829333a25.6 25.6 0 1 1 36.181333 36.181333l-319.829333 319.829334 319.829333 319.829333a25.6 25.6 0 1 1-36.181333 36.181333l-319.829333-319.829333-319.829334 319.829333a25.6 25.6 0 1 1-36.181333-36.181333l319.829333-319.829333-319.829333-319.829334a25.6 25.6 0 1 1 36.181333-36.181333l319.829334 319.829333z" p-id="2773"></path></svg>
+					<svg class="de-message-svg icon" t="1595411366477" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2772" width="200" height="200"><path d="M503.466667 467.285333l319.829333-319.829333a25.6 25.6 0 1 1 36.181333 36.181333l-319.829333 319.829334 319.829333 319.829333a25.6 25.6 0 1 1-36.181333 36.181333l-319.829333-319.829333-319.829334 319.829333a25.6 25.6 0 1 1-36.181333-36.181333l319.829333-319.829333-319.829333-319.829334a25.6 25.6 0 1 1 36.181333-36.181333l319.829334 319.829333z" p-id="2773"></path></svg>
 				</span>
 			</div>
 		</div>
@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import LayIcon from '../icon/index.vue'
+import DeIcon from '../icon/index.vue'
 export default {
 	props: {
 		message: {
@@ -58,7 +58,7 @@ export default {
 		}
 	},
 	components: {
-		LayIcon
+		DeIcon
 	},
 	mounted () {
 		// 注意：$el指向的是当前组件的DOM元素
@@ -137,7 +137,7 @@ export default {
 	width: 16px;
 	height: 16px;
 }
-.lay-info-icon /deep/ .icon svg {
+.de-info-icon /deep/ .icon svg {
 	width: 100%;
 	height: 100%;
 }

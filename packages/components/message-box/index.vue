@@ -2,14 +2,14 @@
 	 <!-- v-if="visible" -->
 	<div class="mask">
 		<transition name="message-fade">
-			<div class="lay-message-box" v-if="visible">
-				<div class="lay-message-box-title">{{ title }}</div>
-				<div class="lay-message-box-content">{{ content }}</div>
-				<div class="lay-message-box-footer">
+			<div class="de-message-box" v-if="visible">
+				<div class="de-message-box-title">{{ title }}</div>
+				<div class="de-message-box-content">{{ content }}</div>
+				<div class="de-message-box-footer">
 					<!-- <template v-if="isConfirm"> -->
-						<lay-button v-if="isConfirm" @click="clickHandle('cancel')">取消</lay-button>
+						<de-button v-if="isConfirm" @click="clickHandle('cancel')">取消</de-button>
 					<!-- </template> -->
-					<lay-button type="primary" @click="clickHandle('confirm')">确定</lay-button>
+					<de-button type="primary" @click="clickHandle('confirm')">确定</de-button>
 				</div>
 			</div>
 		</transition>
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import LayButton from '../button/index.vue'
+import DeButton from '../button/index.vue'
 export default {
 	props: {
 		title: {
@@ -52,7 +52,7 @@ export default {
 		}
 	},
 	components: {
-		LayButton
+		DeButton
 	},
 	mounted() {
 		this.visible = true

@@ -1,10 +1,10 @@
-.lay-input {
+.de-input {
   -webkit-appearance: none;
   background-color: #fff;
   background-image: none;
-  bordelay-radius: 4px;
+  bordede-radius: 4px;
   border: 1px solid #dcdfe6;
-  box-sizing: bordelay-box;
+  box-sizing: bordede-box;
   color: #606266;
   display: inline-block;
   font-size: inherit;
@@ -12,72 +12,72 @@
   line-height: 40px;
   outline: none;
   padding: 0 15px;
-  transition: bordelay-color .2s cubic-bezier(.645, .045, .355, 1);
+  transition: bordede-color .2s cubic-bezier(.645, .045, .355, 1);
   width: 100%;
   border-radius: 5px;
   font-size: 15px;
   color: #000;
 }
 
-.lay-input::placeholder {
+.de-input::placeholder {
 	color: #aaa;
 	font-size: 14px;
 }
 
-.lay-input.is-disabled {
+.de-input.is-disabled {
   background-color: #f5f7fa;
-  bordelay-color: #e4e7ed;
+  bordede-color: #e4e7ed;
   color: #c0c4cc;
   cursor: not-allowed;
 }
 
-.lay-input.is-center {
+.de-input.is-center {
   text-align: center;
 }
 
-.lay-input:hover {
+.de-input:hover {
   border-color: #c0c4cc;
 }
 
-.lay-input:focus {
+.de-input:focus {
   outline: none;
   border-color: #409eff;
 }
 
-.lay-input::-webkit-scrollbar {
+.de-input::-webkit-scrollbar {
   z-index: 11;
   width: 6px;
 }
 
-.lay-input::-webkit-scrollbar:horizontal {
+.de-input::-webkit-scrollbar:horizontal {
   height: 6px;
 }
 
-.lay-input::-webkit-scrollbalay-thumb {
-  bordelay-radius: 5px;
+.de-input::-webkit-scrollbade-thumb {
+  bordede-radius: 5px;
   width: 6px;
   background: #b4bccc;
 }
 
-.lay-input::-webkit-scrollbalay-corner {
+.de-input::-webkit-scrollbade-corner {
   background: #fff;
 }
 
-.lay-input::-webkit-scrollbalay-track {
+.de-input::-webkit-scrollbade-track {
   background: #fff;
 }
 
-.lay-input::-webkit-scrollbalay-track-piece {
+.de-input::-webkit-scrollbade-track-piece {
   background: #fff;
   width: 6px;
 }
 
-.lay-textarea {
+.de-textarea {
   display: block;
   resize: vertical;
   padding: 5px 15px;
   line-height: 1.5;
-  box-sizing: bordelay-box;
+  box-sizing: bordede-box;
   width: 100%;
   font-size: 15px;
   color: #000;
@@ -85,21 +85,21 @@
   background-image: none;
   border: 1px solid #dcdfe6;
   border-radius: 5px;
-  transition: bordelay-color .2s cubic-bezier(.645, .045, .355, 1)
+  transition: bordede-color .2s cubic-bezier(.645, .045, .355, 1)
 }
 
-.lay-textarea::placeholder {
+.de-textarea::placeholder {
 	color: #aaa;
 	font-size: 14px;
 }
 
-.lay-textarea:focus {
+.de-textarea:focus {
   outline: none;
   border-color: #409eff;
 }
 
-.lay-input-prepend,
-.lay-input-append {
+.de-input-prepend,
+.de-input-append {
   background-color: #f5f7fa;
   color: #909399;
   display: flex;
@@ -112,54 +112,54 @@
   width: max-content;
 }
 
-.lay-input-prepend {
+.de-input-prepend {
 	border-right: none;
 }
 
-.has-prepend .lay-input {
+.has-prepend .de-input {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
-.has-append .lay-input {
+.has-append .de-input {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
 
-.has-prepend .lay-input-prepend {
+.has-prepend .de-input-prepend {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-.lay-input-append {
+.de-input-append {
 	border-left: none;
 }
 
-.has-prepend .lay-input-append {
+.has-prepend .de-input-append {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   border-left: none;
 }
 
-.has-append .lay-input-append {
+.has-append .de-input-append {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 
-.lay-input-medium {
+.de-input-medium {
   height: 36px;
   line-height: 36px;
 }
 
-.lay-input-medium::placeholder {
+.de-input-medium::placeholder {
 	font-size: 13px;
 }
 
-.lay-input-small {
+.de-input-small {
   height: 32px;
   line-height: 32px;
 }
 
-.lay-input-small::placeholder {
+.de-input-small::placeholder {
 	font-size: 12px;
 }
 
@@ -169,12 +169,12 @@
   position: relative;
 }
 
-.lay-input-outer {
+.de-input-outer {
   width: 100%;
   position: relative;
 }
 
-.lay-input-clear {
+.de-input-clear {
   position: absolute;
   right: 5px;
   top: 50%;
@@ -196,4 +196,8 @@
 	padding: 3px;
 	box-sizing: border-box;
 	cursor: pointer;
+}
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px white inset !important;
+	border: 1px solid #409eff !important;
 }

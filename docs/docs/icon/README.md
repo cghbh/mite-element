@@ -4,18 +4,18 @@
 
 ### 使用方法
 在下面的图标集合里面直接使用最后面的图标名称即可，传递到icon参数上
-<lay-icon-based></lay-icon-based>
+<icon-based></icon-based>
 
 ```vue
-<lay-icon icon="loading2"></lay-icon>
-<lay-icon icon="info"></lay-icon>
-<lay-icon icon="s-tools"></lay-icon>
-<lay-icon icon="delete"></lay-icon>
+<de-icon icon="loading2"></de-icon>
+<de-icon icon="info"></de-icon>
+<de-icon icon="s-tools"></de-icon>
+<de-icon icon="delete"></de-icon>
 ```
 
 ### 图标集合
 
-<layicon-list></layicon-list>
+<icon-list></icon-list>
 
 ### Attributes
 

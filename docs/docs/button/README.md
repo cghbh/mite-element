@@ -3,11 +3,11 @@
 <button-exam1></button-exam1>
 
 ```vue
-<lay-button>默认按钮</lay-button>
-<lay-button type="warning">warning按钮</lay-button>
-<lay-button type="danger">danger按钮</lay-button>
-<lay-button type="primary">primary按钮</lay-button>
-<lay-button type="success">success按钮</lay-button>
+<de-button>默认按钮</de-button>
+<de-button type="warning">warning按钮</de-button>
+<de-button type="danger">danger按钮</de-button>
+<de-button type="primary">primary按钮</de-button>
+<de-button type="success">success按钮</de-button>
 ```
 #### 禁用状态
 
@@ -16,11 +16,11 @@
 <button-exam2></button-exam2>
 
 ```vue
-<lay-button disabled>默认按钮</lay-button>
-<lay-button disabled type="warning">warning按钮</lay-button>
-<lay-button disabled type="danger">danger按钮</lay-button>
-<lay-button disabled type="primary">primary按钮</lay-button>
-<lay-button disabled type="success">success按钮</lay-button>
+<de-button disabled>默认按钮</de-button>
+<de-button disabled type="warning">warning按钮</de-button>
+<de-button disabled type="danger">danger按钮</de-button>
+<de-button disabled type="primary">primary按钮</de-button>
+<de-button disabled type="success">success按钮</de-button>
 ```
 
 #### 图标按钮
@@ -30,11 +30,11 @@
 <button-exam3></button-exam3>
 
 ```vue
-<lay-button icon="loading">默认</lay-button>
-<lay-button type="primary" icon="info"></lay-button>
-<lay-button type="warning" icon="star">警告</lay-button>
-<lay-button type="danger" icon="bell">危险</lay-button>
-<lay-button type="success" icon="success">成功</lay-button>
+<de-button icon="loading">默认</de-button>
+<de-button type="primary" icon="info"></de-button>
+<de-button type="warning" icon="star">警告</de-button>
+<de-button type="danger" icon="bell">危险</de-button>
+<de-button type="success" icon="success">成功</de-button>
 ```
 
 
@@ -46,11 +46,11 @@
 <button-exam4></button-exam4>
 
 ```vue
-<lay-button round>默认圆角</lay-button>
-<lay-button type="warning" round>警告圆角</lay-button>
-<lay-button type="danger" round>危险圆角</lay-button>
-<lay-button type="primary" round>默认圆角</lay-button>
-<lay-button type="success" round>成功圆角</lay-button>
+<de-button round>默认圆角</de-button>
+<de-button type="warning" round>警告圆角</de-button>
+<de-button type="danger" round>危险圆角</de-button>
+<de-button type="primary" round>默认圆角</de-button>
+<de-button type="success" round>成功圆角</de-button>
 ```
 
 
@@ -62,10 +62,10 @@
 <button-exam5></button-exam5>
 
 ```vue
-<lay-button type="primary" round>默认按钮</lay-button>
-<lay-button type="primary" size="medium" round>中型按钮</lay-button>
-<lay-button type="primary" size="small" round>小型按钮</lay-button>
-<lay-button type="primary" size="mini" round>超小按钮</lay-button>
+<de-button type="primary" round>默认按钮</de-button>
+<de-button type="primary" size="medium" round>中型按钮</de-button>
+<de-button type="primary" size="small" round>小型按钮</de-button>
+<de-button type="primary" size="mini" round>超小按钮</de-button>
 ```
 
 #### 点击事件
@@ -75,7 +75,7 @@
 <button-exam6></button-exam6>
 
 ```vue
-<lay-button type="primary" @click="handleClick">默认按钮</lay-button>
+<de-button type="primary" @click="handleClick">默认按钮</de-button>
 ```
 ### Attributes
 

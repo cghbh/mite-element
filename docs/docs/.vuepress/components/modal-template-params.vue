@@ -1,20 +1,20 @@
 <template>
 	<div class="modal-params-trans">
-		<lay-button @click="showModal" type="primary">传递参数到template组件</lay-button>
+		<de-button @click="showModal" type="primary">传递参数到template组件</de-button>
 		<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css"/>
 	</div>
 </template>
 
 <script>
-import LayButton from '../../../../packages/components/button/index.js'
+import DeButton from '../../../../packages/components/button/index.js'
 import Vue from 'vue'
-import LayMessage from '../../../../packages/components/message/index.js'
-import LayModal from '../../../../packages/components/modal/index.js'
+import DeMessage from '../../../../packages/components/message/index.js'
+import DeModal from '../../../../packages/components/modal/index.js'
 import ModalTest from './modaltest.vue'
-Vue.use(LayMessage).use(LayModal)
+Vue.use(DeMessage).use(DeModal)
 export default {
 	components: {
-		LayButton
+		DeButton
 	},
 	methods: {
 		showModal() {

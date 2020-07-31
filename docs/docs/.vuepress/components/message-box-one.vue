@@ -1,17 +1,18 @@
 <template>
 	<div class="message-box-one">
-		<lay-button @click="showMessageBox" type="primary">点击打开MessageBox</lay-button>
+		<de-button @click="showMessageBox" type="primary">点击打开MessageBox</de-button>
 	</div>
 </template>
 
 <script>
-import LayButton from '../../../../packages/components/button/index.js'
+import DeButton from '../../../../packages/components/button/index.js'
 import Vue from 'vue'
-import LayMessageBox from '../../../../packages/components/message-box/index.js'
-Vue.use(LayMessageBox)
+import DeMessageBox from '../../../../packages/components/message-box/index.js'
+import DeMessage from '../../../../packages/components/message/index.js'
+Vue.use(DeMessageBox).use(DeMessage)
 export default {
 	components: {
-		LayButton
+		DeButton
 	},
 	methods: {
 		showMessageBox() {

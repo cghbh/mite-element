@@ -1,5 +1,5 @@
 <template>
-	<svg class="icon" aria-hidden="true">
+	<svg class="icon-self" aria-hidden="true">
 		<use :xlink:href="iconName"></use>
 	</svg>
 </template>
@@ -8,7 +8,7 @@
 	// 导入iconfont的js文件
 import '../../assets/js/iconfont.js'
 export default {
-	name: 'lay-icon',
+	name: 'de-icon',
 	props: {
 		icon: {
 			type: String,
@@ -25,11 +25,4 @@ export default {
 
 <style type="text/css" scoped>
 @import './index.scss';
-.icon {
-	width: 18px;
-	height: 18px;
-	vertical-align: -0.15em;
-	fill: currentColor;
-	overflow: hidden;
-}
 </style>

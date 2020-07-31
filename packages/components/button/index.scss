@@ -1,4 +1,4 @@
-.lay-button {
+.de-button {
   display: inline-block;
   line-height: 1;
   white-space: nowrap;
@@ -21,19 +21,19 @@
 }
 
 /* button的尺寸大小设计 */
-.lay-button-default {
+.de-button-default {
 	padding: 12px 20px;
 	font-size: 14px;
 }
-.lay-button-medium {
+.de-button-medium {
 	padding: 10px 18px;
 	font-size: 13px;
 }
-.lay-button-small {
+.de-button-small {
 	padding: 8px 16px;
 	font-size: 13px;
 }
-.lay-button-mini {
+.de-button-mini {
 	padding: 6px 14px;
 	font-size: 11px;
 }
@@ -44,26 +44,26 @@
 	margin-right: 5px;
 }
 
-.lay-button+.lay-button {
+.de-button+.de-button {
   margin-left: 10px;
 }
 
-.lay-button:focus,
-.lay-button:hover {
+.de-button:focus,
+.de-button:hover {
   color: #409EFF;
   border-color: #c6e2ff;
   background-color: #ecf5ff;
 }
 
-.lay-button:active {
+.de-button:active {
   color: #3a8ee6;
   border-color: #3a8ee6;
   outline: 0;
 }
 
-.lay-button.is-disabled,
-.lay-button.is-disabled:focus,
-.lay-button.is-disabled:hover {
+.de-button.is-disabled,
+.de-button.is-disabled:focus,
+.de-button.is-disabled:hover {
   color: #c0c4cc;
   cursor: not-allowed;
   background-image: none;
@@ -71,185 +71,185 @@
   border-color: #ebeef5;
 }
 
-.lay-button--primary {
+.de-button--primary {
   color: #fff;
   background-color: #409eff;
   border-color: #409eff;
 }
 
-.lay-button--primary:focus,
-.lay-button--primary:hover {
+.de-button--primary:focus,
+.de-button--primary:hover {
   background: #66b1ff;
   border-color: #66b1ff;
   color: #fff;
 }
 
-.lay-button--primary.is-disabled,
-.lay-button--primary.is-disabled:active,
-.lay-button--primary.is-disabled:focus,
-.lay-button--primary.is-disabled:hover {
+.de-button--primary.is-disabled,
+.de-button--primary.is-disabled:active,
+.de-button--primary.is-disabled:focus,
+.de-button--primary.is-disabled:hover {
   color: #fff;
   background-color: #a0cfff;
   border-color: #a0cfff;
 }
 
 
-.lay-button--success {
+.de-button--success {
   color: #fff;
   background-color: #67c23a;
   border-color: #67c23a;
 }
 
-.lay-button--success:focus,
-.lay-button--success:hover {
+.de-button--success:focus,
+.de-button--success:hover {
   background: #85ce61;
   border-color: #85ce61;
   color: #fff;
 }
 
-.lay-button--success.is-active,
-.lay-button--success:active {
+.de-button--success.is-active,
+.de-button--success:active {
   background: #5daf34;
   border-color: #5daf34;
   color: #fff;
 }
 
-.lay-button--success:active {
+.de-button--success:active {
   outline: 0;
 }
 
-.lay-button--success.is-disabled,
-.lay-button--success.is-disabled:active,
-.lay-button--success.is-disabled:focus,
-.lay-button--success.is-disabled:hover {
+.de-button--success.is-disabled,
+.de-button--success.is-disabled:active,
+.de-button--success.is-disabled:focus,
+.de-button--success.is-disabled:hover {
   color: #fff;
   background-color: #b3e19d;
   border-color: #b3e19d;
 }
 
-.lay-button--warning {
+.de-button--warning {
   color: #fff;
   background-color: #e6a23c;
   border-color: #e6a23c;
 }
 
-.lay-button--warning:focus,
-.lay-button--warning:hover {
+.de-button--warning:focus,
+.de-button--warning:hover {
   background: #ebb563;
   border-color: #ebb563;
   color: #fff;
 }
 
-.lay-button--warning.is-active,
+.de-button--warning.is-active,
 .laybutton--warning:active {
   background: #cf9236;
   border-color: #cf9236;
   color: #fff;
 }
 
-.lay-button--warning:active {
+.de-button--warning:active {
   outline: 0;
 }
 
-.lay-button--warning.is-disabled,
-.lay-button--warning.is-disabled:active,
-.lay-button--warning.is-disabled:focus,
-.lay-button--warning.is-disabled:hover {
+.de-button--warning.is-disabled,
+.de-button--warning.is-disabled:active,
+.de-button--warning.is-disabled:focus,
+.de-button--warning.is-disabled:hover {
   color: #fff;
   background-color: #f3d19e;
   border-color: #f3d19e;
 }
 
-.lay-button--danger {
+.de-button--danger {
   color: #fff;
   background-color: #f56c6c;
   border-color: #f56c6c;
 }
 
-.lay-button--danger:focus,
-.lay-button--danger:hover {
+.de-button--danger:focus,
+.de-button--danger:hover {
   background: #f78989;
   border-color: #f78989;
   color: #fff;
 }
 
-.lay-button--danger.is-active,
-.lay-button--danger:active {
+.de-button--danger.is-active,
+.de-button--danger:active {
   background: #dd6161;
   border-color: #dd6161;
   color: #fff;
 }
 
-.lay-button--danger:active {
+.de-button--danger:active {
   outline: 0;
 }
 
-.lay-button--danger.is-disabled,
-.lay-button--danger.is-disabled:active,
-.lay-button--danger.is-disabled:focus,
-.lay-button--danger.is-disabled:hover {
+.de-button--danger.is-disabled,
+.de-button--danger.is-disabled:active,
+.de-button--danger.is-disabled:focus,
+.de-button--danger.is-disabled:hover {
   color: #fff;
   background-color: #fab6b6;
   border-color: #fab6b6;
 }
 
 
-.lay-button--info {
+.de-button--info {
   color: #fff;
   background-color: #909399;
   border-color: #909399;
 }
 
-.lay-button--info:focus,
-.lay-button--info:hover {
+.de-button--info:focus,
+.de-button--info:hover {
   background: #a6a9ad;
   border-color: #a6a9ad;
   color: #fff;
 }
 
-.lay-button--info.is-active,
-.lay-button--info:active {
+.de-button--info.is-active,
+.de-button--info:active {
   background: #82848a;
   border-color: #82848a;
   color: #fff;
 }
 
-.lay-button--info:active {
+.de-button--info:active {
   outline: 0;
 }
 
-.lay-button--info.is-disabled,
-.lay-button--info.is-disabled:active,
-.lay-button--info.is-disabled:focus,
-.lay-button--info.is-disabled:hover {
+.de-button--info.is-disabled,
+.de-button--info.is-disabled:active,
+.de-button--info.is-disabled:focus,
+.de-button--info.is-disabled:hover {
   color: #fff;
   background-color: #c8c9cc;
   border-color: #c8c9cc;
 }
 
 /* border-radius */
-.lay-button.is-round.lay-button-default {
+.de-button.is-round.de-button-default {
 	border-radius: 20px;
 	padding: 12px 20px;
 }
 
-.lay-button.is-round.lay-button-medium {
+.de-button.is-round.de-button-medium {
 	border-radius: 18px;
 	padding: 10px 18px;
 }
 
-.lay-button.is-round.lay-button-small {
+.de-button.is-round.de-button-small {
 	border-radius: 16px;
 	padding: 8px 16px;
 }
 
-.lay-button.is-round.lay-button-mini {
+.de-button.is-round.de-button-mini {
 	border-radius: 14px;
 	padding: 6px 14px;
 	
 }
 
-.lay-button::-moz-focus-inner {
+.de-button::-moz-focus-inner {
   border-radius: 10px;
   padding: 6px 14px;
 }

@@ -1,4 +1,4 @@
-.lay-modal-mask {
+.de-modal-mask {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -12,38 +12,38 @@
 	overflow: auto;
 }
 
-.lay-modal {
+.de-modal {
 	min-width: 30%;
 	padding: 20px;
 	background-color: #fff;
 	border-radius: 5px;
 }
 
-.lay-modal-title {
+.de-modal-title {
 	display: flex;
 	justify-content: space-between;
 }
-.lay-modal-title-text {
+.de-modal-title-text {
 	font-size: 18px;
 }
-.lay-modal-title-svg {
+.de-modal-title-svg {
 	width: 18px;
 	height: 18px;;
 }
-.lay-modal-title-svg svg {
+.de-modal-title-svg svg {
 	width: 100%;
 	height: 100%;
 	cursor: pointer;
 }
 
-.lay-modal-content {
+.de-modal-content {
 	width: 100%;
 	height: 100%;
 	font-size: 14px;
 	padding: 15px 0;
 }
 
-.lay-modal-button {
+.de-modal-button {
 	display: flex;
 	justify-content: flex-end;
 }

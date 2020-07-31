@@ -1,24 +1,23 @@
 <template>
-	<div class="lay-form-item">
-		<label class="lay-form-item-label">
+	<div class="de-form-item">
+		<label class="de-form-item-label">
 			{{ label }}
 		</label>
-		<div class="lay-form-item-container">
+		<div class="de-form-item-container">
 			<slot></slot>
-			<p v-if="error" class="lay-form-item-container-warning">{{ error }}</p>
+			<p v-if="error" class="de-form-item-container-warning">{{ error }}</p>
 		</div>
 	</div>
 </template>
 
 <script>
-// import Schema from 'async-validator'
 import Schema from '../../assets/js/validate.js'
 export default {
-	name: 'lay-form-item',
-	inject: ['LayForm'],
+	name: 'de-form-item',
+	inject: ['Form'],
 	provide() {
 		return {
-			LayFormItem: this
+			FormItem: this
 		}
 	},
 	props: {
@@ -42,16 +41,17 @@ export default {
 		// 将当前的对象传递给他的上一级元素，由于考虑到$children和$parent的高度耦合，所有采用provide和inject向上派发传递
 		// 过滤掉不需要校验的
 		if(this.prop) {
-			this.LayForm.$emit('add.Fileds', this)
+			this.Form.$emit('add.Fileds', this)
+			this.Form.$emit('reset.fileds', this)
 		}
 	},
 	methods: {
 		// 执行表单校验的操作
 		validate() {
 			// 获取当前的数据
-			const value = this.LayForm.modal[this.prop]
+			const value = this.Form.modal[this.prop]
 			// 获取当前的校验规则
-			const rule = this.LayForm.rules[this.prop]
+			const rule = this.Form.rules[this.prop]
 			// 创建校验规则对象
 			const descriptor = {
 				[`${this.prop}`]: rule
@@ -70,25 +70,30 @@ export default {
 					this.error = ''
 				}
 			})
+		},
+		resetFileds() {
+			this.error = ''
+			// 向下级input派发清除内容事件
+			this.$emit('reset')
 		}
 	}
 }
 </script>
 
 <style scoped>
-.lay-form-item {
+.de-form-item {
 	display: flex;
 	align-items: center;
 	margin-bottom: 24px;
 }
 
-.lay-form-item /deep/ .lay-input {
+.de-form-item /deep/ .de-input {
 	max-width: 400px;
 }
-.lay-form-item /deep/  .lay-textarea {
+.de-form-item /deep/  .de-textarea {
 	max-width: 400px;
 }
-.lay-form-item .lay-form-item-label {
+.de-form-item .de-form-item-label {
 	width: 60px;
 	margin: 0!important;
 	line-height: 40px;
@@ -97,11 +102,11 @@ export default {
 	text-align: right;
 	margin-right: 15px!important;
 }
-.lay-form-item .lay-form-item-container {
+.de-form-item .de-form-item-container {
 	position: relative;
 	flex: 1;
 }
-.lay-form-item .lay-form-item-container-warning {
+.de-form-item .de-form-item-container-warning {
 	position: absolute;
 	font-size: 12px;
 	top: 80%;

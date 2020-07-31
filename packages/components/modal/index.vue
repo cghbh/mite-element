@@ -1,26 +1,26 @@
 <template>
-	<div class="lay-modal-mask">
+	<div class="de-modal-mask">
 		 <transition
 		 duration="2000"
 		    :enter-active-class="enterClass" 
 			:leave-active-class="leaveClass">
-			<div class="lay-modal" v-if="visible">
+			<div class="de-modal" v-if="visible">
 				<!-- 我是Modal复杂组件，我将进一步增强弹框组件的功能 -->
-				<div class="lay-modal-title">
-					<span class="lay-modal-title-text">{{ title }}</span>
-					<span class="lay-modal-title-svg" @click="closeModal">
-						<svg class="lay-message-svg icon" t="1595411366477" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2772" width="200" height="200"><path d="M503.466667 467.285333l319.829333-319.829333a25.6 25.6 0 1 1 36.181333 36.181333l-319.829333 319.829334 319.829333 319.829333a25.6 25.6 0 1 1-36.181333 36.181333l-319.829333-319.829333-319.829334 319.829333a25.6 25.6 0 1 1-36.181333-36.181333l319.829333-319.829333-319.829333-319.829334a25.6 25.6 0 1 1 36.181333-36.181333l319.829334 319.829333z" p-id="2773"></path></svg>
+				<div class="de-modal-title">
+					<span class="de-modal-title-text">{{ title }}</span>
+					<span class="de-modal-title-svg" @click="closeModal">
+						<svg class="de-message-svg icon" t="1595411366477" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2772" width="200" height="200"><path d="M503.466667 467.285333l319.829333-319.829333a25.6 25.6 0 1 1 36.181333 36.181333l-319.829333 319.829334 319.829333 319.829333a25.6 25.6 0 1 1-36.181333 36.181333l-319.829333-319.829333-319.829334 319.829333a25.6 25.6 0 1 1-36.181333-36.181333l319.829333-319.829333-319.829333-319.829334a25.6 25.6 0 1 1 36.181333-36.181333l319.829334 319.829333z" p-id="2773"></path></svg>
 					</span>
 				</div>
-				<div class="lay-modal-content">
+				<div class="de-modal-content">
 					<template-com :params="params" v-if="template"></template-com>
 					<template v-if="message">
 						{{ message }}
 					</template>
 				</div>
-				<div v-if="showButton" class="lay-modal-button">
-					<lay-button @click="handleCancel">取消</lay-button>
-					<lay-button @click="handleConfirm" type="primary">确定</lay-button>
+				<div v-if="showButton" class="de-modal-button">
+					<de-button @click="handleCancel">取消</de-button>
+					<de-button @click="handleConfirm" type="primary">确定</de-button>
 				</div>
 			</div>
 		</transition>
@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import LayButton from '../button/index.vue'
+import DeButton from '../button/index.vue'
 export default {
 	data () {
 		return {
@@ -131,7 +131,7 @@ export default {
 	},
 	components: {
 		TemplateCom: null,
-		LayButton
+		DeButton
 	}
 }
 </script>

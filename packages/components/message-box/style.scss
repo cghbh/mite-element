@@ -12,7 +12,7 @@
   z-index: 9999;
 }
 
-.lay-message-box {
+.de-message-box {
   display: inline-block;
   width: 420px;
   padding-bottom: 10px;
@@ -29,7 +29,7 @@
   backface-visibility: hidden;
 }
 
-.lay-message-box-title {
+.de-message-box-title {
   padding-left: 0;
   margin: 15px;
   margin-bottom: 5px;
@@ -38,13 +38,13 @@
   color: #303133;
 }
 
-.lay-message-box-content {
+.de-message-box-content {
   padding: 10px 15px 15px 15px;
   color: #606266;
   font-size: 14px;
 }
 
-.lay-message-box-footer{
+.de-message-box-footer{
   text-align: right;
   padding-right: 10px;
 }

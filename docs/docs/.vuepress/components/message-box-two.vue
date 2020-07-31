@@ -1,17 +1,17 @@
 <template>
 	<div class="message-box-two">
-		<lay-button @click="showMessageBox" type="primary">确认消息框</lay-button>
+		<de-button @click="showMessageBox" type="primary">确认消息框</de-button>
 	</div>
 </template>
 
 <script>
-import LayButton from '../../../../packages/components/button/index.js'
+import DeButton from '../../../../packages/components/button/index.js'
 import Vue from 'vue'
-import LayMessageBox from '../../../../packages/components/message-box/index.js'
-Vue.use(LayMessageBox)
+import DeMessageBox from '../../../../packages/components/message-box/index.js'
+Vue.use(DeMessageBox)
 export default {
 	components: {
-		LayButton
+		DeButton
 	},
 	methods: {
 		showMessageBox() {

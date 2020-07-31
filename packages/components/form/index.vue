@@ -6,10 +6,10 @@
 
 <script>
 export default {
-	name: 'lay-form',
+	name: 'de-form',
 	provide() {
 		return {
-			LayForm: this
+			Form: this
 		}
 	},
 	props: {
@@ -24,8 +24,13 @@ export default {
 	created() {
 		// 一定要注意的是，我们由于要获取的是子孙组件，因此不要再mounted里面获取，因为已经挂载了，也就没办法获取
 		this.fileds = []
+		this.resetFiledsArray = []
 		this.$on('add.Fileds', item => {
 			this.fileds.push(item)
+		})
+		// 重置表单
+		this.$on('reset.fileds', item => {
+			this.resetFiledsArray.push(item)
 		})
 	},
 	methods: {
@@ -39,6 +44,12 @@ export default {
 			})
 			.catch(() => {
 				cb(false)
+			})
+		},
+		//表单重置操作
+		resetFileds() {
+			this.resetFiledsArray.map(item => {
+				item.resetFileds()
 			})
 		}
 	}

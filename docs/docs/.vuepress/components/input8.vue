@@ -1,15 +1,15 @@
 <template>
 	<div class="input8">
-		<lay-input v-model="value" maxlength="10" clearable placeholder="最多只能输入10个字符"></lay-input>
+		<de-input v-model="value" :maxlength="10" placeholder="最多只能输入10个字符"></de-input>
 		</div>
 	</div>
 </template>
 
 <script>
-import LayInput from '../../../../packages/components/input/index.js'
+import DeInput from '../../../../packages/components/input/index.js'
 export default {
 	components: {
-		LayInput
+		DeInput
 	},
 	data() {
 		return {

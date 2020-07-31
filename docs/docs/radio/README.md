@@ -8,9 +8,9 @@
 <radio></radio>
 
 ```vue
-<lay-radio v-model="selectItem" label="选项一">选项一</lay-radio>
-<lay-radio v-model="selectItem" label="选项二">选项二</lay-radio>
-<lay-radio v-model="selectItem" label="选项三">选项三</lay-radio>
+<de-radio v-model="selectItem" label="选项一">选项一</de-radio>
+<de-radio v-model="selectItem" label="选项二">选项二</de-radio>
+<de-radio v-model="selectItem" label="选项三">选项三</de-radio>
 
 <script>
 export default {
@@ -30,16 +30,16 @@ export default {
 <radio-group></radio-group>
 
 ```vue
-<lay-radio-group v-model="radio1">
-  <lay-radio label="选项1">选项1</lay-radio>
-  <lay-radio label="选项2">选项2</lay-radio>
-  <lay-radio label="选项3">选项3</lay-radio>
-</lay-radio-group>
-<lay-radio-group v-model="radio2">
-  <lay-radio label="选项A">选项A</lay-radio>
-  <lay-radio label="选项B">选项B</lay-radio>
-  <lay-radio label="选项C">选项C</lay-radio>
-</lay-radio-group>
+<de-radio-group v-model="radio1">
+  <de-radio label="选项1">选项1</de-radio>
+  <de-radio label="选项2">选项2</de-radio>
+  <de-radio label="选项3">选项3</de-radio>
+</de-radio-group>
+<de-radio-group v-model="radio2">
+  <de-radio label="选项A">选项A</de-radio>
+  <de-radio label="选项B">选项B</de-radio>
+  <de-radio label="选项C">选项C</de-radio>
+</de-radio-group>
 
 <script>
  data () {

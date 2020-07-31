@@ -1,16 +1,16 @@
 <template>
 	<div class="radio">
-		<lay-radio v-model="selectItem" label="选项一">选项一</lay-radio>
-		<lay-radio v-model="selectItem" label="选项二">选项二</lay-radio>
-		<lay-radio v-model="selectItem" label="选项三">选项三</lay-radio>
+		<de-radio v-model="selectItem" label="选项一">选项一</de-radio>
+		<de-radio v-model="selectItem" label="选项二">选项二</de-radio>
+		<de-radio v-model="selectItem" label="选项三">选项三</de-radio>
 	</div>
 </template>
 
 <script>
-import LayRadio from '../../../../packages/components/radio/index.js'
+import DeRadio from '../../../../packages/components/radio/index.js'
 export default {
 	components: {
-		LayRadio
+		DeRadio
 	},
 	data () {
 		return {

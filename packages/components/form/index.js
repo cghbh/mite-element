@@ -1,7 +1,7 @@
-import LayForm from './index.vue'
+import Form from './index.vue'
 
-LayForm.install = function(Vue) {
-	Vue.component(LayForm.name, LayForm)
+Form.install = function(Vue) {
+	Vue.component(LayForm.name, Form)
 }
 
-export default LayForm
+export default Form

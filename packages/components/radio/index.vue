@@ -1,20 +1,20 @@
 <template>
-	<label class="lay-radio">
-		<span class="lay-radio-outer" >
-			<span class="lay-radio-inner" :class="{ 'is-checked': isChecked }"></span>
+	<label class="de-radio">
+		<span class="de-radio-outer" >
+			<span class="de-radio-inner" :class="{ 'is-checked': isChecked }"></span>
 			<input 
 			  type="radio" 
-			  class="lay-radio-native" 
+			  class="de-radio-native" 
 			  :value="label"
 			  v-model="radioValue">
 		</span>
-		<span class="lay-radio-label">{{ label }}</span>
+		<span class="de-radio-label">{{ label }}</span>
 	</label>
 </template>
 
 <script>
 export default {
-	name: 'lay-radio',
+	name: 'de-radio',
 	inject: {
 		radioGroup: {
 			default: ''

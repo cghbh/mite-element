@@ -1,20 +1,20 @@
 <template>
 	<div class="message-status">
-		<lay-button @click="showDefaultMessage" icon="info">消息</lay-button>
-		<lay-button @click="showSuccessMessage" type="success" icon="success">成功</lay-button>
-		<lay-button @click="showWarningMessage" type="warning" icon="warning">警告</lay-button>
-		<lay-button @click="showErrorMessage" type="danger" icon="error">错误</lay-button>
+		<de-button @click="showDefaultMessage" icon="info">消息</de-button>
+		<de-button @click="showSuccessMessage" type="success" icon="success">成功</de-button>
+		<de-button @click="showWarningMessage" type="warning" icon="warning">警告</de-button>
+		<de-button @click="showErrorMessage" type="danger" icon="error">错误</de-button>
 	</div>
 </template>
 
 <script>
-import LayButton from '../../../../packages/components/button/index.js'
+import DeButton from '../../../../packages/components/button/index.js'
 import Vue from 'vue'
-import LayMessage from '../../../../packages/components/message/index.js'
-Vue.use(LayMessage)
+import DeMessage from '../../../../packages/components/message/index.js'
+Vue.use(DeMessage)
 export default {
 	components: {
-		LayButton
+		DeButton
 	},
 	methods: {
 		showDefaultMessage() {

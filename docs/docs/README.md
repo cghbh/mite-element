@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: LayUI
+heroText: V-Design
 tagline: 一套简洁的基于Vue的组件库
 actionText: 快速上手 →
 actionLink: /install/

@@ -1,17 +1,17 @@
 <template>
 	<div class="checkbox">
-	  <lay-checkbox label="选项A" v-model="checkedList">选项A</lay-checkbox>
-	  <lay-checkbox label="选项B" v-model="checkedList">选项B</lay-checkbox>
-	  <lay-checkbox label="选项C" v-model="checkedList">选项C</lay-checkbox>
-	  <lay-checkbox label="选项D" v-model="checkedList">选项D</lay-checkbox>
+	  <de-checkbox label="选项A" v-model="checkedList">选项A</de-checkbox>
+	  <de-checkbox label="选项B" v-model="checkedList">选项B</de-checkbox>
+	  <de-checkbox label="选项C" v-model="checkedList">选项C</de-checkbox>
+	  <de-checkbox label="选项D" v-model="checkedList">选项D</de-checkbox>
 	</div>
 </template>
 
 <script>
-import LayCheckbox from '../../../../packages/components/checkbox/index.js'
+import DeCheckbox from '../../../../packages/components/checkbox/index.js'
 export default {
 	components: {
-		LayCheckbox
+		DeCheckbox
 	},
 	data () {
 		return {

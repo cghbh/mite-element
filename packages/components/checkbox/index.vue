@@ -1,8 +1,8 @@
 <template>
-	<label class="lay-checkbox">
-		<span class="lay-checkbox-outer" :class="{ 'is-checked': isChecked, 'is-disabled': disabled }">
-			<span class="lay-checkbox-inner" :class="{ 'is-checked': isChecked, 'is-disabled': disabled }"></span>
-			<input type="checkbox" :disabled="disabled" :value="label" v-model="checkValue" class="lay-checkbox-native" :class="{'is-disabled': disabled}">
+	<label class="de-checkbox">
+		<span class="de-checkbox-outer" :class="{ 'is-checked': isChecked, 'is-disabled': disabled }">
+			<span class="de-checkbox-inner" :class="{ 'is-checked': isChecked, 'is-disabled': disabled }"></span>
+			<input type="checkbox" :disabled="disabled" :value="label" v-model="checkValue" class="de-checkbox-native" :class="{'is-disabled': disabled}">
 		</span>
 		<span class="checkbox__label" :class="{'is-disabled': disabled}">{{ label }}</span>
 	</label>
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'lay-checkbox',
+  name: 'de-checkbox',
   // 如果存在复选框组的话，就将祖级组件整个传递过来调用
   inject: {
 	  checkedGroup: {

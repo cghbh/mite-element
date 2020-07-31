@@ -1,19 +1,19 @@
 <template>
 	<div class="input2">
 		<div class="input2-discribe">默认</div>
-		<lay-input v-model="value" placeholder="请输入内容"></lay-input>
+		<de-input v-model="value" placeholder="请输入内容"></de-input>
 		<div class="input2-discribe">中型</div>
-		<lay-input v-model="value" placeholder="请输入内容" size="medium"></lay-input>
+		<de-input v-model="value" placeholder="请输入内容" size="medium"></de-input>
 		<div class="input2-discribe">小型</div>
-		<lay-input v-model="value" placeholder="请输入内容" size="small"></lay-input>
+		<de-input v-model="value" placeholder="请输入内容" size="small"></de-input>
 	</div>
 </template>
 
 <script>
-import LayInput from '../../../../packages/components/input/index.js'
+import DeInput from '../../../../packages/components/input/index.js'
 export default {
 	components: {
-		LayInput
+		DeInput
 	},
 	data() {
 		return {

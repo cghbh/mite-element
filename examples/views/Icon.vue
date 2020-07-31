@@ -1,19 +1,19 @@
 <template>
 	<div>
-	  <lay-icon icon="loading"></lay-icon>
-	  <lay-icon icon="check"></lay-icon>
-	  <lay-icon icon="bell"></lay-icon>
-	  <lay-icon icon="loading2"></lay-icon>
-	  <lay-icon icon="star1"></lay-icon>
-	  <lay-icon icon="info"></lay-icon>
-	  <lay-icon icon="minus"></lay-icon>
-	  <lay-icon icon="circle-close"></lay-icon>
-	  <lay-icon icon="s-tools"></lay-icon>
-	  <lay-icon icon="star"></lay-icon>
-	  <lay-icon icon="loading1"></lay-icon>
-	  <lay-icon icon="error"></lay-icon>
-	  <lay-icon icon="home"></lay-icon>
-	  <lay-icon icon="delete"></lay-icon>
+	  <de-icon icon="loading"></de-icon>
+	  <de-icon icon="check"></de-icon>
+	  <de-icon icon="bell"></de-icon>
+	  <de-icon icon="loading2"></de-icon>
+	  <de-icon icon="star1"></de-icon>
+	  <de-icon icon="info"></de-icon>
+	  <de-icon icon="minus"></de-icon>
+	  <de-icon icon="circle-close"></de-icon>
+	  <de-icon icon="s-tools"></de-icon>
+	  <de-icon icon="star"></de-icon>
+	  <de-icon icon="loading1"></de-icon>
+	  <de-icon icon="error"></de-icon>
+	  <de-icon icon="home"></de-icon>
+	  <de-icon icon="delete"></de-icon>
 	</div>
 </template>
 

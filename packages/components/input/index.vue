@@ -1,12 +1,13 @@
 <template>
 	<div class="inline-container" :class="appendClass">
-		<template v-if="type==='text'">
-			<div class="lay-input-prepend" v-if="$slots.prepend">
+		<template v-if="type==='text' || type === 'password'">
+			<div class="de-input-prepend" v-if="$slots.prepend">
 				<slot name="prepend"></slot>
 			</div>
 			<input
-				class="lay-input" 
-				type="text"
+				class="de-input" 
+				autoComplete="new-password"
+				:type="type"
 				v-bind="$attrs"
 				v-model="inputValue"
 				:disabled="disabled"
@@ -15,14 +16,14 @@
 				:maxlength="maxlength"
 				@blur="validateData"
 			>
-			<div class="lay-input-append" v-if="$slots.append">
+			<div class="de-input-append" v-if="$slots.append">
 				<slot name="append"></slot>
 			</div>
-			<lay-icon v-if="showClearable" @click.native="clearInputValue" class="btn-close-icon" icon="close"></lay-icon>
+			<de-icon v-if="showClearable" @click.native="clearInputValue" class="btn-close-icon" icon="close"></de-icon>
 		</template>
 		<template v-else>
 			<textarea
-				class="lay-textarea" 
+				class="de-textarea" 
 				v-bind="$attrs"
 				v-model="inputValue"
 				v-on="myListeners"
@@ -34,14 +35,14 @@
 </template>
 
 <script>
-import LayIcon from '../icon/index.vue'
+import DeIcon from '../icon/index.vue'
 export default {
-	name: 'lay-input',
+	name: 'de-input',
 	inject: {
-		LayForm: {
+		Form: {
 			default: null
 		},
-		LayFormItem: {
+		FormItem: {
 			default: null
 		}
 	},
@@ -55,7 +56,7 @@ export default {
 			type: String,
 			default: 'text',
 			validator: (value) => {
-				return ['textarea', 'text'].includes(value)
+				return ['textarea', 'text', 'password'].includes(value)
 			}
 		},
 		// 输入框的大小控制
@@ -87,7 +88,12 @@ export default {
 		}
 	},
 	components: {
-		LayIcon
+		DeIcon
+	},
+	mounted() {
+		this.FormItem.$on('reset', () => {
+			this.inputValue = ''
+		})
 	},
 	methods: {
 		clearInputValue() {
@@ -96,7 +102,10 @@ export default {
 		// 当失去焦点的时候，开始校验表单传递过来的数据
 		validateData() {
 			// 向他的上级组件派发事件，本质上派发者和监听者是一个人
-			this.LayFormItem.$emit('validate')
+			// 如果有formitem的话，才执行校验，否则单独一个人不需要校验的操作
+			if(this.FormItem) {
+				this.FormItem.$emit('validate')
+			}
 		}
 	},
 	computed: {
@@ -115,7 +124,7 @@ export default {
 		},
 		styleClass() {
 			return {
-				[`lay-input-${this.size}`]: this.size,
+				[`de-input-${this.size}`]: this.size,
 				[`is-center`]: this.center,
 				[`is-disabled`]: this.disabled
 			}

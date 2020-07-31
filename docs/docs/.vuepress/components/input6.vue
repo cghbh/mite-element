@@ -1,14 +1,14 @@
 <template>
 	<div class="input6">
-		<lay-input v-model="value" center placeholder="请输入内容"></lay-input>
+		<de-input v-model="value" center placeholder="请输入内容"></de-input>
 	</div>
 </template>
 
 <script>
-import LayInput from '../../../../packages/components/input/index.js'
+import DeInput from '../../../../packages/components/input/index.js'
 export default {
 	components: {
-		LayInput
+		DeInput
 	},
 	data() {
 		return {

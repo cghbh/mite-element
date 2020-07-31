@@ -1,14 +1,14 @@
 <template>
 	<div class="button-exam5">
-		<lay-button type="primary" round>默认按钮</lay-button>
-		<lay-button type="primary" size="medium" round>中型按钮</lay-button>
-		<lay-button type="primary" size="small">小型按钮</lay-button>
-		<lay-button type="primary" size="mini">超小按钮</lay-button>
+		<de-button type="primary" round>默认按钮</de-button>
+		<de-button type="primary" size="medium" round>中型按钮</de-button>
+		<de-button type="primary" size="small">小型按钮</de-button>
+		<de-button type="primary" size="mini">超小按钮</de-button>
 	</div>
 </template>
 
 <script>
-import LayButton from '../../../../packages/components/button/index.js'
+import DeButton from '../../../../packages/components/button/index.js'
 export default {
 	methods: {
 		handleClick (e) {
@@ -16,7 +16,7 @@ export default {
 		}
 	},
 	components: {
-		LayButton
+		DeButton
 	}
 }
 </script>

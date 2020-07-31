@@ -2,26 +2,26 @@
 	<div>
 	  <ul class="list-container">
 	  	<li class="list">
-	  		 <lay-icon icon="loading2"></lay-icon>
+	  		 <de-icon icon="loading2"></de-icon>
 	  	</li>
 	  	<li class="list">
-	  		<lay-icon icon="info"></lay-icon>
+	  		<de-icon icon="info"></de-icon>
 	  	</li>
 	  	<li class="list">
-	  		<lay-icon icon="s-tools"></lay-icon>
+	  		<de-icon icon="s-tools"></de-icon>
 	  	</li>
 	  	<li class="list">
-	  		<lay-icon icon="delete"></lay-icon>
+	  		<de-icon icon="delete"></de-icon>
 	  	</li>
 	  </ul>
 	</div>
 </template>
 
 <script>
-import LayIcon from '../../../../packages/components/icon/index.js'
+import DeIcon from '../../../../packages/components/icon/index.js'
 export default {
 	components: {
-		LayIcon
+		DeIcon
 	}
 }
 </script>
@@ -38,8 +38,8 @@ export default {
 .list {
 	width: 70px;
 }
-.list /deep/ .icon {
-	width: 30px;
-	height: 30px;
+.list /deep/ .icon-self {
+	width: 25px;
+	height: 25px;
 }
 </style>

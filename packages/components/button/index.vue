@@ -1,5 +1,5 @@
 <template>
-	<button @click="handleClick" class="lay-button" :class="styleClass">
+	<button @click="handleClick" class="de-button" :class="styleClass">
 		<svg v-if="showIcon" class="icon" aria-hidden="true">
 			<use :xlink:href="iconName"></use>
 		</svg>
@@ -9,7 +9,7 @@
 
 <script>
 export default {
-	name: 'lay-button',
+	name: 'de-button',
 	props: {
 		type: {
 			type: String,
@@ -35,9 +35,9 @@ export default {
 	computed: {
 		styleClass () {
 			return {
-				[`lay-button--${this.type}`]: true,
+				[`de-button--${this.type}`]: true,
 				[`is-disabled`]: this.disabled,
-				[`lay-button-${this.size}`]: true,
+				[`de-button-${this.size}`]: true,
 				'is-round': this.round
 			}
 		},

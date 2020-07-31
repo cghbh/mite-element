@@ -1,15 +1,15 @@
 <template>
 	<div class="input4">
-		<lay-input v-model="value" clearable placeholder="请输入内容"></lay-input>
+		<de-input v-model="value" clearable placeholder="请输入内容"></de-input>
 		<div class="display">{{ value }}</div>
 	</div>
 </template>
 
 <script>
-import LayInput from '../../../../packages/components/input/index.js'
+import DeInput from '../../../../packages/components/input/index.js'
 export default {
 	components: {
-		LayInput
+		DeInput
 	},
 	data() {
 		return {

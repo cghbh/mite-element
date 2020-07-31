@@ -1,13 +1,13 @@
 <template>
 	<div>
-		<div @click="tabClick" class="lay-tabs-nav-item">{{ label }}</div>
+		<div @click="tabClick" class="de-tabs-nav-item">{{ label }}</div>
 		<slot v-if="false"></slot>
 	</div>
 </template>
 
 <script>
 export default {
-	name: 'lay-tabs-item',
+	name: 'de-tabs-item',
 	inject: ['tabs'],
 	props: {
 		label: {
@@ -25,7 +25,7 @@ export default {
 			console.log(this.$slots.default[0].text)
 		}
 		// tabClick(e) {
-		// 	if(e.target.className.includes( 'lay-tabs-nav-item')){
+		// 	if(e.target.className.includes( 'de-tabs-nav-item')){
 		// 		if (e.target.className.includes('no-paddingleft')) {
 		// 			this.tabs.$refs.border.style.left = e.target.offsetLeft + 'px'
 		// 			this.tabs.$refs.border.style.width = e.target.offsetWidth - 20 + 'px'

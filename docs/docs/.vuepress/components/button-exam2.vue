@@ -1,18 +1,18 @@
 <template>
 	<div class="button-exam2">
-		<lay-button disabled>默认按钮</lay-button>
-		<lay-button disabled type="warning">warning按钮</lay-button>
-		<lay-button disabled type="danger">danger按钮</lay-button>
-		<lay-button disabled type="primary">primary按钮</lay-button>
-		<lay-button disabled type="success">success按钮</lay-button>
+		<de-button disabled>默认按钮</de-button>
+		<de-button disabled type="warning">warning按钮</de-button>
+		<de-button disabled type="danger">danger按钮</de-button>
+		<de-button disabled type="primary">primary按钮</de-button>
+		<de-button disabled type="success">success按钮</de-button>
 	</div>
 </template>
 
 <script>
-import LayButton from '../../../../packages/components/button/index.js'
+import DeButton from '../../../../packages/components/button/index.js'
 export default {
 	components: {
-		LayButton
+		DeButton
 	}
 }
 </script>

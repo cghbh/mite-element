@@ -6,7 +6,7 @@
 
 <script>
 export default {
-	name: 'lay-radio-group',
+	name: 'de-radio-group',
 	props: {
 		value: {
 			type: [String, Number]

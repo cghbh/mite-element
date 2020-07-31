@@ -1,17 +1,17 @@
 <template>
 	<div class="message-center">
-		<lay-button @click="showMessage" type="primary">文字居中消息</lay-button>
+		<de-button @click="showMessage" type="primary">文字居中消息</de-button>
 	</div>
 </template>
 
 <script>
-import LayButton from '../../../../packages/components/button/index.js'
+import DeButton from '../../../../packages/components/button/index.js'
 import Vue from 'vue'
-import LayMessage from '../../../../packages/components/message/index.js'
-Vue.use(LayMessage)
+import DeMessage from '../../../../packages/components/message/index.js'
+Vue.use(DeMessage)
 export default {
 	components: {
-		LayButton
+		DeButton
 	},
 	methods: {
 		showMessage() {

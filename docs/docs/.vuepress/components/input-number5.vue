@@ -1,14 +1,14 @@
 <template>
 	<div class="input-number5">
-		<lay-input-number v-model="value" :precision="2" :step="0.1"></lay-input-number>
+		<de-input-number v-model="value" :precision="2" :step="0.1"></de-input-number>
 	</div>
 </template>
 
 <script>
-import LayInputNumber from '../../../../packages/components/input-number/index.js'
+import DeInputNumber from '../../../../packages/components/input-number/index.js'
 export default {
 	components: {
-		LayInputNumber
+		DeInputNumber
 	},
 	data() {
 		return {

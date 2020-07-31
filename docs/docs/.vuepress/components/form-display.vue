@@ -1,54 +1,51 @@
 <template>
 	<div class="form-container">
-		<lay-form :modal="users" :rules="rules" ref="ruleForm">
-			<lay-form-item label="活动名称" prop="name">
-				<lay-input v-model="users.name" placeholder="请输入活动名称"></lay-input>
-			</lay-form-item>
-			<lay-form-item label="活动形式" prop="desc">
-				<lay-input v-model="users.desc" placeholder="请输入活动形式"></lay-input>
-			</lay-form-item>
-			<lay-form-item label="活动人数">
-				<lay-input-number :step="1" :max="20" :min="1" v-model="users.number"></lay-input-number>
-			</lay-form-item>
-			<lay-form-item label="个人爱好">
-				<lay-checkbox-group v-model="users.hobby">
-					<lay-checkbox label="羽毛球">羽毛球</lay-checkbox>
-					<lay-checkbox label="游泳">游泳</lay-checkbox>
-					<lay-checkbox label="篮球">篮球</lay-checkbox>
-					<lay-checkbox label="足球">足球</lay-checkbox>
-				</lay-checkbox-group>
-			</lay-form-item>
-			<lay-form-item label="你的选择">
-				<lay-radio-group v-model="users.selectOnly">
-				  <lay-radio label="选项一">选项一</lay-radio>
-				  <lay-radio label="选项二">选项二</lay-radio>
-				  <lay-radio label="选项三">选项三</lay-radio>
-				</lay-radio-group>
-			</lay-form-item>
-			<lay-form-item label="活动评价" prop="score">
-				<lay-input type="textarea" placeholder="请输入对活动的评价" v-model="users.score"></lay-input>
-			</lay-form-item>
-			<lay-form-item>
-				<lay-button type="primary" @click="submit">立即创建</lay-button>
-				<lay-button>取消</lay-button>
-			</lay-form-item>
-		</lay-form>
+		<de-form :modal="users" :rules="rules" ref="ruleForm">
+			<de-form-item label="活动名称" prop="name">
+				<de-input v-model="users.name" placeholder="请输入活动名称"></de-input>
+			</de-form-item>
+			<de-form-item label="活动形式" prop="desc">
+				<de-input v-model="users.desc" placeholder="请输入活动形式"></de-input>
+			</de-form-item>
+			<de-form-item label="活动人数">
+				<de-input-number :step="1" :max="20" :min="1" v-model="users.number"></de-input-number>
+			</de-form-item>
+			<de-form-item label="个人爱好">
+				<de-checkbox-group v-model="users.hobby">
+					<de-checkbox label="羽毛球">羽毛球</de-checkbox>
+					<de-checkbox label="游泳">游泳</de-checkbox>
+					<de-checkbox label="篮球">篮球</de-checkbox>
+					<de-checkbox label="足球">足球</de-checkbox>
+				</de-checkbox-group>
+			</de-form-item>
+			<de-form-item label="你的选择">
+				<de-radio-group v-model="users.selectOnly">
+				  <de-radio label="选项一">选项一</de-radio>
+				  <de-radio label="选项二">选项二</de-radio>
+				  <de-radio label="选项三">选项三</de-radio>
+				</de-radio-group>
+			</de-form-item>
+			<de-form-item>
+				<de-button type="primary" @click="submit">立即创建</de-button>
+				<de-button @click="reset">取消</de-button>
+			</de-form-item>
+		</de-form>
 	</div>
 </template>
 
 <script>
-import LayForm from '../../../../packages/components/form/index.js'
-import LayFormItem from '../../../../packages/components/form-item/index.js'
-import LayInput from '../../../../packages/components/input/index.js'
-import LayInputNumber from '../../../../packages/components/input-number/index.js'
-import LayRadio from '../../../../packages/components/radio/index.js'
-import LayRadioGroup from '../../../../packages/components/radio-group/index.js'
-import LayCheckbox from '../../../../packages/components/checkbox/index.js'
-import LayCheckboxGroup from '../../../../packages/components/checkbox-group/index.js'
-import LayButton from '../../../../packages/components/button/index.js'
+import DeForm from '../../../../packages/components/form/index.js'
+import DeFormItem from '../../../../packages/components/form-item/index.js'
+import DeInput from '../../../../packages/components/input/index.js'
+import DeInputNumber from '../../../../packages/components/input-number/index.js'
+import DeRadio from '../../../../packages/components/radio/index.js'
+import DeRadioGroup from '../../../../packages/components/radio-group/index.js'
+import DeCheckbox from '../../../../packages/components/checkbox/index.js'
+import DeCheckboxGroup from '../../../../packages/components/checkbox-group/index.js'
+import DeButton from '../../../../packages/components/button/index.js'
 import Vue from 'vue'
-import LayMessage from '../../../../packages/components/message/index.js'
-Vue.use(LayMessage)
+import DeMessage from '../../../../packages/components/message/index.js'
+Vue.use(DeMessage)
 export default {
 	data() {
 		return {
@@ -56,7 +53,6 @@ export default {
 				name: '',
 				desc: '',
 				number: 1,
-				score: '',
 				hobby: [],
 				selectOnly: '选项一'
 			},
@@ -90,18 +86,22 @@ export default {
 					return
 				}
 			})
+		},
+		// 重置表单内容
+		reset() {
+			this.$refs.ruleForm.resetFileds()
 		}
 	},
 	components: {
-		LayForm,
-		LayFormItem,
-		LayInput,
-		LayRadio,
-		LayRadioGroup,
-		LayCheckbox,
-		LayCheckboxGroup,
-		LayButton,
-		LayInputNumber
+		DeForm,
+		DeFormItem,
+		DeInput,
+		DeRadio,
+		DeRadioGroup,
+		DeCheckbox,
+		DeCheckboxGroup,
+		DeButton,
+		DeInputNumber
 	}
 }
 </script>

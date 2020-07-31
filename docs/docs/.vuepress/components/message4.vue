@@ -1,20 +1,20 @@
 <template>
 	<div class="message-4">
-		<lay-button @click="showMessagePosition('left')">左边</lay-button>
-		<lay-button @click="showMessagePosition('center')">中间</lay-button>
-		<lay-button @click="showMessagePosition('right')">右边</lay-button>
+		<de-button @click="showMessagePosition('left')">左边</de-button>
+		<de-button @click="showMessagePosition('center')">中间</de-button>
+		<de-button @click="showMessagePosition('right')">右边</de-button>
 	</div>
 </template>
 
 <script>
-import LayButton from '../../../../packages/components/button/index.js'
+import DeButton from '../../../../packages/components/button/index.js'
 import Vue from 'vue'
-import LayMessage from '../../../../packages/components/message/index.js'
-Vue.use(LayMessage)
+import DeMessage from '../../../../packages/components/message/index.js'
+Vue.use(DeMessage)
 export default {
 	components: {
-		LayMessage,
-		LayButton
+		DeMessage,
+		DeButton
 	},
 	data () {
 		return {

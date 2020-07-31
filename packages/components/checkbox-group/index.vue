@@ -6,7 +6,7 @@
 
 <script>
 export default {
-	name: 'lay-checkbox-group',
+	name: 'de-checkbox-group',
 	provide () {
 		return {
 			checkedGroup: this

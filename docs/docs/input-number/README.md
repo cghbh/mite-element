@@ -5,7 +5,7 @@
 <input-number1></input-number1>
 
 ```vue
-<lay-input-number v-model="value"></lay-input-number>
+<de-input-number v-model="value"></de-input-number>
 
 <script>
 export default {
@@ -23,7 +23,7 @@ export default {
 <input-number2></input-number2>
 
 ```vue
-<lay-input-number v-model="value" disabled></lay-input-number>
+<de-input-number v-model="value" disabled></de-input-number>
 
 <script>
 export default {
@@ -43,7 +43,7 @@ export default {
 <input-number3></input-number3>
 
 ```vue
-<lay-input-number v-model="value" :step="5"></lay-input-number>
+<de-input-number v-model="value" :step="5"></de-input-number>
 
 <script>
 export default {
@@ -63,7 +63,7 @@ export default {
 <input-number4></input-number4>
 
 ```vue
-<lay-input-number v-model="value" :max="30" :min="10"></lay-input-number>
+<de-input-number v-model="value" :max="30" :min="10"></de-input-number>
 
 <script>
 export default {
@@ -81,7 +81,7 @@ export default {
 <input-number5></input-number5>
 
 ```vue
-<lay-input-number v-model="value" :precision="2" :step="0.1"></lay-input-number>
+<de-input-number v-model="value" :precision="2" :step="0.1"></de-input-number>
 
 <script>
 export default {

@@ -1,21 +1,21 @@
 <template>
 	<div>
-		<div class="lay-tabs-nav">
+		<div class="de-tabs-nav">
 			<!-- this.$slots.default[0].text -->
-			<div class="lay-tabs-nav-contain" @click="tabClick">
-				<div class="lay-tabs-nav-border" ref="border"></div>
+			<div class="de-tabs-nav-contain" @click="tabClick">
+				<div class="de-tabs-nav-border" ref="border"></div>
 				<template>
 					<slot></slot>
 				</template>
 			</div>
 		</div>
-		<div class="lay-tabs-content" v-html="displayValue"></div>
+		<div class="de-tabs-content" v-html="displayValue"></div>
 	</div>
 </template>
 
 <script>
 export default {
-	name: 'lay-tabs',
+	name: 'de-tabs',
 	provide () {
 		return {
 			tabs: this
@@ -43,7 +43,7 @@ export default {
 	},
 	methods: {
 		tabClick(e) {
-			if(e.target.className.includes( 'lay-tabs-nav-item')){
+			if(e.target.className.includes( 'de-tabs-nav-item')){
 				if (e.target.className.includes('no-paddingleft')) {
 					this.$refs.border.style.left = e.target.offsetLeft + 'px'
 					this.$refs.border.style.width = e.target.offsetWidth - 20 + 'px'
