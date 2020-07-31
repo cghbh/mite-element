@@ -132,12 +132,12 @@ export default {
 </script>
 
 <style scoped>
-@import './style.scss';
-.close-btn /deep/ .icon {
+@import './style.css';
+.close-btn >>> .icon {
 	width: 16px;
 	height: 16px;
 }
-.de-info-icon /deep/ .icon svg {
+.de-info-icon >>> .icon svg {
 	width: 100%;
 	height: 100%;
 }

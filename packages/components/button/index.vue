@@ -61,7 +61,7 @@ export default {
 </script>
 
 <style scoped>
-@import './index.scss';
+@import './index.css';
 .icon {
 	width: 18px;
 	height: 18px;

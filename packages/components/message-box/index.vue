@@ -80,13 +80,6 @@ export default {
 		visible(newVal) {
 			if(!newVal) {
 				this.$destroy()
-				// this.$el.addEventListener('transitionend', () => {
-				// 	console.log(1, '-----------------------')
-				// 	this.$destroy()
-				// 	// this.$once('hook: beforeDestroy', () => {
-				// 	// 	this.$el.parentNode.removeChild(this.$el)
-				// 	// })
-				// })
 			}
 		}
 	}
@@ -94,5 +87,5 @@ export default {
 </script>
 
 <style scoped>
-@import './style.scss'
+@import './style.css'
 </style>

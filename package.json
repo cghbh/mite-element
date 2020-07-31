@@ -1,10 +1,13 @@
 {
-  "name": "lay-ui",
-  "version": "1.0.0",
+  "name": "v-design-cg",
+  "version": "1.0.1",
   "description": "Vue Components Library",
-  "main": "index.js",
+  "main": "lib/vdesign.js",
   "scripts": {
-    "dev": "webpack-dev-server --config ./build/webpack.dev.js --hot"
+    "dev": "webpack-dev-server --config ./build/webpack.dev.js --hot",
+    "build": "npm run lib:all && npm run lib:component",
+    "lib:all": "webpack --config ./build/webpack.lib.prod.js",
+    "lib:component": "webpack --config ./build/webpack.lib.prod.component.js"
   },
   "keywords": [
     "Vue",
@@ -17,8 +20,6 @@
     "@babel/plugin-syntax-dynamic-import": "^7.7.4",
     "@babel/preset-env": "^7.7.5",
     "@intervolga/optimize-cssnano-plugin": "^1.0.6",
-    "animate.css": "^3.7.2",
-    "async-validator": "^3.2.4",
     "autoprefixer": "^9.7.3",
     "babel-loader": "^8.0.6",
     "babel-plugin-component": "^1.1.1",

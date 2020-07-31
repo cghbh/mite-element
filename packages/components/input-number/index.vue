@@ -92,7 +92,7 @@ export default {
 </script>
 
 <style scoped>
-@import './style.scss';
+@import './style.css';
 .icon-containe {
 	height: 16px;
 	width: 16px;
@@ -106,7 +106,7 @@ export default {
 	width: 100%;
 	height: 100%;
 }
-.de-input-number /deep/ .de-input {
+.de-input-number >>> .de-input {
 	width: 50px!important;
 }
 </style>

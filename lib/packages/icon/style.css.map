@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://[name]/packages/components/icon/index.css"],"names":[],"mappings":"AAAA,WACA,UAAA,CACA,WAAA,CACA,qBAAA,CACA,iBAAA,CACA,eACA","file":"style.css","sourcesContent":[".icon-self {\r\n\twidth: 18px;\r\n\theight: 18px;\r\n\tvertical-align: -0.15em;\r\n\tfill: currentColor;\r\n\toverflow: hidden;\r\n}"]}

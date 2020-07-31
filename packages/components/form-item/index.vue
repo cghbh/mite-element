@@ -11,7 +11,8 @@
 </template>
 
 <script>
-import Schema from '../../assets/js/validate.js'
+// import Schema from '../../assets/js/validate.js'
+import Schema from 'async-validator'
 export default {
 	name: 'de-form-item',
 	inject: ['Form'],
@@ -87,10 +88,10 @@ export default {
 	margin-bottom: 24px;
 }
 
-.de-form-item /deep/ .de-input {
+.de-form-item >>> .de-input {
 	max-width: 400px;
 }
-.de-form-item /deep/  .de-textarea {
+.de-form-item >>>  .de-textarea {
 	max-width: 400px;
 }
 .de-form-item .de-form-item-label {
@@ -109,7 +110,7 @@ export default {
 .de-form-item .de-form-item-container-warning {
 	position: absolute;
 	font-size: 12px;
-	top: 80%;
+	top: 42px;
 	left: 5px;
 	color: #E92322;
 }
