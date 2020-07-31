@@ -11,8 +11,8 @@
 </template>
 
 <script>
-// import Schema from '../../assets/js/validate.js'
-import Schema from 'async-validator'
+import Schema from '../../assets/js/validate.js'
+// import Schema from 'async-validator'
 export default {
 	name: 'de-form-item',
 	inject: ['Form'],
