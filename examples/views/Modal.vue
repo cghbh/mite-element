@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<lay-button @click="showModal">点我出现Modal弹框</lay-button>
+		<de-button @click="showModal">点我出现Modal弹框</de-button>
 	</div>
 </template>
 

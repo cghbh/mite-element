@@ -1,8 +1,8 @@
 <template>
 	<div>
-		<lay-radio v-model="selectItem" label="选项一">选项一</lay-radio>
-		<lay-radio v-model="selectItem" label="选项二">选项二</lay-radio>
-		<lay-radio v-model="selectItem" label="选项三">选项三</lay-radio>
+		<de-radio v-model="selectItem" label="选项一">选项一</de-radio>
+		<de-radio v-model="selectItem" label="选项二">选项二</de-radio>
+		<de-radio v-model="selectItem" label="选项三">选项三</de-radio>
 	</div>
 </template>
 

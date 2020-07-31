@@ -16,8 +16,6 @@ import Input from 'UI/input/index'
 import InputNumber from 'UI/input-number/index'
 import Form from 'UI/form/index'
 import FormItem from 'UI/form-item/index'
-import Tabs from 'UI/tabs/index.js'
-import TabsItem from 'UI/tabs-item/index'
 Vue.use(Icon)
    .use(Button)
    .use(Radio)
@@ -31,8 +29,6 @@ Vue.use(Icon)
    .use(InputNumber)
    .use(Form)
    .use(FormItem)
-   .use(Tabs)
-   .use(TabsItem)
 
 new Vue ({
   router,

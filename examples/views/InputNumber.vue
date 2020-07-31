@@ -1,6 +1,6 @@
 <template>
-	<div class="display-exam">
-		<lay-input-number v-model="value" :step="0.5" :precision="3" :max="20" :min="10"></lay-input-number>
+	<div class="dispde-exam">
+		<de-input-number v-model="value" :step="0.5" :precision="3" :max="20" :min="10"></de-input-number>
 		<button @click="updateObject">更新对象</button>
 		<button @click="updateValue">强制更新</button>
 		<div>{{ value }}</div>
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style scoped>
-.display-exam {
+.dispde-exam {
 	width: 200px;
 	margin: 20px;
 }

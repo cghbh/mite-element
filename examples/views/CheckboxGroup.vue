@@ -1,11 +1,11 @@
 <template>
 	<div>
-		<lay-checkbox-group v-model="checkList">
-			<lay-checkbox disabled label="选项一"></lay-checkbox>
-			<lay-checkbox label="选项二"></lay-checkbox>
-			<lay-checkbox label="选项三"></lay-checkbox>
-			<lay-checkbox label="选项四"></lay-checkbox>
-		</lay-checkbox-group>
+		<de-checkbox-group v-model="checkList">
+			<de-checkbox disabled label="选项一"></de-checkbox>
+			<de-checkbox label="选项二"></de-checkbox>
+			<de-checkbox label="选项三"></de-checkbox>
+			<de-checkbox label="选项四"></de-checkbox>
+		</de-checkbox-group>
 		{{ checkList }}
 	</div>
 </template>

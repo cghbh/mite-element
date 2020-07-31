@@ -91,9 +91,11 @@ export default {
 		DeIcon
 	},
 	mounted() {
-		this.FormItem.$on('reset', () => {
-			this.inputValue = ''
-		})
+		if(this.FormItem) {
+			this.FormItem.$on('reset', () => {
+				this.inputValue = ''
+			})
+		}
 	},
 	methods: {
 		clearInputValue() {

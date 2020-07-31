@@ -1,10 +1,10 @@
 <template>
 	<div class="input-display">
 		我是用来展示Input组件的
-		<lay-input placeholder="请输入内容"  v-model="value">
+		<de-input placeholder="请输入内容"  v-model="value">
 			<template slot="prepend">Http://</template>
 			<template slot="append">.com</template>
-		</lay-input>
+		</de-input>
 		<div>{{ value }}</div>
 	</div>
 </template>
