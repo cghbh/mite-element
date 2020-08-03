@@ -4,8 +4,6 @@
 
 [V-Design组件库文档说明地址]( https://cghbh.github.io/v-design/)
 
-[V-Design的github地址，欢迎Star]( https://github.com/cghbh/v-design )
-
 ### 安装
 
 npm install v-design-cg -S
@@ -35,18 +33,18 @@ new Vue({
 
 ```js
 module.exports = {
-	plugins: [
-		[
-			// 配置按需加载
-			'component',
-			{
-				// 库名
-				libraryName: 'v-design-cg',
-				libDir: 'lib/packages',
-				camel2Dash: true // 驼峰转小横线
-			}
-		]
+ plugins: [
+	[
+		// 配置按需加载
+		'component',
+		{
+			// 库名
+			libraryName: 'v-design-cg',
+			libDir: 'lib/packages',
+			camel2Dash: true // 驼峰转小横线
+		}
 	]
+ ]
 }
 ```
 
