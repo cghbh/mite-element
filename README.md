@@ -69,7 +69,50 @@ new Vue({
 
 
 
-#### 3.关于Animate.css动画的单独说明（重要）
+#### 3.所有组件全部导入
+
+```js
+import Vue from 'vue'
+import {
+	Button,
+  Icon,
+  Radio,
+  RadioGroup,
+  CheckBox,
+  CheckBoxGroup,
+  Input,
+  InputNumber,
+  Form,
+  FormItem,
+  Message,
+  MessageBox,
+  Modal,
+  Tabs,
+  TabsItem
+}
+
+Vue.use(Button)
+Vue.use(Icon)
+Vue.use(Radio)
+Vue.use(RadioGroup)
+Vue.use(CheckBox)
+Vue.use(CheckBoxGroup)
+Vue.use(Input)
+Vue.use(InputNumber)
+Vue.use(Form)
+Vue.use(FormItem)
+Vue.use(Message)
+Vue.use(MessageBox)
+Vue.use(Modal)
+Vue.use(Tabs)
+Vue.use(TabsItem)
+```
+
+
+
+
+
+#### 4.关于Animate.css动画的单独说明（重要）
 
 ```js
 // 如果需要使用复杂弹框Modal的动画，请npm install animate.css -S
