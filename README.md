@@ -4,6 +4,8 @@
 
 [V-Design组件库文档说明地址]( https://cghbh.github.io/v-design/)
 
+[Github地址]( https://github.com/cghbh/v-design )
+
 ### 安装
 
 npm install v-design-cg -S

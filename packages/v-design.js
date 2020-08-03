@@ -13,6 +13,8 @@ import FormItem from 'UI/form-item'
 import Message from 'UI/message'
 import Modal from 'UI/modal'
 import MessageBox from 'UI/message-box'
+import Tabs from 'UI/tabs'
+import TabsItem from 'UI/tabs-item'
 
 // 定义组件列表
 const componentsList = [
@@ -28,7 +30,9 @@ const componentsList = [
   FormItem,
   Message,
   Modal,
-  MessageBox
+  MessageBox,
+  Tabs,
+  TabsItem
 ]
 
 const install = function(Vue) {
@@ -56,4 +60,6 @@ export default {
   Message,
   Modal,
   MessageBox,
+  Tabs,
+  TabsItem
 }

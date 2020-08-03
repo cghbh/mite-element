@@ -1,6 +1,6 @@
 {
   "name": "v-design-cg",
-  "version": "1.0.4",
+  "version": "1.1.1",
   "description": "Vue Components Library",
   "main": "lib/vdesign.js",
   "scripts": {
