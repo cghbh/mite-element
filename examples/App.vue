@@ -36,6 +36,9 @@
 		<div>
 			<router-link to="/form">我是Form表单组件</router-link>
 		</div>
+		<div>
+			<router-link to="/tabs">我是Tabs菜单切换组件</router-link>
+		</div>
 		<router-view></router-view>
 	</div>
 </template>

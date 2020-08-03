@@ -62,19 +62,19 @@ module.exports = {
 					{title: 'MessageBox 弹框', path:'/message-box/'},
 					{title: 'Modal 复杂弹框', path:'/modal/'}
 				]
+			},
+			{
+				title: '其他组件',
+				collapsable: false,
+				sidebarDepth: 0,
+				children: [
+					// {title: 'Swiper 轮播图', path:'/swiper/'},
+					// {title: 'Pagination 分页', path:'/pagination/'},
+					// {title: 'Badge 标记', path:'/badge/'},
+					{title: 'Tabs 标签页', path:'/tabs/'}
+					// {title: 'Collapse 折叠面板', path:'/collapse/'}
+				]
 			}
-			// {
-			// 	title: '其他组件',
-			// 	collapsable: false,
-			// 	sidebarDepth: 0,
-			// 	children: [
-			// 		{title: 'Swiper 轮播图', path:'/swiper/'},
-			// 		{title: 'Pagination 分页', path:'/pagination/'},
-			// 		{title: 'Badge 标记', path:'/badge/'},
-			// 		{title: 'Tabs 标签页', path:'/tabs/'},
-			// 		{title: 'Collapse 折叠面板', path:'/collapse/'}
-			// 	]
-			// }
 		],
 		displayAllHeaders: true,
 		sidebarDepth: 0
