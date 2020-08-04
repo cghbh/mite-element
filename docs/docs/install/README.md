@@ -12,5 +12,5 @@ npm install v-design-cg -S
 
 ```
 cnpm install v-design-cg -S
-yarn add lay-ui
+yarn add v-design-cg
 ```

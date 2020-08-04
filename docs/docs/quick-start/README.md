@@ -31,7 +31,7 @@ import { Button, Radio } from 'v-design-cg'
 import App from './App.vue'
 
 Vue.component(Button.name, Button)
-Vue.component(Radio.name, Select)
+Vue.component(Radio.name, Radio)
 /* 或写为
  * Vue.use(Button)
  * Vue.use(Radio)

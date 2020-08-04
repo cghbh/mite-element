@@ -113,5 +113,6 @@ export default {
 	top: 42px;
 	left: 5px;
 	color: #E92322;
+	margin: 0;
 }
 </style>
