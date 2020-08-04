@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://[name]/packages/components/collapse/style.css"],"names":[],"mappings":"AAAA,kBAEA,qBAAA,CAAA,kBAAA,CACA,iBAAA,CACA,iBACA","file":"style.css","sourcesContent":[".no-border-bottom {\r\n\tborder: 1px solid #ddd;\r\n\tborder-bottom: none;\r\n\tborder-radius: 5px;\r\n\toverflow-x: hidden;\r\n}"]}
