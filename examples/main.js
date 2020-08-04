@@ -18,6 +18,8 @@ import Form from 'UI/form/index'
 import FormItem from 'UI/form-item/index'
 import Tabs from 'UI/tabs/index'
 import TabsItem from 'UI/tabs-item/index'
+import Collapse from 'UI/collapse/index'
+import CollapseItem from 'UI/collapse-item/index'
 
 // import '../lib/main.css'
 // import Ele from 'v-design-cg/lib/vdesign.js'
@@ -54,6 +56,8 @@ Vue.use(Icon)
    .use(FormItem)
    .use(Tabs)
    .use(TabsItem)
+   .use(Collapse)
+   .use(CollapseItem)
 
 new Vue ({
   router,

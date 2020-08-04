@@ -1,6 +1,6 @@
 <template>
 	<div id="views">
-		<div>
+		<!-- <div>
 			<router-link to="/icon">Icon图标组件</router-link>
 		</div>
 		<div>
@@ -17,8 +17,8 @@
 		</div>
 		<div>
 			<router-link to="/checkbox-group">CheckboxGroup复选框组件</router-link>
-		</div>
-		<div>
+		</div> -->
+		<!-- <div>
 			<router-link to="/message">点我弹出Message</router-link>
 		</div>
 		<div>
@@ -38,6 +38,9 @@
 		</div>
 		<div>
 			<router-link to="/tabs">我是Tabs菜单切换组件</router-link>
+		</div> -->
+		<div>
+			<router-link to="/collapse">Collapse折叠面板</router-link>
 		</div>
 		<router-view></router-view>
 	</div>

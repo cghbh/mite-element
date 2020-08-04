@@ -68,19 +68,19 @@ module.exports = {
 				collapsable: false,
 				sidebarDepth: 0,
 				children: [
-					{title: 'Swiper 轮播图', path:'/swiper/'},
-					{title: 'Pagination 分页', path:'/pagination/'},
-					{title: 'Badge 标记', path:'/badge/'},
+					// {title: 'Swiper 轮播图', path:'/swiper/'},
+					// {title: 'Pagination 分页', path:'/pagination/'},
+					// {title: 'Badge 标记', path:'/badge/'},
 					{title: 'Tabs 标签页', path:'/tabs/'},
 					{title: 'Collapse 折叠面板', path:'/collapse/'},
-					{title: 'Table 表格', path:'/table/'},
-					{title: 'Affix 图钉', path:'/affix/'},
-					{title: 'Tree 树形图', path:'/tree/'},
-					{title: 'Cascader 级联选择', path:'/cascader/'},
-					{title: 'Datepicker 级联选择', path:'/datepicker/'},
-					{title: 'Swicth 开关', path:'/switch/'},
-					{title: 'Popover 气泡卡片', path:'/popover/'},
-					{title: 'Select 选择', path:'/select/'}
+					// {title: 'Table 表格', path:'/table/'},
+					// {title: 'Affix 图钉', path:'/affix/'},
+					// {title: 'Tree 树形图', path:'/tree/'},
+					// {title: 'Cascader 级联选择', path:'/cascader/'},
+					// {title: 'Datepicker 日期选择', path:'/datepicker/'},
+					// {title: 'Swicth 开关', path:'/switch/'},
+					// {title: 'Popover 气泡卡片', path:'/popover/'},
+					// {title: 'Select 选择', path:'/select/'}
 				]
 			}
 		],

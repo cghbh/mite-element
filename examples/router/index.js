@@ -16,6 +16,7 @@ import Input from '../views/Input.vue'
 import InputNumber from '../views/InputNumber.vue'
 import Form from '../views/Form.vue'
 import Tabs from '../views/Tabs.vue'
+import Collapse from '../views/Collapse.vue'
 
 const routes = [
 	{
@@ -82,6 +83,11 @@ const routes = [
 		path: '/tabs',
 		component: Tabs,
 		name: 'tabs'
+	},
+	{
+		path: '/collapse',
+		component: Collapse,
+		name: 'collapse'
 	}
 ]
 
