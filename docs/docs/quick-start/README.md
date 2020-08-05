@@ -71,6 +71,51 @@ import 'animate.css'
 
 
 
+#### 按需导入所有的组件
+
+```js
+import Vue from 'vue'
+import {
+  Button,
+  Icon,
+  Radio,
+  Checkbox,
+  Input,
+  InputNumber,
+  Form,
+  FormItem,
+  Message,
+  MessageBox,
+  Modal,
+  Swiper,
+  SwiperItem,
+  Tabs,
+  TabsItem,
+  Collapse,
+  CollapseItem
+}
+
+Vue.use(Button)
+Vue.use(Icon)
+Vue.use(Radio)
+Vue.use(Checkbox)
+Vue.use(Input)
+Vue.use(InputNumber)
+Vue.use(Form)
+Vue.use(FormItem)
+Vue.use(Message)
+Vue.use(MessageBox)
+Vue.use(Modal)
+Vue.use(Swiper)
+Vue.use(SwiperItem)
+Vue.use(Tabs)
+Vue.use(TabsItem)
+Vue.use(Collapse)
+Vue.use(CollapseItem)
+```
+
+
+
 #### 开始使用
 
 至此，一个基于Vue 安装了v-design-cg插件的开发环境已经搭建完毕，各个组件的使用方法请参阅它们各自的文档。
