@@ -7,7 +7,7 @@
 			<input
 				class="de-input" 
 				autoComplete="new-password"
-				:type="type"
+				:type="type === 'password' ? passwordType : type"
 				v-bind="$attrs"
 				v-model="inputValue"
 				:disabled="disabled"
@@ -16,6 +16,10 @@
 				:maxlength="maxlength"
 				@blur="validateData"
 			>
+			<!-- 此处所有涉及图标的问题后期单独解决，暂时不予处理 -->
+			<span class="hide-password" @click="showOrHidePassword" v-if="type === 'password'">
+				<svg t="1596695492861" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4539" width="200" height="200"><path d="M511.466 269.569c169.452 0 315.308 99.39 383.565 242.84h66.514c-72.09-177.91-246.293-303.527-450.08-303.527-203.754 0-377.957 125.617-450.046 303.526h66.515c68.255-143.449 214.111-242.84 383.532-242.84z" p-id="4540"></path><path d="M511.466 755.248c-169.42 0-315.277-99.39-383.532-242.84H61.419C133.507 690.35 307.71 815.966 511.466 815.966c203.786 0 377.99-125.617 450.079-303.558H895.03c-68.257 143.45-214.112 242.84-383.565 242.84z" p-id="4541"></path><path d="M349.594 512.424c0 89.412 72.474 161.886 161.885 161.886 89.414 0 161.886-72.474 161.886-161.886 0-89.414-72.472-161.886-161.886-161.886-89.412 0-161.885 72.472-161.885 161.886z m263.084 0c0 55.88-45.32 101.197-101.199 101.197s-101.166-45.318-101.166-101.197c0-55.88 45.287-101.2 101.166-101.2s101.199 45.32 101.199 101.2z" p-id="4542"></path></svg>
+			</span>
 			<div class="de-input-append" v-if="$slots.append">
 				<slot name="append"></slot>
 			</div>
@@ -90,6 +94,11 @@ export default {
 	components: {
 		DeIcon
 	},
+	data() {
+		return {
+			passwordType: 'password'
+		} 
+	},
 	mounted() {
 		if(this.FormItem) {
 			this.FormItem.$on('reset', () => {
@@ -108,6 +117,9 @@ export default {
 			if(this.FormItem) {
 				this.FormItem.$emit('validate')
 			}
+		},
+		showOrHidePassword() {
+			this.passwordType = this.passwordType === 'password' ? 'text' : 'password'
 		}
 	},
 	computed: {
@@ -148,4 +160,17 @@ export default {
 
 <style scoped>
 @import './style.css';
+.hide-password {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 12px;
+	cursor: pointer;
+}
+.hide-password .icon {
+	width: 100%;
+	height: 100%;
+}
 </style>

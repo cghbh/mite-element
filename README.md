@@ -119,7 +119,8 @@ Vue.use(TabsItem)
 // 在main.js导入animated.css
 import 'animate.css'
 ```
-
+#### 5.单独说明（重要）
+这是个人项目，目前代码还没有经过测试，建议慎重使用到生产环境。
 ### LICENSE
 
 [MIT](https://github.com/cghbh/lay-ui/blob/master/LICENSE)

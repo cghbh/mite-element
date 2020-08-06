@@ -70,7 +70,7 @@ module.exports = {
 				children: [
 					{title: 'Swiper 轮播图-未完成', path:'/swiper/'},
 					{title: 'Pagination 分页-未完成', path:'/pagination/'},
-					{title: 'Badge 标记', path:'/badge/'},
+					// {title: 'Badge 标记', path:'/badge/'},
 					{title: 'Tabs 标签页', path:'/tabs/'},
 					{title: 'Collapse 折叠面板', path:'/collapse/'},
 					{title: 'Table 表格-未完成', path:'/table/'},
@@ -78,7 +78,7 @@ module.exports = {
 					// {title: 'Tree 树形图', path:'/tree/'},
 					{title: 'Cascader 级联选择-未完成', path:'/cascader/'},
 					{title: 'Datepicker 日期选择-未完成', path:'/datepicker/'},
-					{title: 'Swicth 开关-未完成', path:'/switch/'},
+					// {title: 'Swicth 开关-未完成', path:'/switch/'},
 					// {title: 'Popover 气泡卡片', path:'/popover/'},
 					// {title: 'Select 选择', path:'/select/'}
 				]

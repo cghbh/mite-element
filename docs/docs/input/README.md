@@ -128,6 +128,32 @@ export default {
 </script>
 ```
 
+
+
+#### 密码框
+
+可以实现密码的显示或者隐藏效果。
+
+<input9></input9>
+
+```vue
+<de-input v-model="value" type="password" placeholder="最多只能输入10个字符"></de-input>
+
+<script>
+export default {
+	data() {
+		return {
+			value: ''
+		}
+	}
+}
+</script>
+```
+
+
+
+
+
 #### 文字居中
 
 <input6></input6>
