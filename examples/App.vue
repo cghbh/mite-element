@@ -39,8 +39,11 @@
 		<div>
 			<router-link to="/tabs">我是Tabs菜单切换组件</router-link>
 		</div> -->
-		<div>
+		<!-- <div>
 			<router-link to="/collapse">Collapse折叠面板</router-link>
+		</div> -->
+		<div>
+			<router-link to="/swiper">Swiper轮播图</router-link>
 		</div>
 		<router-view></router-view>
 	</div>

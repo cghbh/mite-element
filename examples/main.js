@@ -20,6 +20,8 @@ import Tabs from 'UI/tabs/index'
 import TabsItem from 'UI/tabs-item/index'
 import Collapse from 'UI/collapse/index'
 import CollapseItem from 'UI/collapse-item/index'
+import Swiper from 'UI/swiper/index'
+import SwiperItem from 'UI/swiper-item/index'
 
 // import '../lib/main.css'
 // import Ele from 'v-design-cg/lib/vdesign.js'
@@ -58,6 +60,8 @@ Vue.use(Icon)
    .use(TabsItem)
    .use(Collapse)
    .use(CollapseItem)
+   .use(Swiper)
+   .use(SwiperItem)
 
 new Vue ({
   router,

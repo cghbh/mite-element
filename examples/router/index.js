@@ -17,6 +17,7 @@ import InputNumber from '../views/InputNumber.vue'
 import Form from '../views/Form.vue'
 import Tabs from '../views/Tabs.vue'
 import Collapse from '../views/Collapse.vue'
+import Swiper from '../views/Swiper.vue'
 
 const routes = [
 	{
@@ -88,6 +89,11 @@ const routes = [
 		path: '/collapse',
 		component: Collapse,
 		name: 'collapse'
+	},
+	{
+		path: '/swiper',
+		component: Swiper,
+		name: 'swiper'
 	}
 ]
 
