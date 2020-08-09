@@ -4,7 +4,7 @@
 
 >注意：设置轮播图的图片内容的时候，只需要设置外部的宽度以及设置图片的宽度为100%即可实现自适应。
 >
->如果是非图片的轮播图展示内容，则需要设置宽高即可。
+>如果是非图片的轮播图展示内容，则只需要设置宽高即可。
 
 #### 基础用法
 
@@ -42,10 +42,7 @@ export default {
 	<de-swiper :interval="interval" arrow :initindex="0" dot dotcolor="#409eff">
 		<de-swiper-item name="1"><img src="../img/01.png"></de-swiper-item>
 		<de-swiper-item name="2"><img src="../img/02.png"></de-swiper-item>
-    	<de-swiper-item name="3"><img src="../img/03.jpg"></de-swiper-item>
-		<de-swiper-item name="4"><img src="../img/04.png"></de-swiper-item>
-		<de-swiper-item name="5"><img src="../img/05.jpg"></de-swiper-item>
-		</de-swiper>
+	</de-swiper>
 	</div>
 </template>
 
@@ -59,4 +56,25 @@ export default {
 }
 </script>
 ```
+
+### Swiper Attributes
+
+|   参数    |                  说明                   |  类型   |    可选值    | 默认值  |
+| :-------: | :-------------------------------------: | :-----: | :----------: | :-----: |
+| interval  |      轮播图的间隔时间，单位是毫秒       | number  |      —       |  3000   |
+|    dot    |          是否显示切换的小圆点           | boolean | true / false |  false  |
+| dotcolor  |              小圆点的颜色               | string  |      —       | #409eff |
+| initindex | 初始化状态下显示第几张图片，所以从0开始 | number  |      —       |    0    |
+|   arrow   |          是否显示左右切换箭头           | boolean | true / false |  false  |
+|  radius   |            轮播图圆角化展示             | string  |      —       |  '0px'  |
+
+
+
+
+
+### SwiperItem  Attributes
+
+| 参数 |        说明        |      类型       | 可选值 | 默认值 |
+| :--: | :----------------: | :-------------: | :----: | :----: |
+| name | 轮播图的唯一标识符 | string / number |   —    |   —    |
 

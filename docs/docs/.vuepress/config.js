@@ -42,7 +42,7 @@ module.exports = {
 				]
 			},
 			{
-				title: '表单组件',
+				title: '数据组件',
 				collapsable: false,
 				sidebarDepth: 0,
 				children: [
@@ -50,7 +50,10 @@ module.exports = {
 					{title: 'Checkbox 复选框', path:'/checkbox/'},
 					{title: 'Input 输入框', path:'/input/'},
 					{title: 'InputNumber 计数器', path:'/input-number/'},
-					{title: 'Form表单', path: '/form/' }
+					{title: 'Form表单', path: '/form/' },
+					{title: 'Table 表格-未完成', path:'/table/'},
+					// {title: 'Pagination 分页-未完成', path:'/pagination/'},
+					{title: 'Cascader 级联选择-未完成', path:'/cascader/'}
 				]
 			},
 			{
@@ -68,16 +71,16 @@ module.exports = {
 				collapsable: false,
 				sidebarDepth: 0,
 				children: [
-					{title: 'Swiper 轮播图-未完成', path:'/swiper/'},
-					{title: 'Pagination 分页-未完成', path:'/pagination/'},
+					{title: 'Swiper 轮播图', path:'/swiper/'},
+					
 					// {title: 'Badge 标记', path:'/badge/'},
 					{title: 'Tabs 标签页', path:'/tabs/'},
 					{title: 'Collapse 折叠面板', path:'/collapse/'},
-					{title: 'Table 表格-未完成', path:'/table/'},
-					{title: 'Affix 图钉-未完成', path:'/affix/'},
+					
+					// {title: 'Affix 图钉-未完成', path:'/affix/'},
 					// {title: 'Tree 树形图', path:'/tree/'},
-					{title: 'Cascader 级联选择-未完成', path:'/cascader/'},
-					{title: 'Datepicker 日期选择-未完成', path:'/datepicker/'},
+					
+					// {title: 'Datepicker 日期选择-未完成', path:'/datepicker/'},
 					// {title: 'Swicth 开关-未完成', path:'/switch/'},
 					// {title: 'Popover 气泡卡片', path:'/popover/'},
 					// {title: 'Select 选择', path:'/select/'}

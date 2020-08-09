@@ -117,3 +117,18 @@ export default {
 
 
 
+### Collapse  Attributes
+
+|      参数       |          说明          |          类型           |    可选值    | 默认值 |
+| :-------------: | :--------------------: | :---------------------: | :----------: | :----: |
+| v-model / value | 折叠面板的双向绑定的值 | string / array / number |      —       |   —    |
+|    accordion    |     开启手风琴模式     |         boolean         | true / false | false  |
+|     border      |      是否有边框线      |         boolean         | true / false | false  |
+
+
+### CollapseItem  Attributes
+
+| 参数  |            说明            |  类型  | 可选值 | 默认值 |
+| :---: | :------------------------: | :----: | :----: | :----: |
+| title | 折叠面板每一项的标题，必传 | string |   —    |   —    |
+| name  |    折叠面板的唯一标志符    | string |   —    |   —    |
