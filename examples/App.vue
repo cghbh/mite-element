@@ -42,8 +42,11 @@
 		<!-- <div>
 			<router-link to="/collapse">Collapse折叠面板</router-link>
 		</div> -->
-		<div>
+		<!-- <div>
 			<router-link to="/swiper">Swiper轮播图</router-link>
+		</div> -->
+		<div>
+			<router-link to="/cascader">Cascader级联选择器</router-link>
 		</div>
 		<router-view></router-view>
 	</div>

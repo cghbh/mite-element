@@ -18,6 +18,7 @@ import Form from '../views/Form.vue'
 import Tabs from '../views/Tabs.vue'
 import Collapse from '../views/Collapse.vue'
 import Swiper from '../views/Swiper.vue'
+import Cascader from '../views/Cascader.vue'
 
 const routes = [
 	{
@@ -94,6 +95,11 @@ const routes = [
 		path: '/swiper',
 		component: Swiper,
 		name: 'swiper'
+	},
+	{
+		path: '/cascader',
+		component: Cascader,
+		name: 'cascader'
 	}
 ]
 

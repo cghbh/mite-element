@@ -1,5 +1,5 @@
 <template>
-	<div :style="{ height: height, 'border-radius': radius }" @mouseenter.stop="mouseEnter" @mouseleave.stop="mouseLeave" class="de-swiper">
+	<div :style="{ 'border-radius': radius }" @mouseenter.stop="mouseEnter" @mouseleave.stop="mouseLeave" class="de-swiper">
 		<!-- 视口承载 -->
 		<div class="de-swiper-viewport">
 			<slot></slot>
@@ -49,20 +49,10 @@ export default {
 			type: String,
 			default: '#409eff'
 		},
-		// 是否自动切换
-		// autoplay: {
-		// 	type: Boolean,
-		// 	default: false
-		// },
 		// 初始化状态下显示哪一张轮播图
 		initindex: {
 			type: Number,
 			default: 0
-		},
-		// 轮播图的高度设置，那么宽度是自适应的
-		height: {
-			type: String,
-			// default: '200px'
 		},
 		// 是否显示左右的切换箭头
 		arrow: {

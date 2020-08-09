@@ -22,6 +22,7 @@ import Collapse from 'UI/collapse/index'
 import CollapseItem from 'UI/collapse-item/index'
 import Swiper from 'UI/swiper/index'
 import SwiperItem from 'UI/swiper-item/index'
+import Cascader from 'UI/cascader/index'
 
 // import '../lib/main.css'
 // import Ele from 'v-design-cg/lib/vdesign.js'
@@ -62,6 +63,7 @@ Vue.use(Icon)
    .use(CollapseItem)
    .use(Swiper)
    .use(SwiperItem)
+   .use(Cascader)
 
 new Vue ({
   router,
