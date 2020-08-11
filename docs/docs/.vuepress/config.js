@@ -100,6 +100,11 @@ module.exports = {
 					{title: '40.Layout 布局', path: '/'},
 					{title: '41.Container 布局容器', path: '/'},
 					{title: '42.LoadingBar加载进度条', path: '/'},
+					{title: '43.Skeleton骨架屏',path: '/'},
+					{title: '44.Toast轻提示', path: '/'},
+					{title: '45.BackTop回到顶部', path: '/'},
+					{title: '46.Transition过渡动画', path: '/'},
+					{title: '47.Waterfall瀑布流', path: '/'}
 				]
 			}
 		],
