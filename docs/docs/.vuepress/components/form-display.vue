@@ -108,9 +108,8 @@ export default {
 
 <style scoped>
 .form-container {
-	padding: 20px 0 10px 15px;
-	margin-top: 30px;
+	width: 100%;
+	padding: 20px 20px 10px 15px;
 	box-shadow: 0 0 3px #ccc;
-	margin-bottom: 30px;
 }
 </style>

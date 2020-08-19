@@ -47,7 +47,4 @@ export default {
 </script>
 
 <style scoped>
-.modal-button {
-	margin: 20px 0;
-}
 </style>

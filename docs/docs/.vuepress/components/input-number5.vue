@@ -21,7 +21,5 @@ export default {
 <style scoped>
 .input-number5 {
   width: 200px;
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
 </style>

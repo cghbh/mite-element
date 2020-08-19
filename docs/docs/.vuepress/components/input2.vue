@@ -26,12 +26,10 @@ export default {
 <style scoped>
 .input2 {
   width: 300px;
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
 
 .input2-discribe {
-	margin: 10px 0;
+	margin: 10px 0 15px 0;
 	font-size: 14px;
 }
 </style>

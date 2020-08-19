@@ -4,7 +4,15 @@
 
 用来展示数据， 可同时展开多个面板，面板之间不影响 。
 
+<base-code>
+
+<template slot="display">
+
 <collapse-exam1></collapse-exam1>
+
+</template>
+
+<template>
 
 ```vue
 <template>
@@ -36,13 +44,29 @@ export default {
 </script>
 ```
 
+</template>
+
+</base-code>
+
+
+
+
+
 
 
 #### 带边框的折叠面板
 
 具备边框属性。
 
+<base-code>
+
+<template slot="display">
+
 <collapse-exam2></collapse-exam2>
+
+</template>
+
+<template>
 
 ```vue
 <template>
@@ -77,13 +101,29 @@ export default {
 </script>
 ```
 
+</template>
+
+</base-code>
+
+
+
+
+
 
 
 #### 手风琴效果
 
 只能展示一个栏目，其他的会被自动收起来。注意：如果是手风琴的效果，那么activeNames的类型不能是数组。
 
+<base-code>
+
+<template slot="display">
+
 <collapse-exam3></collapse-exam3>
+
+</template>
+
+<template>
 
 ```vue
 <template>
@@ -114,6 +154,13 @@ export default {
 }
 </script>
 ```
+
+</template>
+
+</base-code>
+
+
+
 
 
 

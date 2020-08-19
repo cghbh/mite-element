@@ -1,6 +1,15 @@
 ## Button 按钮
 #### 基础用法
+
+<base-code>
+
+<template slot="display">
+
 <button-exam1></button-exam1>
+
+</template>
+
+<template>
 
 ```vue
 <de-button>默认按钮</de-button>
@@ -9,11 +18,27 @@
 <de-button type="primary">primary按钮</de-button>
 <de-button type="success">success按钮</de-button>
 ```
+
+</template>
+
+</base-code>
+
+
+
+
 #### 禁用状态
 
 按钮不可用状态。
 
+<base-code>
+
+<template slot="display">
+
 <button-exam2></button-exam2>
+
+</template>
+
+<template>
 
 ```vue
 <de-button disabled>默认按钮</de-button>
@@ -23,19 +48,42 @@
 <de-button disabled type="success">success按钮</de-button>
 ```
 
+</template>
+
+</base-code>
+
+
+
+
 #### 图标按钮
 
  带图标的按钮可增强辨识度（有文字）或节省空间（无文字）。 
+ 
+ <base-code>
+ 
+ <template slot="display">
+ 
+ <button-exam3></button-exam3>
+ 
+ </template>
+ 
+ <template>
+ 
+ ```vue
+ <de-button icon="loading">默认</de-button>
+ <de-button type="primary" icon="info"></de-button>
+ <de-button type="warning" icon="star">警告</de-button>
+ <de-button type="danger" icon="bell">危险</de-button>
+ <de-button type="success" icon="success">成功</de-button>
+ ```
+ 
+ </template>
+ 
+ </base-code>
 
-<button-exam3></button-exam3>
 
-```vue
-<de-button icon="loading">默认</de-button>
-<de-button type="primary" icon="info"></de-button>
-<de-button type="warning" icon="star">警告</de-button>
-<de-button type="danger" icon="bell">危险</de-button>
-<de-button type="success" icon="success">成功</de-button>
-```
+
+
 
 
 
@@ -43,7 +91,15 @@
 
 圆润化的圆角按钮。
 
+<base-code>
+
+<template slot="display">
+
 <button-exam4></button-exam4>
+
+</template>
+
+<template>
 
 ```vue
 <de-button round>默认圆角</de-button>
@@ -53,30 +109,69 @@
 <de-button type="success" round>成功圆角</de-button>
 ```
 
+</template>
+
+</base-code>
+
+
+
+
+
 
 
 #### 不同尺寸
 
- Button 组件提供除了默认值以外的三种尺寸，可以在不同场景下选择合适的按钮尺寸。 
+ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景下选择合适的按钮尺寸。
+  
+<base-code>
+  <template slot="display">
+  
+  <button-exam5></button-exam5>
+  
+  </template>
+  
+  <template>
+  
+  
+  ```vue
+  <de-button type="primary" round>默认按钮</de-button>
+  <de-button type="primary" size="medium" round>中型按钮</de-button>
+  <de-button type="primary" size="small" round>小型按钮</de-button>
+  <de-button type="primary" size="mini" round>超小按钮</de-button>
+  ```
+  
+  </template>
+</base-code>
 
-<button-exam5></button-exam5>
 
-```vue
-<de-button type="primary" round>默认按钮</de-button>
-<de-button type="primary" size="medium" round>中型按钮</de-button>
-<de-button type="primary" size="small" round>小型按钮</de-button>
-<de-button type="primary" size="mini" round>超小按钮</de-button>
-```
+
 
 #### 点击事件
 
 点击按钮之后的事件，避免在组件上面直接使用原生的click事件。
 
+<base-code>
+
+<template slot="display">
+
 <button-exam6></button-exam6>
+
+</template>
+
+<template>
 
 ```vue
 <de-button type="primary" @click="handleClick">默认按钮</de-button>
 ```
+
+</template>
+
+
+</base-code>
+
+
+
+
 ### Attributes
 
 | 参数                         | 说明 | 类型   | 可选值                                         | 默认值  |

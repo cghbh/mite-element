@@ -37,7 +37,6 @@ export default {
 .swiper-exam1 {
 	width: 500px;
 	height: 200px;
-	margin: 20px 0;
 }
 h1 {
 	margin: 0;

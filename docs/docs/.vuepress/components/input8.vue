@@ -22,7 +22,7 @@ export default {
 <style scoped>
 .input8 {
   width: 300px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  /* margin-top: 25px; */
+  /* margin-bottom: 25px; */
 }
 </style>

@@ -32,7 +32,4 @@ export default {
 </script>
 
 <style scoped>
-.modal-animate {
-	margin: 20px 0;
-}
 </style>

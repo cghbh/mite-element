@@ -26,7 +26,4 @@ export default {
 </script>
 
 <style scoped>
-.message-one {
-	margin: 20px 0;
-}
 </style>

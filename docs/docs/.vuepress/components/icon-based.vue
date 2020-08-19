@@ -13,6 +13,9 @@
 	  	<li class="list">
 	  		<de-icon icon="delete"></de-icon>
 	  	</li>
+		<li class="list">
+			<de-icon icon="star1"></de-icon>
+		</li>
 	  </ul>
 	</div>
 </template>
@@ -27,6 +30,10 @@ export default {
 </script>
 
 <style scoped>
+ul {
+	margin: 0;
+	padding: 0;
+}
 .list-container, .list {
 	list-style: none;
 }

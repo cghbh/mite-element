@@ -29,14 +29,12 @@ export default {
 
 <style>
 .swiper-exam2 {
-	margin: 20px 0;
 	width: 100%;
 	max-width: 600px;
 }
 .swiper-img {
 	width: 100%;
 	height: auto;
-	/* height: 100%; */
 }
 .navbar {
 	z-index: 9999999;

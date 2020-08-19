@@ -22,8 +22,4 @@ export default {
 </script>
 
 <style scoped>
-.button-exam5 {
-	margin-top: 25px;
-	margin-bottom: 25px;
-}
 </style>

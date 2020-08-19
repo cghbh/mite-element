@@ -22,11 +22,9 @@ export default {
 <style scoped>
 .input-number1 {
   width: 200px;
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
 .display {
-	margin: 15px 0;
+	margin-top: 15px;
 	font-size: 16px;
 }
 </style>

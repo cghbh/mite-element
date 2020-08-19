@@ -26,7 +26,4 @@ export default {
 </script>
 
 <style scoped>
-.message-center {
-	margin: 20px 0;
-}
 </style>

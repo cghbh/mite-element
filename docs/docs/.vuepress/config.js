@@ -1,4 +1,5 @@
 module.exports = {
+	// 新的参考名ad-ui
 	title: "Ad-Vue",
 	description: 'Vue Components Library',
 	base: '/ad-vue/',

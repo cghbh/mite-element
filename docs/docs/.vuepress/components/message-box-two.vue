@@ -39,7 +39,4 @@ export default {
 </script>
 
 <style scoped>
-.message-box-two {
-	margin: 20px 0;
-}
 </style>

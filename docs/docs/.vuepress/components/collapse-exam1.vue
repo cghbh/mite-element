@@ -40,8 +40,7 @@ export default {
 
 <style scoped>
 .collapse-exam1 {
-  margin-top: 25px;
-  margin-bottom: 25px;
+    width: 100%;
 }
 
 .display-p {

@@ -8,7 +8,15 @@
 
 #### 基础用法
 
+<base-code>
+
+<template slot="display">
+
 <swiper-exam1></swiper-exam1>
+
+</template>
+
+<template>
 
 ```vue
 <template>
@@ -31,11 +39,26 @@ export default {
 </script>
 ```
 
+</template>
+
+</base-code>
+
+
+
+
 #### 指示器
 
 显示在轮播图底部的小圆点，你也可以自定义小圆点的active状态颜色。
 
+<base-code>
+
+<template slot="display">
+
 <swiper-exam2></swiper-exam2>
+
+</template>
+
+<template>
 
 ```vue
 <template>
@@ -56,6 +79,14 @@ export default {
 }
 </script>
 ```
+
+</template>
+
+</base-code>
+
+
+
+
 
 ### Swiper Attributes
 

@@ -21,7 +21,5 @@ export default {
 <style scoped>
 .input6 {
   width: 300px;
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
 </style>

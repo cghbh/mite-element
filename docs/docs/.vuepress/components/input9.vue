@@ -22,7 +22,5 @@ export default {
 <style scoped>
 .input9 {
   width: 300px;
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
 </style>

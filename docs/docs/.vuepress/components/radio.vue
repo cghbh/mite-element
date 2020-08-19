@@ -21,7 +21,4 @@ export default {
 </script>
 
 <style scoped>
-.radio {
-	margin: 20px 0;
-}
 </style>

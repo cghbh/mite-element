@@ -49,7 +49,4 @@ export default {
 </script>
 
 <style scoped>
-.message-status {
-	margin: 20px 0;
-}
 </style>

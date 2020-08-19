@@ -28,7 +28,4 @@ export default {
 </script>
 
 <style scoped>
-.message-close {
-	margin: 20px 0;
-}
 </style>

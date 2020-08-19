@@ -35,10 +35,10 @@ export default {
 
 <style scoped>
 .input7 {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  width: 100%;
 }
 .input-container {
 	margin: 10px 0;
+	width: 100%;
 }
 </style>

@@ -2,13 +2,21 @@
 
 #### 重要提示
 
-由于Modal的动画是由animate.css实现的，因此在使用本组件的时候，请使用npm i animate.css --save来安装animate.css，同时在项目的main.js中引入。
+<p style="color: #e92322; margin-bottom: 40px">由于Modal的动画是由animate.css实现的，因此在使用本组件的时候，请使用npm i animate.css --save来安装animate.css，同时在项目的main.js中引入。</p>
 
 #### 基础用法
 
 默认的复杂弹框方式，底部没有按钮，由右上角的关闭按钮来关闭。
 
+<base-code>
+
+<template slot="display">
+
 <modal-base></modal-base>
+
+</template>
+
+<template>
 
 ```vue
 <lay-button @click="showModal" type="primary">打开复杂弹框</lay-button>
@@ -35,11 +43,27 @@ export default {
 </script>
 ```
 
+
+</template>
+
+</base-code>
+
+
+
+
 #### 自定义动画
 
 使用animate.css的动画结合实现的效果，请将参数分别传递到entername入场动画和leavename出场动画中，默认的值分别是fadeInDown和fadeInUp。具体的效果请参考animate.css的官网。[animate.css官网]( https://animate.style/ )
 
+<base-code>
+
+<template slot="display">
+
 <modal-animate></modal-animate>
+
+</template>
+
+<template>
 
 ```vue
 <lay-button @click="showModal" type="primary">动画出场</lay-button>
@@ -70,11 +94,27 @@ export default {
 </script>
 ```
 
+</template>
+
+</base-code>
+
+
+
+
+
 #### 组件传递
 
 可以将书写好的组件传递到Modal弹框中。
 
+<base-code>
+
+<template slot="display">
+
 <modal-template></modal-template>
+
+</template>
+
+<template>
 
 ```vue
 <lay-button @click="showModal" type="primary">将组件作为参数传递</lay-button>
@@ -104,12 +144,28 @@ export default {
 ```
 
 
+</template>
+
+</base-code>
+
+
+
+
+
 
 #### 有按钮的复杂弹框
 
 在复杂弹框Modal的底部显示取消和确定两个按钮，点击两个按钮分别执行不同的回调函数。
 
+<base-code>
+
+<template slot="display">
+
 <modal-button></modal-button>
+
+</template>
+
+<template>
 
 ```vue
 <lay-button @click="showModal" type="success">有按钮的Modal弹框</lay-button>
@@ -145,13 +201,29 @@ export default {
 </script>
 ```
 
+</template>
+
+</base-code>
+
+
+
+
+
 
 
 #### 给template组件传递参数
 
 我们如果通过template属性传递的是一个组件的话，那么在有些场景下是需要对这个组件传递一些参数的。如果要传递的话必须以对象的形式传递下去。
 
+<base-code>
+
+<template slot="display">
+
 <modal-template-params></modal-template-params>
+
+</template>
+
+<template>
 
 ```vue
 <lay-button @click="showModal" type="primary">传递参数到template组件</lay-button>
@@ -178,6 +250,13 @@ export default {
 }
 </script>
 ```
+
+</template>
+
+</base-code>
+
+
+
 
 
 

@@ -1,3 +1,6 @@
+.de-tabs {
+	width: 100%;
+}
 .de-tabs .de-tabs-heading {
 	display: flex;
 	border-bottom: 2px solid #E4E7ED;

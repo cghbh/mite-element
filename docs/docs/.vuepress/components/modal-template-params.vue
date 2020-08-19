@@ -34,7 +34,4 @@ export default {
 </script>
 
 <style scoped>
-.modal-params-trans {
-	margin: 20px 0;
-}
 </style>

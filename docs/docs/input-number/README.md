@@ -1,8 +1,15 @@
 ## InputNumber计数器
 
 #### 基础用法
+<base-code>
+
+<template slot="display">
 
 <input-number1></input-number1>
+
+</template>
+
+<template>
 
 ```vue
 <de-input-number v-model="value"></de-input-number>
@@ -18,9 +25,24 @@ export default {
 </script>
 ```
 
+</template>
+
+</base-code>
+
+
+
+
+
 #### 禁用状态
+<base-code>
+
+<template slot="display">
 
 <input-number2></input-number2>
+
+</template>
+
+<template>
 
 ```vue
 <de-input-number v-model="value" disabled></de-input-number>
@@ -36,31 +58,64 @@ export default {
 </script>
 ```
 
+</template>
+
+</base-code>
+
+
+
+
+
 #### 步进
 
  允许定义递增递减的步数控制。
+ 
+ <base-code>
+ 
+ <template slot="display">
+ 
+ <input-number3></input-number3>
+ 
+ </template>
+ 
+ <template>
+ 
+ ```vue
+ <de-input-number v-model="value" :step="5"></de-input-number>
+ 
+ <script>
+ export default {
+ 	data() {
+ 		return {
+ 			value: 1
+ 		}
+ 	}
+ }
+ </script>
+ ```
+ 
+ </template>
+ 
+ </base-code>
 
-<input-number3></input-number3>
 
-```vue
-<de-input-number v-model="value" :step="5"></de-input-number>
 
-<script>
-export default {
-	data() {
-		return {
-			value: 1
-		}
-	}
-}
-</script>
-```
+
 
 
 
 #### 限定计数范围
+控制步进组件数值的范围，只能在指定的范围内操作。
+
+<base-code>
+
+<template slot="display">
 
 <input-number4></input-number4>
+
+</template>
+
+<template>
 
 ```vue
 <de-input-number v-model="value" :max="30" :min="10"></de-input-number>
@@ -76,9 +131,27 @@ export default {
 </script>
 ```
 
+</template>
+
+</base-code>
+
+
+
+
+
 #### 精度控制
 
+控制步进组件的精度，精度由传入的参数决定。
+
+<base-code>
+
+<template slot="display">
+
 <input-number5></input-number5>
+
+</template>
+
+<template>
 
 ```vue
 <de-input-number v-model="value" :precision="2" :step="0.1"></de-input-number>
@@ -93,6 +166,13 @@ export default {
 }
 </script>
 ```
+
+</template>
+
+</base-code>
+
+
+
 
 #### Attributes
 

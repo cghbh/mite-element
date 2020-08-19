@@ -36,16 +36,6 @@ export default {
 </script>
 
 <style scoped>
-.button-exam6 {
-	margin-top: 25px;
-	margin-bottom: 25px;
-}
-/*table {
-	width: 100%;
-}
-td {
-	min-width: 200px;
-}*/
 td {
 	text-align: center;
 }

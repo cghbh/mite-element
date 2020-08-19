@@ -4,7 +4,15 @@
 
 ### 使用方法
 在下面的图标集合里面直接使用最后面的图标名称即可，传递到icon参数上
-<icon-based></icon-based>
+
+<base-code>
+
+<template slot="display">
+​	<icon-based></icon-based>
+
+</template>
+
+<template slot="default">	
 
 ```vue
 <de-icon icon="loading2"></de-icon>
@@ -12,6 +20,10 @@
 <de-icon icon="s-tools"></de-icon>
 <de-icon icon="delete"></de-icon>
 ```
+
+</template>
+
+</base-code>
 
 ### 图标集合
 

@@ -40,7 +40,7 @@ export default {
 
 <style scoped>
 .tabs-exam1 {
-	margin: 20px 0;
+	width: 100%;
 	padding: 20px;
 	border: 1px solid #DCDFE6;
 	box-sizing: border-box;

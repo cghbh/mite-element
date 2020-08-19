@@ -1,6 +1,6 @@
 <template>
 	<div class="radio-group">
-		<div class="group">
+		<div class="group group-one">
 			<de-radio-group v-model="radio1">
 				<de-radio label="选项1">选项1</de-radio>
 				<de-radio label="选项2">选项2</de-radio>
@@ -35,10 +35,7 @@ export default {
 </script>
 
 <style scoped>
-.radio-group {
-	margin: 25px 0;
-}
-.group {
-	margin-bottom: 25px;
+.group-one {
+	margin-bottom: 20px;
 }
 </style>
