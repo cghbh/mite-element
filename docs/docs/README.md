@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: V-Design
-tagline: 一套简洁的基于Vue的组件库
+heroText: Ad-Vue
+tagline: 一套简洁的基于Vue的PC端组件库
 actionText: 快速上手 →
 actionLink: /install/
 features:
