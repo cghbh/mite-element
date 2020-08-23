@@ -2,9 +2,9 @@
 
 ### 文档说明链接
 
-[V-Design组件库文档说明地址]( https://cghbh.github.io/v-design/)
+[V-Design组件库文档说明地址]( https://cghbh.github.io/ad-vue/)
 
-[Github地址]( https://github.com/cghbh/v-design )
+[Github地址]( https://github.com/cghbh/ad-vue )
 
 ### 安装
 
