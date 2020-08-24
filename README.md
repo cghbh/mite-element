@@ -1,14 +1,14 @@
-## 基于Vue的UI组件库----V-Design
+## 基于Vue的UI组件库----Mite-Element
 
 ### 文档说明链接
 
-[V-Design组件库文档说明地址]( https://cghbh.github.io/ad-vue/)
+[Mite-Element组件库文档说明地址]( https://cghbh.github.io/ad-vue/)
 
 [Github地址]( https://github.com/cghbh/ad-vue )
 
 ### 安装
 
-npm install v-design-cg -S
+npm installmite-element -S
 
 ### 快速上手
 
@@ -17,10 +17,10 @@ npm install v-design-cg -S
 ```js
 import Vue from 'vue'
 import App from './App.vue'
-import VDesign from 'v-design-cg'
+import MiteElement from 'MiteElement'
 // 需要导入css文件
-import 'v-design-cg/lib/main.css'
-Vue.use(VDesign)
+import 'mite-element/lib/main.css'
+Vue.use(MiteElement)
 new Vue({
 	el: '#app',
 	render: h => h(App)
@@ -41,7 +41,7 @@ module.exports = {
 		'component',
 		{
 			// 库名
-			libraryName: 'v-design-cg',
+			libraryName: 'mite-element',
 			libDir: 'lib/packages',
 			camel2Dash: true // 驼峰转小横线
 		}
@@ -56,10 +56,10 @@ module.exports = {
 import Vue from 'vue'
 import App from './App.vue'
 
-import { Button } from 'v-design-cg'
+import { Button } from 'mite-element'
 Vue.use(Button)
-// 使用均以de-开头，使用如下
-<de-button></de-button>
+// 使用均以m-开头，使用如下
+<m-button></m-button>
 
 new Vue({
 	el: '#app',
