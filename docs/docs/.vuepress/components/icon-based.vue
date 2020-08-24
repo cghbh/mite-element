@@ -2,19 +2,19 @@
 	<div>
 	  <ul class="list-container">
 	  	<li class="list">
-	  		 <de-icon icon="loading2"></de-icon>
+	  		 <de-icon icon="heart"></de-icon>
 	  	</li>
 	  	<li class="list">
-	  		<de-icon icon="info"></de-icon>
+	  		<de-icon icon="wechat-fill"></de-icon>
 	  	</li>
 	  	<li class="list">
-	  		<de-icon icon="s-tools"></de-icon>
+	  		<de-icon icon="github-fill"></de-icon>
 	  	</li>
 	  	<li class="list">
-	  		<de-icon icon="delete"></de-icon>
+	  		<de-icon icon="setting"></de-icon>
 	  	</li>
 		<li class="list">
-			<de-icon icon="star1"></de-icon>
+			<de-icon icon="info-circle"></de-icon>
 		</li>
 	  </ul>
 	</div>

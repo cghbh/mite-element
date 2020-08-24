@@ -5,7 +5,7 @@
 </template>
 
 <script>
-	// 导入iconfont的js文件
+// 导入iconfont的js文件
 import '../../assets/js/iconfont.js'
 export default {
 	name: 'de-icon',

@@ -6,11 +6,11 @@
 		</div>
 		
 		<div class="base-code-code" ref="code">
-			<transition name="fade">
+			<collapse-transition>
 				<div v-if="showCodeText">
 					<slot name="default" ></slot>
 				</div>
-			</transition>
+			</collapse-transition>
 		</div>
 		
 		<div 
@@ -28,6 +28,8 @@
 
 <script>
 import DeIcon from '../../../../packages/components/icon/index.js'
+import { CollapseTransition } from '../../../../packages/utils/collapseTransition.js'
+console.log(CollapseTransition, 'CollapseTransition')
 export default {
 	data() {
 		return {
@@ -37,7 +39,8 @@ export default {
 		}
 	},
 	components: {
-		DeIcon
+		DeIcon,
+		CollapseTransition
 	},
 	methods: {
 		add() {

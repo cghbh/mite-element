@@ -15,10 +15,11 @@
 <template slot="default">	
 
 ```vue
-<de-icon icon="loading2"></de-icon>
-<de-icon icon="info"></de-icon>
-<de-icon icon="s-tools"></de-icon>
-<de-icon icon="delete"></de-icon>
+<m-icon icon="heart"></m-icon>
+<m-icon icon="wechat-fill"></m-icon>
+<m-icon icon="github-fill"></m-icon>
+<m-icon icon="setting"></m-icon>
+<m-icon icon="info-circle"></m-icon>
 ```
 
 </template>

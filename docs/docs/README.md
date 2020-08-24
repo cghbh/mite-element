@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: Ad-Vue
+heroText: Mite-Element
 tagline: 一套简洁的基于Vue的PC端组件库
 actionText: 快速上手 →
 actionLink: /install/

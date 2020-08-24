@@ -1,7 +1,6 @@
 module.exports = {
-	// 新的参考名ad-ui
-	title: "Ad-Vue",
-	description: 'Vue Components Library',
+	title: "Mite-Element",
+	description: 'Vue Components Library || Similar ElementUI',
 	base: '/ad-vue/',
 	head: [
 		['link', {
@@ -24,6 +23,14 @@ module.exports = {
 			},
 		],
 		sidebar: [
+			{
+				title: '介绍',
+				collapsable: false,
+				sidebarDepth: 0,
+				children: [
+					{title: '写在前面', path:'/front/'}
+				]
+			},
 			{
 				title: '开发指南',
 				collapsable: false,
