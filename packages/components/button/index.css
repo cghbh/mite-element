@@ -227,7 +227,7 @@
   border-color: #c8c9cc;
 }
 
-/* border-radius */
+/* 下面是圆角设置 */
 .de-button.is-round.de-button-default {
 	border-radius: 20px;
 	padding: 12px 20px;
@@ -252,4 +252,12 @@
 .de-button::-moz-focus-inner {
   border-radius: 10px;
   padding: 6px 14px;
+}
+ /* 单独的图标大小设置 */
+.icon {
+	width: 18px;
+	height: 18px;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
 }

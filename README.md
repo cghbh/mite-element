@@ -121,6 +121,46 @@ import 'animate.css'
 ```
 #### 5.单独说明（重要）
 这是个人项目，目前代码还没有经过测试，建议慎重使用到生产环境。
+
+
+
+
+
+#### 6.进度表
+
+- [ ] Icon图标组件
+- [ ] Button按钮组件
+- [ ] Radio单选框组件
+- [ ] Checkbox复选框组件
+- [ ] Input输入框组件
+- [ ] InputNumber计数器组件
+- [ ] Form表单组件
+- [ ] Table表格组件
+- [ ] Pagination分页器组件
+- [ ] Cascader组件
+- [ ] MessageBox消息提示组件
+- [ ] Message消息弹框组件
+- [ ] Modal消息组件
+- [ ] Swiper轮播图组件
+- [ ] Tabs切换组件
+- [ ] Collapse折叠面板组件
+- [ ] Badge徽标组件
+- [ ] Affix固定组件
+- [ ] Tree树形控件组件
+- [ ] DatePicker日期选择组件
+- [ ] Switch开关组件
+- [ ] Popover气泡组件
+- [ ] Select选择器组件
+- [ ] Step步骤条组件
+- [ ] Card卡片视图组件
+- [ ] Tooltip文字提示组件
+- [ ] NavMenu导航菜单组件
+- [ ] Tag标签组件
+- [ ] Uploader上传组件
+- [ ] TimePicker时间选择组件
+- [ ] DateTimePicker日期时间选择器
+- [ ] Toast轻提示组件
+
 ### LICENSE
 
 [MIT](https://github.com/cghbh/lay-ui/blob/master/LICENSE)

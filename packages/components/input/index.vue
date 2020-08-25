@@ -100,6 +100,7 @@ export default {
 			type: Boolean,
 			default: false
 		},
+		// 最大长度
 		maxlength: {
 			type: Number,
 			default: 100

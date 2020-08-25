@@ -11,22 +11,27 @@
 export default {
 	name: 'de-button',
 	props: {
+		// 类型
 		type: {
 			type: String,
 			default: 'default'
 		},
+		// 禁用
 		disabled: {
 			type: Boolean,
 			default: false
 		},
+		// 尺寸大小
 		size: {
 			type: String,
 			default: 'default'
 		},
+		// 图标按钮
 		icon: {
 			type: String,
 			default: ''
 		},
+		// 圆角按钮
 		round: {
 			type: Boolean,
 			default: false
@@ -62,11 +67,4 @@ export default {
 
 <style scoped>
 @import './index.css';
-.icon {
-	width: 18px;
-	height: 18px;
-	vertical-align: -0.15em;
-	fill: currentColor;
-	overflow: hidden;
-}
 </style>
