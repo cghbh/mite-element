@@ -6,7 +6,7 @@
 
 <script>
 export default {
-	name: 'de-form',
+	name: 'm-form',
 	provide() {
 		return {
 			Form: this

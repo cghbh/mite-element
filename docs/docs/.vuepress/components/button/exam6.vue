@@ -1,15 +1,15 @@
 <template>
 	<div class="button-exam6">
-		<de-button type="success" @click="handleClick">点我有惊喜</de-button>
-		<de-button type="info" disabled @click="handleClickDisabled">点坏鼠标也没有</de-button>
+		<m-button type="success" @click="handleClick">点我有惊喜</m-button>
+		<m-button type="info" disabled @click="handleClickDisabled">点坏鼠标也没有</m-button>
 	</div>
 </template>
 
 <script>
 import Vue from 'vue'
-import DeButton from '../../../../../packages/components/button/index.js'
-import DeMessage from '../../../../../packages/components/message/index.js'
-Vue.use(DeMessage)
+import MButton from '../../../../../packages/components/button/index.js'
+import MMessage from '../../../../../packages/components/message/index.js'
+Vue.use(MMessage)
 export default {
 	methods: {
 		handleClick () {
@@ -30,7 +30,7 @@ export default {
 		}
 	},
 	components: {
-		DeButton
+		MButton
 	}
 }
 </script>

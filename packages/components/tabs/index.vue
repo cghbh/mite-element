@@ -1,22 +1,22 @@
 <template>
-	<div class="de-tabs":class="{ 'is-card-container': type }">
-		<div class="de-tabs-heading" :class="{ 'is-card': type }">
-			<div ref="tabbar" :class="{ 'active-class': item.name === activeName, 'is-card-active':  item.name === activeName && type }" :s-id="item.name" :style="{'padding-left': type? '20px' : index === 0 ? '0' : '20px', 'padding-right': type? '20px' : nameAndLabelList.length - 1 === 0 ? '0' : '20px', 'border-left': index === 0 && type ? 'none': '' }" @click="tabsClick(item, $event)" v-for="(item, index) in nameAndLabelList" :key="index" class="de-tabs-heading-item">
-			<de-icon v-if="item.icon" :icon="item.icon"></de-icon>
+	<div class="m-tabs":class="{ 'is-card-container': type }">
+		<div class="m-tabs-heading" :class="{ 'is-card': type }">
+			<div ref="tabbar" :class="{ 'active-class': item.name === activeName, 'is-card-active':  item.name === activeName && type }" :s-id="item.name" :style="{'padding-left': type? '20px' : index === 0 ? '0' : '20px', 'padding-right': type? '20px' : nameAndLabelList.length - 1 === 0 ? '0' : '20px', 'border-left': index === 0 && type ? 'none': '' }" @click="tabsClick(item, $event)" v-for="(item, index) in nameAndLabelList" :key="index" class="m-tabs-heading-item">
+			<m-icon v-if="item.icon" :icon="item.icon"></m-icon>
 			{{ item.label }}
 		</div>
-			<div v-show="!type" ref="activeBar" class="de-tabs-heading-active_bar"></div>
+			<div v-show="!type" ref="activeBar" class="m-tabs-heading-active_bar"></div>
 		</div>
-		<div class="de-tabs-content" :style="{'padding-left': type? '10px' : '0'}">
+		<div class="m-tabs-content" :style="{'padding-left': type? '10px' : '0'}">
 			<slot></slot>
 		</div>
 	</div>
 </template>
 
 <script>
-import DeIcon from '../icon/index.vue'
+import MIcon from '../icon/index.vue'
 export default {
-	name:'de-tabs',
+	name:'m-tabs',
 	// 由于使用$children和$parent存在耦合性，因此使用provide向子孙组件注入数据
 	provide() {
 		return {
@@ -44,7 +44,7 @@ export default {
 		}
 	},
 	components: {
-		DeIcon
+		MIcon
 	},
 	methods: {
 		// 点击Tabbar的时候触发的事情

@@ -1,18 +1,18 @@
 <template>
 	<div class="message-box-one">
-		<de-button @click="showMessageBox" type="primary">点击打开MessageBox</de-button>
+		<m-button @click="showMessageBox" type="primary">点击打开MessageBox</m-button>
 	</div>
 </template>
 
 <script>
-import DeButton from '../../../../../packages/components/button/index.js'
+import MButton from '../../../../../packages/components/button/index.js'
 import Vue from 'vue'
-import DeMessageBox from '../../../../../packages/components/message-box/index.js'
-import DeMessage from '../../../../../packages/components/message/index.js'
-Vue.use(DeMessageBox).use(DeMessage)
+import MMessageBox from '../../../../../packages/components/message-box/index.js'
+import MMessage from '../../../../../packages/components/message/index.js'
+Vue.use(MMessageBox).use(MMessage)
 export default {
 	components: {
-		DeButton
+		MButton
 	},
 	methods: {
 		showMessageBox() {

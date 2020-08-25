@@ -1,9 +1,9 @@
 <template>
 	<div>
-		<de-button type="success" @click="handleClick1">成功</de-button>
-		<de-button type="warning" @click="handleClick2">警告</de-button>
-		<de-button type="info" @click="handleClick3">消息</de-button>
-		<de-button type="danger" @click="handleClick4">错误</de-button>
+		<m-button type="success" @click="handleClick1">成功</m-button>
+		<m-button type="warning" @click="handleClick2">警告</m-button>
+		<m-button type="info" @click="handleClick3">消息</m-button>
+		<m-button type="danger" @click="handleClick4">错误</m-button>
 	</div>
 </template>
 

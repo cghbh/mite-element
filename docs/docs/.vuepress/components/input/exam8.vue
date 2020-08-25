@@ -1,15 +1,15 @@
 <template>
 	<div class="input8">
-		<de-input v-model="value" :maxlength="10" placeholder="最多只能输入10个字符"></de-input>
+		<m-input v-model="value" :maxlength="10" placeholder="最多只能输入10个字符"></m-input>
 		</div>
 	</div>
 </template>
 
 <script>
-import DeInput from '../../../../../packages/components/input/index.js'
+import MInput from '../../../../../packages/components/input/index.js'
 export default {
 	components: {
-		DeInput
+		MInput
 	},
 	data() {
 		return {

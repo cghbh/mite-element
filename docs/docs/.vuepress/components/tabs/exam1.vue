@@ -1,29 +1,29 @@
 <template>
 	<div class="tabs-exam1">
-		<de-tabs v-model="activeName" @tab-click="handleClick">
-			<de-tabs-item label="用户管理" name="first">
+		<m-tabs v-model="activeName" @tab-click="handleClick">
+			<m-tabs-item label="用户管理" name="first">
 				用户管理
-			</de-tabs-item>
-			<de-tabs-item label="配置管理" name="second">
+			</m-tabs-item>
+			<m-tabs-item label="配置管理" name="second">
 				配置管理
-			</de-tabs-item>
-			<de-tabs-item label="角色管理" name="third">
+			</m-tabs-item>
+			<m-tabs-item label="角色管理" name="third">
 				角色管理
-			</de-tabs-item>
-			<de-tabs-item label="定时任务补偿" name="fourth">
+			</m-tabs-item>
+			<m-tabs-item label="定时任务补偿" name="fourth">
 				定时任务补偿
-			</de-tabs-item>
-		</de-tabs>
+			</m-tabs-item>
+		</m-tabs>
 	</div>
 </template>
 
 <script>
-import DeTabs from '../../../../../packages/components/tabs/index.js'
-import DeTabsItem from '../../../../../packages/components/tabs-item/index.js'
+import MTabs from '../../../../../packages/components/tabs/index.js'
+import MTabsItem from '../../../../../packages/components/tabs-item/index.js'
 export default {
 	components: {
-		DeTabs,
-		DeTabsItem
+		MTabs,
+		MTabsItem
 	},
 	data() {
 		return {

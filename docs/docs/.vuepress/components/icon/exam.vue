@@ -2,32 +2,32 @@
 	<div>
 	  <ul class="list-container">
 	  	<li class="list">
-	  		 <de-icon icon="heart"></de-icon>
+	  		 <m-icon icon="heart"></m-icon>
 	  	</li>
 	  	<li class="list">
-	  		<de-icon icon="wechat-fill"></de-icon>
+	  		<m-icon icon="wechat-fill"></m-icon>
 	  	</li>
 	  	<li class="list">
-	  		<de-icon icon="github-fill"></de-icon>
+	  		<m-icon icon="github-fill"></m-icon>
 	  	</li>
 	  	<li class="list">
-	  		<de-icon icon="setting"></de-icon>
+	  		<m-icon icon="setting"></m-icon>
 	  	</li>
 		<li class="list">
-			<de-icon icon="info-circle"></de-icon>
+			<m-icon icon="info-circle"></m-icon>
 		</li>
 		<li class="list">
-			<de-icon icon="search"></de-icon>
+			<m-icon icon="search"></m-icon>
 		</li>
 	  </ul>
 	</div>
 </template>
 
 <script>
-import DeIcon from '../../../../../packages/components/icon/index.js'
+import MIcon from '../../../../../packages/components/icon/index.js'
 export default {
 	components: {
-		DeIcon
+		MIcon
 	}
 }
 </script>

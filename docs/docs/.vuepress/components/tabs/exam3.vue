@@ -1,27 +1,27 @@
 <template>
-	<de-tabs v-model="activeName" type="card" @tab-click="handleClick">
-		<de-tabs-item label="正在加载中" name="one" icon="loading">
+	<m-tabs v-model="activeName" type="card" @tab-click="handleClick">
+		<m-tabs-item label="正在加载中" name="one" icon="loading">
 			<h3>正在加载中......</h3>
-		</de-tabs-item>
-		<de-tabs-item label="菜单选项" name="two" icon="caidan">
+		</m-tabs-item>
+		<m-tabs-item label="菜单选项" name="two" icon="caidan">
 			<h3>菜单选项</h3>
-		</de-tabs-item>
-		<de-tabs-item label="提示信息" name="three" icon="info">
+		</m-tabs-item>
+		<m-tabs-item label="提示信息" name="three" icon="info">
 			<h3>提示信息</h3>
-		</de-tabs-item>
-		<de-tabs-item label="建议收藏" name="four" icon="star">
+		</m-tabs-item>
+		<m-tabs-item label="建议收藏" name="four" icon="star">
 			<h3>建议收藏</h3>
-		</de-tabs-item>
-	</de-tabs>
+		</m-tabs-item>
+	</m-tabs>
 </template>
 
 <script>
-import DeTabs from '../../../../../packages/components/tabs/index.js'
-import DeTabsItem from '../../../../../packages/components/tabs-item/index.js'
+import MTabs from '../../../../../packages/components/tabs/index.js'
+import MTabsItem from '../../../../../packages/components/tabs-item/index.js'
 export default {
 	components: {
-		DeTabs,
-		DeTabsItem
+		MTabs,
+		MTabsItem
 	},
 	data() {
 		return {

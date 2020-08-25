@@ -2,13 +2,13 @@
 	<div class="inline-container" :class="appendClass" ref="container">
 		<template v-if="type==='text' || type === 'password'">
 			<!-- 前缀 -->
-			<div class="de-input-prepend" v-if="$slots.prepend">
+			<div class="m-input-prepend" v-if="$slots.prepend">
 				<slot name="prepend"></slot>
 			</div>
 			
 			<!-- 输入框 -->
 			<input
-				class="de-input" 
+				class="m-input" 
 				autoComplete="new-password"
 				:type="type === 'password' ? passwordType : type"
 				v-bind="$attrs"
@@ -24,16 +24,16 @@
 			<!-- 隐藏按钮 -->
 			<span class="hide-password" @click="showOrHidePassword" v-if="type === 'password'">
 				<!-- 控制显示密码与隐藏密码 -->
-				<de-icon :icon="passwordTag % 2 === 0 ? 'eye' : 'eye-close'"></de-icon>
+				<m-icon :icon="passwordTag % 2 === 0 ? 'eye' : 'eye-close'"></m-icon>
 			</span>
 			
 			<!-- 清除按钮 -->
-			<span class="de-input-clear">
-				<de-icon v-if="showClearable" @click.native="clearInputValue" class="btn-close-icon" icon="close"></de-icon>
+			<span class="m-input-clear">
+				<m-icon v-if="showClearable" @click.native="clearInputValue" class="btn-close-icon" icon="close"></m-icon>
 			</span>
 			
 			<!-- 后缀 -->
-			<div class="de-input-append" v-if="$slots.append">
+			<div class="m-input-append" v-if="$slots.append">
 				<slot name="append"></slot>
 			</div>
 		</template>
@@ -41,7 +41,7 @@
 		<!-- 文本域 -->
 		<template v-else>
 			<textarea
-				class="de-textarea" 
+				class="m-textarea" 
 				v-bind="$attrs"
 				v-model="inputValue"
 				v-on="myListeners"
@@ -53,9 +53,9 @@
 </template>
 
 <script>
-import DeIcon from '../icon/index.vue'
+import MIcon from '../icon/index.vue'
 export default {
-	name: 'de-input',
+	name: 'm-input',
 	inject: {
 		Form: {
 			default: null
@@ -107,7 +107,7 @@ export default {
 		}
 	},
 	components: {
-		DeIcon
+		MIcon
 	},
 	data() {
 		return {
@@ -167,7 +167,7 @@ export default {
 		},
 		styleClass() {
 			return {
-				[`de-input-${this.size}`]: this.size,
+				[`m-input-${this.size}`]: this.size,
 				[`is-center`]: this.center,
 				[`is-disabled`]: this.disabled
 			}

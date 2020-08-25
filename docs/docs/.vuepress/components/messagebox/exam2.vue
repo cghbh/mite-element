@@ -1,17 +1,17 @@
 <template>
 	<div class="message-box-two">
-		<de-button @click="showMessageBox" type="primary">确认消息框</de-button>
+		<m-button @click="showMessageBox" type="primary">确认消息框</m-button>
 	</div>
 </template>
 
 <script>
-import DeButton from '../../../../../packages/components/button/index.js'
+import MButton from '../../../../../packages/components/button/index.js'
 import Vue from 'vue'
-import DeMessageBox from '../../../../../packages/components/message-box/index.js'
-Vue.use(DeMessageBox)
+import MMessageBox from '../../../../../packages/components/message-box/index.js'
+Vue.use(MMessageBox)
 export default {
 	components: {
-		DeButton
+		MButton
 	},
 	methods: {
 		showMessageBox() {

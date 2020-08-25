@@ -1,11 +1,11 @@
 <template>
-	<div class="de-form-item">
-		<label class="de-form-item-label">
+	<div class="m-form-item">
+		<label class="m-form-item-label">
 			{{ label }}
 		</label>
-		<div class="de-form-item-container">
+		<div class="m-form-item-container">
 			<slot></slot>
-			<p v-if="error" class="de-form-item-container-warning">{{ error }}</p>
+			<p v-if="error" class="m-form-item-container-warning">{{ error }}</p>
 		</div>
 	</div>
 </template>
@@ -14,7 +14,7 @@
 import Schema from '../../assets/js/validate.js'
 // import Schema from 'async-validator'
 export default {
-	name: 'de-form-item',
+	name: 'm-form-item',
 	inject: ['Form'],
 	provide() {
 		return {

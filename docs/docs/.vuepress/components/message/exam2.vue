@@ -1,20 +1,20 @@
 <template>
 	<div class="message-status">
-		<de-button @click="showDefaultMessage" icon="info-circle">消息</de-button>
-		<de-button @click="showSuccessMessage" type="success" icon="success">成功</de-button>
-		<de-button @click="showWarningMessage" type="warning" icon="error1">警告</de-button>
-		<de-button @click="showErrorMessage" type="danger" icon="error1">错误</de-button>
+		<m-button @click="showDefaultMessage" icon="info-circle">消息</m-button>
+		<m-button @click="showSuccessMessage" type="success" icon="success">成功</m-button>
+		<m-button @click="showWarningMessage" type="warning" icon="error1">警告</m-button>
+		<m-button @click="showErrorMessage" type="danger" icon="error1">错误</m-button>
 	</div>
 </template>
 
 <script>
-import DeButton from '../../../../../packages/components/button/index.js'
+import MButton from '../../../../../packages/components/button/index.js'
 import Vue from 'vue'
-import DeMessage from '../../../../../packages/components/message/index.js'
-Vue.use(DeMessage)
+import MMessage from '../../../../../packages/components/message/index.js'
+Vue.use(MMessage)
 export default {
 	components: {
-		DeButton
+		MButton
 	},
 	methods: {
 		showDefaultMessage() {

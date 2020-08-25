@@ -1,12 +1,12 @@
 <template>
-	<div class="de-collapse" :class="{'no-border-bottom': border}">
+	<div class="m-collapse" :class="{'no-border-bottom': border}">
 		<slot></slot>
 	</div>
 </template>
 
 <script>
 export default {
-	name: 'de-collapse',
+	name: 'm-collapse',
 	provide() {
 		return {
 			Collapse: this

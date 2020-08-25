@@ -1,18 +1,18 @@
 <template>
 	<div class="button-exam2">
-		<de-button disabled>默认按钮</de-button>
-		<de-button disabled type="warning">warning按钮</de-button>
-		<de-button disabled type="danger">danger按钮</de-button>
-		<de-button disabled type="primary">primary按钮</de-button>
-		<de-button disabled type="success">success按钮</de-button>
+		<m-button disabled>默认按钮</m-button>
+		<m-button disabled type="warning">warning按钮</m-button>
+		<m-button disabled type="danger">danger按钮</m-button>
+		<m-button disabled type="primary">primary按钮</m-button>
+		<m-button disabled type="success">success按钮</m-button>
 	</div>
 </template>
 
 <script>
-import DeButton from '../../../../../packages/components/button/index.js'
+import MButton from '../../../../../packages/components/button/index.js'
 export default {
 	components: {
-		DeButton
+		MButton
 	}
 }
 </script>

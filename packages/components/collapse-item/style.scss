@@ -1,8 +1,8 @@
-.de-collapse-item {
+.m-collapse-item {
 	border-bottom: 1px solid #ddd;
 }
 
-.de-collapse-item .de-collapse-item-head {
+.m-collapse-item .m-collapse-item-head {
 	height: 48px;
 	display: flex;
 	align-items: center;
@@ -18,19 +18,21 @@
 	position: relative;
 }
 
-.de-collapse-item-head-icon {
+.m-collapse-item-head-icon {
 	width: 20px;
 	height: 20px;
 }
 
-.de-collapse-item-head-icon .icon-left {
+.m-collapse-item-head-icon .icon-left {
 	width: 100%;
 	height: 100%;
 }
 
-.de-collapse-item-content {
+.m-collapse-item-content {
 	padding-bottom: 18px;
 	font-size: 13px;
+	overflow: hidden;
+	padding-left: 10px;
 }
 
 .icon-style {

@@ -2,14 +2,14 @@
 	 <!-- v-if="visible" -->
 	<div class="mask">
 		<transition name="message-fade">
-			<div class="de-message-box" v-if="visible">
-				<div class="de-message-box-title">{{ title }}</div>
-				<div class="de-message-box-content">{{ content }}</div>
-				<div class="de-message-box-footer">
+			<div class="m-message-box" v-if="visible">
+				<div class="m-message-box-title">{{ title }}</div>
+				<div class="m-message-box-content">{{ content }}</div>
+				<div class="m-message-box-footer">
 					<!-- <template v-if="isConfirm"> -->
-						<de-button v-if="isConfirm" @click="clickHandle('cancel')">取消</de-button>
+						<m-button v-if="isConfirm" @click="clickHandle('cancel')">取消</m-button>
 					<!-- </template> -->
-					<de-button type="primary" @click="clickHandle('confirm')">确定</de-button>
+					<m-button type="primary" @click="clickHandle('confirm')">确定</m-button>
 				</div>
 			</div>
 		</transition>
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import DeButton from '../button/index.vue'
+import MButton from '../button/index.vue'
 export default {
 	props: {
 		title: {
@@ -52,7 +52,7 @@ export default {
 		}
 	},
 	components: {
-		DeButton
+		MButton
 	},
 	mounted() {
 		this.visible = true

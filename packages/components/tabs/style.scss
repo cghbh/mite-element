@@ -1,12 +1,12 @@
-.de-tabs {
+.m-tabs {
 	width: 100%;
 }
-.de-tabs .de-tabs-heading {
+.m-tabs .m-tabs-heading {
 	display: flex;
 	border-bottom: 2px solid #E4E7ED;
 	position: relative;
 }
-.de-tabs .de-tabs-heading .de-tabs-heading-item {
+.m-tabs .m-tabs-heading .m-tabs-heading-item {
 	padding: 0 20px;
 	box-sizing: border-box;
 	line-height: 40px;
@@ -26,7 +26,7 @@
 .active-class {
 	color: #409EFF!important;
 }
-.de-tabs-heading-active_bar {
+.m-tabs-heading-active_bar {
 	height: 2px;
 	background-color: #409EFF;
 	position: absolute;
@@ -42,7 +42,7 @@
 	background-color: #409eff;
 	color: #fff!important;
 }
-.de-tabs >>> .icon-self {
+.m-tabs >>> .icon-self {
 	margin-right: 4px;
 }
 .is-card-container {
@@ -50,6 +50,6 @@
 	border: 1px solid #DCDFE6;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12), 0 0 6px 0 rgba(0,0,0,0.04);
 }
-.de-tabs-content {
+.m-tabs-content {
 	padding: 20px;
 }

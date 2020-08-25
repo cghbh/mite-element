@@ -1,4 +1,4 @@
-.de-button {
+.m-button {
   display: inline-block;
   line-height: 1;
   white-space: nowrap;
@@ -21,19 +21,19 @@
 }
 
 /* button的尺寸大小设计 */
-.de-button-default {
+.m-button-default {
 	padding: 12px 20px;
 	font-size: 14px;
 }
-.de-button-medium {
+.m-button-medium {
 	padding: 10px 18px;
 	font-size: 13px;
 }
-.de-button-small {
+.m-button-small {
 	padding: 8px 16px;
 	font-size: 13px;
 }
-.de-button-mini {
+.m-button-mini {
 	padding: 6px 14px;
 	font-size: 11px;
 }
@@ -44,26 +44,26 @@
 	margin-right: 5px;
 }
 
-.de-button+.de-button {
+.m-button+.m-button {
   margin-left: 10px;
 }
 
-.de-button:focus,
-.de-button:hover {
+.m-button:focus,
+.m-button:hover {
   color: #409EFF;
   border-color: #c6e2ff;
   background-color: #ecf5ff;
 }
 
-.de-button:active {
+.m-button:active {
   color: #3a8ee6;
   border-color: #3a8ee6;
   outline: 0;
 }
 
-.de-button.is-disabled,
-.de-button.is-disabled:focus,
-.de-button.is-disabled:hover {
+.m-button.is-disabled,
+.m-button.is-disabled:focus,
+.m-button.is-disabled:hover {
   color: #c0c4cc;
   cursor: not-allowed;
   background-image: none;
@@ -71,185 +71,185 @@
   border-color: #ebeef5;
 }
 
-.de-button--primary {
+.m-button--primary {
   color: #fff;
   background-color: #409eff;
   border-color: #409eff;
 }
 
-.de-button--primary:focus,
-.de-button--primary:hover {
+.m-button--primary:focus,
+.m-button--primary:hover {
   background: #66b1ff;
   border-color: #66b1ff;
   color: #fff;
 }
 
-.de-button--primary.is-disabled,
-.de-button--primary.is-disabled:active,
-.de-button--primary.is-disabled:focus,
-.de-button--primary.is-disabled:hover {
+.m-button--primary.is-disabled,
+.m-button--primary.is-disabled:active,
+.m-button--primary.is-disabled:focus,
+.m-button--primary.is-disabled:hover {
   color: #fff;
   background-color: #a0cfff;
   border-color: #a0cfff;
 }
 
 
-.de-button--success {
+.m-button--success {
   color: #fff;
   background-color: #67c23a;
   border-color: #67c23a;
 }
 
-.de-button--success:focus,
-.de-button--success:hover {
+.m-button--success:focus,
+.m-button--success:hover {
   background: #85ce61;
   border-color: #85ce61;
   color: #fff;
 }
 
-.de-button--success.is-active,
-.de-button--success:active {
+.m-button--success.is-active,
+.m-button--success:active {
   background: #5daf34;
   border-color: #5daf34;
   color: #fff;
 }
 
-.de-button--success:active {
+.m-button--success:active {
   outline: 0;
 }
 
-.de-button--success.is-disabled,
-.de-button--success.is-disabled:active,
-.de-button--success.is-disabled:focus,
-.de-button--success.is-disabled:hover {
+.m-button--success.is-disabled,
+.m-button--success.is-disabled:active,
+.m-button--success.is-disabled:focus,
+.m-button--success.is-disabled:hover {
   color: #fff;
   background-color: #b3e19d;
   border-color: #b3e19d;
 }
 
-.de-button--warning {
+.m-button--warning {
   color: #fff;
   background-color: #e6a23c;
   border-color: #e6a23c;
 }
 
-.de-button--warning:focus,
-.de-button--warning:hover {
+.m-button--warning:focus,
+.m-button--warning:hover {
   background: #ebb563;
   border-color: #ebb563;
   color: #fff;
 }
 
-.de-button--warning.is-active,
+.m-button--warning.is-active,
 .laybutton--warning:active {
   background: #cf9236;
   border-color: #cf9236;
   color: #fff;
 }
 
-.de-button--warning:active {
+.m-button--warning:active {
   outline: 0;
 }
 
-.de-button--warning.is-disabled,
-.de-button--warning.is-disabled:active,
-.de-button--warning.is-disabled:focus,
-.de-button--warning.is-disabled:hover {
+.m-button--warning.is-disabled,
+.m-button--warning.is-disabled:active,
+.m-button--warning.is-disabled:focus,
+.m-button--warning.is-disabled:hover {
   color: #fff;
   background-color: #f3d19e;
   border-color: #f3d19e;
 }
 
-.de-button--danger {
+.m-button--danger {
   color: #fff;
   background-color: #f56c6c;
   border-color: #f56c6c;
 }
 
-.de-button--danger:focus,
-.de-button--danger:hover {
+.m-button--danger:focus,
+.m-button--danger:hover {
   background: #f78989;
   border-color: #f78989;
   color: #fff;
 }
 
-.de-button--danger.is-active,
-.de-button--danger:active {
+.m-button--danger.is-active,
+.m-button--danger:active {
   background: #dd6161;
   border-color: #dd6161;
   color: #fff;
 }
 
-.de-button--danger:active {
+.m-button--danger:active {
   outline: 0;
 }
 
-.de-button--danger.is-disabled,
-.de-button--danger.is-disabled:active,
-.de-button--danger.is-disabled:focus,
-.de-button--danger.is-disabled:hover {
+.m-button--danger.is-disabled,
+.m-button--danger.is-disabled:active,
+.m-button--danger.is-disabled:focus,
+.m-button--danger.is-disabled:hover {
   color: #fff;
   background-color: #fab6b6;
   border-color: #fab6b6;
 }
 
 
-.de-button--info {
+.m-button--info {
   color: #fff;
   background-color: #909399;
   border-color: #909399;
 }
 
-.de-button--info:focus,
-.de-button--info:hover {
+.m-button--info:focus,
+.m-button--info:hover {
   background: #a6a9ad;
   border-color: #a6a9ad;
   color: #fff;
 }
 
-.de-button--info.is-active,
-.de-button--info:active {
+.m-button--info.is-active,
+.m-button--info:active {
   background: #82848a;
   border-color: #82848a;
   color: #fff;
 }
 
-.de-button--info:active {
+.m-button--info:active {
   outline: 0;
 }
 
-.de-button--info.is-disabled,
-.de-button--info.is-disabled:active,
-.de-button--info.is-disabled:focus,
-.de-button--info.is-disabled:hover {
+.m-button--info.is-disabled,
+.m-button--info.is-disabled:active,
+.m-button--info.is-disabled:focus,
+.m-button--info.is-disabled:hover {
   color: #fff;
   background-color: #c8c9cc;
   border-color: #c8c9cc;
 }
 
 /* 下面是圆角设置 */
-.de-button.is-round.de-button-default {
+.m-button.is-round.m-button-default {
 	border-radius: 20px;
 	padding: 12px 20px;
 }
 
-.de-button.is-round.de-button-medium {
+.m-button.is-round.m-button-medium {
 	border-radius: 18px;
 	padding: 10px 18px;
 }
 
-.de-button.is-round.de-button-small {
+.m-button.is-round.m-button-small {
 	border-radius: 16px;
 	padding: 8px 16px;
 }
 
-.de-button.is-round.de-button-mini {
+.m-button.is-round.m-button-mini {
 	border-radius: 14px;
 	padding: 6px 14px;
 	
 }
 
-.de-button::-moz-focus-inner {
+.m-button::-moz-focus-inner {
   border-radius: 10px;
   padding: 6px 14px;
 }

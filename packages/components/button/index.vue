@@ -1,5 +1,5 @@
 <template>
-	<button @click="handleClick" class="de-button" :class="styleClass">
+	<button @click="handleClick" class="m-button" :class="styleClass">
 		<svg v-if="showIcon" class="icon" aria-hidden="true">
 			<use :xlink:href="iconName"></use>
 		</svg>
@@ -9,7 +9,7 @@
 
 <script>
 export default {
-	name: 'de-button',
+	name: 'm-button',
 	props: {
 		// 类型
 		type: {
@@ -40,9 +40,9 @@ export default {
 	computed: {
 		styleClass () {
 			return {
-				[`de-button--${this.type}`]: true,
+				[`m-button--${this.type}`]: true,
 				[`is-disabled`]: this.disabled,
-				[`de-button-${this.size}`]: true,
+				[`m-button-${this.size}`]: true,
 				'is-round': this.round
 			}
 		},

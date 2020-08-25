@@ -1,15 +1,15 @@
 <template>
 	<div class="input-number1">
-		<de-input-number :step="1" v-model="value"></de-input-number>
+		<m-input-number :step="1" v-model="value"></m-input-number>
 		<div class="display">{{ value }}</div>
 	</div>
 </template>
 
 <script>
-import DeInputNumber from '../../../../../packages/components/input-number/index.js'
+import MInputNumber from '../../../../../packages/components/input-number/index.js'
 export default {
 	components: {
-		DeInputNumber
+		MInputNumber
 	},
 	data() {
 		return {

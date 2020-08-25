@@ -1,17 +1,17 @@
 <template>
 	<div class="message-one">
-		<de-button @click="showMessage" type="primary">不可自动关闭</de-button>
+		<m-button @click="showMessage" type="primary">不可自动关闭</m-button>
 	</div>
 </template>
 
 <script>
-import DeButton from '../../../../../packages/components/button/index.js'
+import MButton from '../../../../../packages/components/button/index.js'
 import Vue from 'vue'
-import DeMessage from '../../../../../packages/components/message/index.js'
-Vue.use(DeMessage)
+import MMessage from '../../../../../packages/components/message/index.js'
+Vue.use(MMessage)
 export default {
 	components: {
-		DeButton
+		MButton
 	},
 	methods: {
 		showMessage() {

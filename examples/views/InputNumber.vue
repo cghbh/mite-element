@@ -1,6 +1,6 @@
 <template>
-	<div class="dispde-exam">
-		<de-input-number v-model="value" :step="0.5" :precision="3" :max="20" :min="10"></de-input-number>
+	<div class="dispm-exam">
+		<m-input-number v-model="value" :step="0.5" :precision="3" :max="20" :min="10"></m-input-number>
 	</div>
 </template>
 
@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style scoped>
-.dispde-exam {
+.dispm-exam {
 	width: 200px;
 	margin: 20px;
 }

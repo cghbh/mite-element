@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-.de-input {
+.m-input {
   -webkit-appearance: none;
   background-color: #fff;
   background-image: none;
@@ -26,23 +26,23 @@
   color: #000;
 }
 
-.de-input::placeholder {
+.m-input::placeholder {
 	color: #aaa;
 	font-size: 14px;
 }
 
-.de-input.is-disabled {
+.m-input.is-disabled {
   background-color: #f5f7fa;
   bordede-color: #e4e7ed;
   color: #c0c4cc;
   cursor: not-allowed;
 }
 
-.de-input.is-center {
+.m-input.is-center {
   text-align: center;
 }
 
-.de-input:hover {
+.m-input:hover {
   border-color: #c0c4cc;
 }
 
@@ -51,26 +51,26 @@
   border-color: #409eff;
 }
 
-.de-input::-webkit-scrollbar {
+.m-input::-webkit-scrollbar {
   z-index: 11;
   width: 6px;
 }
 
-.de-input::-webkit-scrollbar:horizontal {
+.m-input::-webkit-scrollbar:horizontal {
   height: 6px;
 }
 
-.de-input::-webkit-scrollbade-thumb {
+.m-input::-webkit-scrollbade-thumb {
   bordede-radius: 5px;
   width: 6px;
   background: #b4bccc;
 }
 
-.de-input::-webkit-scrollbade-corner {
+.m-input::-webkit-scrollbade-corner {
   background: #fff;
 }
 
-.de-input::-webkit-scrollbade-track {
+.m-input::-webkit-scrollbade-track {
   background: #fff;
 }
 
@@ -79,7 +79,7 @@
   width: 6px;
 }
 
-.de-textarea {
+.m-textarea {
   display: block;
   resize: vertical;
   padding: 5px 15px;
@@ -95,18 +95,18 @@
   transition: bordede-color .2s cubic-bezier(.645, .045, .355, 1)
 }
 
-.de-textarea::placeholder {
+.m-textarea::placeholder {
 	color: #aaa;
 	font-size: 14px;
 }
 
-.de-textarea:focus {
+.m-textarea:focus {
   outline: none;
   border-color: #409eff;
 }
 
-.de-input-prepend,
-.de-input-append {
+.m-input-prepend,
+.m-input-append {
   background-color: #f5f7fa;
   color: #909399;
   display: flex;
@@ -119,63 +119,63 @@
   width: max-content;
 }
 
-.de-input-prepend {
+.m-input-prepend {
 	border-right: none;
 }
 
-.has-prepend .de-input {
+.has-prepend .m-input {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
-.has-append .de-input {
+.has-append .m-input {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
 
-.has-prepend .de-input-prepend {
+.has-prepend .m-input-prepend {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-.de-input-append {
+.m-input-append {
 	border-left: none;
 }
 
-.has-prepend .de-input-append {
+.has-prepend .m-input-append {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   border-left: none;
 }
 
-.has-append .de-input-append {
+.has-append .m-input-append {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 
-.de-input-medium {
+.m-input-medium {
   height: 36px;
   line-height: 36px;
 }
 
-.de-input-medium::placeholder {
+.m-input-medium::placeholder {
 	font-size: 13px;
 }
 
-.de-input-small {
+.m-input-small {
   height: 32px;
   line-height: 32px;
 }
 
-.de-input-small::placeholder {
+.m-input-small::placeholder {
 	font-size: 12px;
 }
 
-.de-input-outer {
+.m-input-outer {
   width: 100%;
   position: relative;
 }
 
-.de-input-clear {
+.m-input-clear {
   position: absolute;
   right: 5px;
   top: 50%;

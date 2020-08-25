@@ -2,7 +2,7 @@
 	<div>
 		<ul class="list-con">
 			<li class="list" :class="{'no-border-left': index % 5 !== 0, 'no-border-bottom': Math.floor(index / 5) >= 1}" v-for="(item, index) in iconlist" :key="item">
-				<de-icon :icon="item"></de-icon>
+				<m-icon :icon="item"></m-icon>
 				<span>{{ item }}</span>
 			</li>
 		</ul>
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import DeIcon from '../../../../../packages/components/icon/index.js'
+import MIcon from '../../../../../packages/components/icon/index.js'
 export default {
 	data () {
 		return {
@@ -18,7 +18,7 @@ export default {
 		}
 	},
 	components: {
-		DeIcon
+		MIcon
 	}
 }
 </script>

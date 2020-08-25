@@ -1,20 +1,19 @@
 <template>
 	<div class="message-4">
-		<de-button @click="showMessagePosition('left')">左边</de-button>
-		<de-button @click="showMessagePosition('center')">中间</de-button>
-		<de-button @click="showMessagePosition('right')">右边</de-button>
+		<m-button @click="showMessagePosition('left')">左边</m-button>
+		<m-button @click="showMessagePosition('center')">中间</m-button>
+		<m-button @click="showMessagePosition('right')">右边</m-button>
 	</div>
 </template>
 
 <script>
-import DeButton from '../../../../../packages/components/button/index.js'
+import MButton from '../../../../../packages/components/button/index.js'
 import Vue from 'vue'
-import DeMessage from '../../../../../packages/components/message/index.js'
-Vue.use(DeMessage)
+import MMessage from '../../../../../packages/components/message/index.js'
+Vue.use(MMessage)
 export default {
 	components: {
-		DeMessage,
-		DeButton
+		MButton
 	},
 	data () {
 		return {

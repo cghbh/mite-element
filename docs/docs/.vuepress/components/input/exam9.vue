@@ -1,15 +1,15 @@
 <template>
 	<div class="input9">
-		<de-input v-model="value" type="password" placeholder="请输入密码"></de-input>
+		<m-input v-model="value" type="password" placeholder="请输入密码"></m-input>
 		</div>
 	</div>
 </template>
 
 <script>
-import DeInput from '../../../../../packages/components/input/index.js'
+import MInput from '../../../../../packages/components/input/index.js'
 export default {
 	components: {
-		DeInput
+		MInput
 	},
 	data() {
 		return {

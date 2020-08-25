@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<de-button @click="handleClick1">点我出现弹出框</de-button>
-		<de-button @click="handleClick2">点我出现弹出框</de-button>
+		<m-button @click="handleClick1">点我出现弹出框</m-button>
+		<m-button @click="handleClick2">点我出现弹出框</m-button>
 	</div>
 </template>
 
