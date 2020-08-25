@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import DeRadio from '../../../../packages/components/radio/index.js'
-import DeRadioGroup from '../../../../packages/components/radio-group/index.js'
+import DeRadio from '../../../../../packages/components/radio/index.js'
+import DeRadioGroup from '../../../../../packages/components/radio-group/index.js'
 export default {
 	components: {
 		DeRadio,

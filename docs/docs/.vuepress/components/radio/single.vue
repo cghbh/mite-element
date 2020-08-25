@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import DeRadio from '../../../../packages/components/radio/index.js'
+import DeRadio from '../../../../../packages/components/radio/index.js'
 export default {
 	components: {
 		DeRadio

@@ -1,8 +1,8 @@
 ## 快速上手
 
-### 引入V-Design
+### 引入MiteElement
 
- 你可以引入整个V-Design，或是根据需要仅引入部分组件。
+ 你可以引入整个MiteElement，或是根据需要仅引入部分组件。
 
 #### 完整引入
 
@@ -10,10 +10,12 @@
 
 ```js
 import Vue from 'vue'
-import VDesign from 'v-design-cg'
+import MiteElement from 'mite-element'
+// 完整导入需要引入css文件
+import 'mite-element/lib/main.css'
 import App from './App.vue'
 
-Vue.use(VDesign)
+Vue.use(MiteElement)
 
 new Vue({
   el: '#app',
@@ -27,7 +29,7 @@ new Vue({
 
 ```js
 import Vue from 'vue'
-import { Button, Radio } from 'v-design-cg'
+import { Button, Radio } from 'mite-element'
 import App from './App.vue'
 
 Vue.component(Button.name, Button)
@@ -53,7 +55,7 @@ module.exports = {
 			'component',
 			{
 				// 库名
-				libraryName: 'v-design-cg',
+				libraryName: 'mite-element',
 				libDir: 'lib/packages',
 				camel2Dash: true // 驼峰转小横线
 			}
@@ -93,7 +95,7 @@ import {
   TabsItem,
   Collapse,
   CollapseItem
-}
+} from 'mite-element'
 
 Vue.use(Button)
 Vue.use(Icon)
@@ -118,4 +120,4 @@ Vue.use(CollapseItem)
 
 #### 开始使用
 
-至此，一个基于Vue 安装了v-design-cg插件的开发环境已经搭建完毕，各个组件的使用方法请参阅它们各自的文档。
+至此，一个基于Vue 安装了mite-element插件的开发环境已经搭建完毕，各个组件的使用方法请参阅它们各自的文档。

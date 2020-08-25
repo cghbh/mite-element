@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import DeButton from '../../../../packages/components/button/index.js'
+import DeButton from '../../../../../packages/components/button/index.js'
 export default {
 	components: {
 		DeButton

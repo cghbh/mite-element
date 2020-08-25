@@ -3,7 +3,7 @@
 #### npm安装
 
 ```npm
-npm install v-design-cg -S
+npm install mite-element -S
 ```
 
 #### cnpm/yarn安装
@@ -11,6 +11,6 @@ npm install v-design-cg -S
 如果npm安装的速度太慢的话，推荐cnpm或者是yarn安装
 
 ```
-cnpm install v-design-cg -S
-yarn add v-design-cg
+cnpm install mite-element -S
+yarn add mite-element
 ```

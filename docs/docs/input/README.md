@@ -5,14 +5,14 @@
 
 <template slot="display">
 
-<input1></input1>
+<input-exam1></input-exam1>
 
 </template>
 
 <template>
 
 ```vue
-<de-input v-model="value" placeholder="请输入内容"></de-input>
+<m-input v-model="value" placeholder="请输入内容"></m-input>
 
 <script>
 export default {
@@ -42,14 +42,14 @@ export default {
 
 <template slot="display">
 
-<input8></input8>
+<input-exam8></input-exam8>
 
 </template>
 
 <template>
 
 ```vue
-<de-input v-model="value" maxlength="10" placeholder="最多只能输入10个字符"></de-input>
+<m-input v-model="value" maxlength="10" placeholder="最多只能输入10个字符"></m-input>
 
 <script>
 export default {
@@ -84,16 +84,16 @@ export default {
 
 <template slot="display">
 
-<input2></input2>
+<input-exam2></input-exam2>
 
 </template>
 
 <template>
 
 ```vue
-<de-input v-model="value" placeholder="请输入内容"></de-input>
-<de-input v-model="value" placeholder="请输入内容" size="medium"></de-input>
-<de-input v-model="value" placeholder="请输入内容" size="small"></de-input>
+<m-input v-model="value" placeholder="请输入内容"></m-input>
+<m-input v-model="value" placeholder="请输入内容" size="medium"></m-input>
+<m-input v-model="value" placeholder="请输入内容" size="small"></m-input>
 
 <script>
 export default {
@@ -125,14 +125,14 @@ export default {
  
  <template slot="display">
  
- <input3></input3>
+ <input-exam3></input-exam3>
  
  </template>
  
  <template>
  
  ```vue
- <de-input v-model="value" placeholder="请输入一长段内容" type="textarea"></de-input>
+ <m-input v-model="value" placeholder="请输入一长段内容" type="textarea"></m-input>
  	</div>
  </template>
  
@@ -162,14 +162,14 @@ export default {
 
 <template slot="display">
 
-<input4></input4>
+<input-exam4></input-exam4>
 
 </template>
 
 <template>
 
 ```vue
-<de-input v-model="value" clearable placeholder="请输入内容"></de-input>
+<m-input v-model="value" clearable placeholder="请输入内容"></m-input>
 
 <script>
 export default {
@@ -195,14 +195,14 @@ export default {
 
 <template slot="display">
 
-<input5></input5>
+<input-exam5></input-exam5>
 
 </template>
 
 <template>
 
 ```vue
-<de-input v-model="value" disabled placeholder="请输入内容"></de-input>
+<m-input v-model="value" disabled placeholder="请输入内容"></m-input>
 
 <script>
 export default {
@@ -231,14 +231,14 @@ export default {
 
 <template slot="display">
 
-<input9></input9>
+<input-exam9></input-exam9>
 
 </template>
 
 <template>
 
 ```vue
-<de-input v-model="value" type="password" placeholder="最多只能输入10个字符"></de-input>
+<m-input v-model="value" type="password" placeholder="最多只能输入10个字符"></m-input>
 
 <script>
 export default {
@@ -269,14 +269,14 @@ export default {
 
 <template slot="display">
 
-<input6></input6>
+<input-exam6></input-exam6>
 
 </template>
 
 <template>
 
 ```vue
-<de-input v-model="value" center placeholder="请输入内容"></de-input>
+<m-input v-model="value" center placeholder="请输入内容"></m-input>
 
 <script>
 export default {
@@ -302,23 +302,23 @@ export default {
  
  <template slot="display">
  
- <input7></input7>
+ <input-exam7></input-exam7>
  
  </template>
  
  <template>
  
  ```vue
- <de-input v-model="value" center placeholder="请输入内容">
+ <m-input v-model="value" center placeholder="请输入内容">
  	<template slot="prepend">Http://</template>
- </de-input>
- 	<de-input v-model="value" center placeholder="请输入内容">
+ </m-input>
+ 	<m-input v-model="value" center placeholder="请输入内容">
  	<template slot="append">.com</template>
- </de-input>
- <de-input v-model="value" center placeholder="请输入内容">
+ </m-input>
+ <m-input v-model="value" center placeholder="请输入内容">
  	<template slot="prepend">Http://</template>
  	<template slot="append">.com</template>
- </de-input>
+ </m-input>
  
  
  <script>

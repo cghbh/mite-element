@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import DeInput from '../../../../packages/components/input/index.js'
+import DeInput from '../../../../../packages/components/input/index.js'
 export default {
 	components: {
 		DeInput

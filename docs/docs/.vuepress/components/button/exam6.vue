@@ -7,8 +7,8 @@
 
 <script>
 import Vue from 'vue'
-import DeButton from '../../../../packages/components/button/index.js'
-import DeMessage from '../../../../packages/components/message/index.js'
+import DeButton from '../../../../../packages/components/button/index.js'
+import DeMessage from '../../../../../packages/components/message/index.js'
 Vue.use(DeMessage)
 export default {
 	methods: {

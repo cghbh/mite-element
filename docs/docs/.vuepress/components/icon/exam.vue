@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import DeIcon from '../../../../packages/components/icon/index.js'
+import DeIcon from '../../../../../packages/components/icon/index.js'
 export default {
 	components: {
 		DeIcon

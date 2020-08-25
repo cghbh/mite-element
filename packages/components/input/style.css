@@ -1,3 +1,10 @@
+.inline-container {
+  width: 100%;
+  display: inline-flex;
+  position: relative;
+  box-sizing: border-box;
+}
+
 .de-input {
   -webkit-appearance: none;
   background-color: #fff;
@@ -161,12 +168,6 @@
 
 .de-input-small::placeholder {
 	font-size: 12px;
-}
-
-.inline-container {
-  width: 100%;
-  display: inline-flex;
-  position: relative;
 }
 
 .de-input-outer {

@@ -9,16 +9,16 @@
  
  <template slot="display">
  
- <radio></radio>
+ <radio-single></radio-single>
  
  </template>
  
  <template>
  
  ```vue
- <de-radio v-model="selectItem" label="选项一">选项一</de-radio>
- <de-radio v-model="selectItem" label="选项二">选项二</de-radio>
- <de-radio v-model="selectItem" label="选项三">选项三</de-radio>
+ <m-radio v-model="selectItem" label="选项一">选项一</m-radio>
+ <m-radio v-model="selectItem" label="选项二">选项二</m-radio>
+ <m-radio v-model="selectItem" label="选项三">选项三</m-radio>
  
  <script>
  export default {
@@ -55,17 +55,17 @@
  <template>
  
  ```vue
- <de-radio-group v-model="radio1">
-   <de-radio label="选项1">选项1</de-radio>
-   <de-radio label="选项2">选项2</de-radio>
-   <de-radio label="选项3">选项3</de-radio>
- </de-radio-group>
+ <m-radio-group v-model="radio1">
+   <m-radio label="选项1">选项1</m-radio>
+   <m-radio label="选项2">选项2</m-radio>
+   <m-radio label="选项3">选项3</m-radio>
+ </m-radio-group>
  
- <de-radio-group v-model="radio2">
-   <de-radio label="选项A">选项A</de-radio>
-   <de-radio label="选项B">选项B</de-radio>
-   <de-radio label="选项C">选项C</de-radio>
- </de-radio-group>
+ <m-radio-group v-model="radio2">
+   <m-radio label="选项A">选项A</m-radio>
+   <m-radio label="选项B">选项B</m-radio>
+   <m-radio label="选项C">选项C</m-radio>
+ </m-radio-group>
  
  <script>
   data () {

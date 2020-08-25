@@ -12,14 +12,14 @@
  
  <template slot="display">
  
- <checkbox1></checkbox1>
+ <checkbox-exam1></checkbox-exam1>
  
  </template>
  
  <template>
  
  ```vue
- <de-checkbox label="选项一" v-model="checked">选项一</de-checkbox>
+ <m-checkbox label="选项一" v-model="checked">选项一</m-checkbox>
  
  <script>
  export default {
@@ -48,17 +48,17 @@
 
 <template slot="display">
 
-<checkbox2></checkbox2>
+<checkbox-exam2></checkbox-exam2>
 
 </template>
 
 <template>
 
 ```vue
-<de-checkbox label="选项A" v-model="checkedList">选项A</de-checkbox>
-<de-checkbox label="选项B" v-model="checkedList">选项B</de-checkbox>
-<de-checkbox label="选项C" v-model="checkedList">选项C</de-checkbox>
-<de-checkbox label="选项D" v-model="checkedList">选项D</de-checkbox>
+<m-checkbox label="选项A" v-model="checkedList">选项A</m-checkbox>
+<m-checkbox label="选项B" v-model="checkedList">选项B</m-checkbox>
+<m-checkbox label="选项C" v-model="checkedList">选项C</m-checkbox>
+<m-checkbox label="选项D" v-model="checkedList">选项D</m-checkbox>
 
 <script>
 export default {
@@ -92,19 +92,19 @@ export default {
  
  <template slot="display">
  
- <checkbox-group></checkbox-group>
+ <checkbox-exam3></checkbox-exam3>
  
  </template>
  
  <template>
  
  ```vue
- <de-checkbox-group v-model="checkedList">
- 	<de-checkbox label="选项A">选项A</de-checkbox>
- 	<de-checkbox label="选项B">选项B</de-checkbox>
- 	<de-checkbox label="选项C">选项C</de-checkbox>
- 	<de-checkbox label="选项D">选项D</de-checkbox>
- </de-checkbox-group>
+ <m-checkbox-group v-model="checkedList">
+ 	<m-checkbox label="选项A">选项A</m-checkbox>
+ 	<m-checkbox label="选项B">选项B</m-checkbox>
+ 	<m-checkbox label="选项C">选项C</m-checkbox>
+ 	<m-checkbox label="选项D">选项D</m-checkbox>
+ </m-checkbox-group>
  
  <script>
  export default {
@@ -133,20 +133,20 @@ export default {
  
  <template slot="display">
  
- <checkbox-disabled></checkbox-disabled>
+ <checkbox-exam4></checkbox-exam4>
  
  </template>
  
  <template>
  
  ```vue
- <de-checkbox-group v-model="checkedList">
- 	<de-checkbox label="选项A">选项A</de-checkbox>
- 	<de-checkbox disabled label="选项B">选项B</de-checkbox>
- 	<de-checkbox label="选项C">选项C</de-checkbox>
- 	<de-checkbox disabled label="选项D">选项D</de-checkbox>
- 	<de-checkbox label="选项E">选项E</de-checkbox>
- </de-checkbox-group>
+ <m-checkbox-group v-model="checkedList">
+ 	<m-checkbox label="选项A">选项A</m-checkbox>
+ 	<m-checkbox disabled label="选项B">选项B</m-checkbox>
+ 	<m-checkbox label="选项C">选项C</m-checkbox>
+ 	<m-checkbox disabled label="选项D">选项D</m-checkbox>
+ 	<m-checkbox label="选项E">选项E</m-checkbox>
+ </m-checkbox-group>
  
  <script>
  export default {

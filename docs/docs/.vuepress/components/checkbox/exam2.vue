@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import DeCheckbox from '../../../../packages/components/checkbox/index.js'
+import DeCheckbox from '../../../../../packages/components/checkbox/index.js'
 export default {
 	components: {
 		DeCheckbox

@@ -8,7 +8,8 @@
 <base-code>
 
 <template slot="display">
-​	<icon-based></icon-based>
+​	<icon-exam></icon-exam>
+
 
 </template>
 

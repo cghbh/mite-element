@@ -12,11 +12,11 @@
 <template>
 
 ```vue
-<de-button>默认按钮</de-button>
-<de-button type="warning">warning按钮</de-button>
-<de-button type="danger">danger按钮</de-button>
-<de-button type="primary">primary按钮</de-button>
-<de-button type="success">success按钮</de-button>
+<m-button>默认按钮</m-button>
+<m-button type="warning">warning按钮</m-button>
+<m-button type="danger">danger按钮</m-button>
+<m-button type="primary">primary按钮</m-button>
+<m-button type="success">success按钮</m-button>
 ```
 
 </template>
@@ -41,11 +41,11 @@
 <template>
 
 ```vue
-<de-button disabled>默认按钮</de-button>
-<de-button disabled type="warning">warning按钮</de-button>
-<de-button disabled type="danger">danger按钮</de-button>
-<de-button disabled type="primary">primary按钮</de-button>
-<de-button disabled type="success">success按钮</de-button>
+<m-button disabled>默认按钮</m-button>
+<m-button disabled type="warning">warning按钮</m-button>
+<m-button disabled type="danger">danger按钮</m-button>
+<m-button disabled type="primary">primary按钮</m-button>
+<m-button disabled type="success">success按钮</m-button>
 ```
 
 </template>
@@ -70,11 +70,11 @@
  <template>
  
  ```vue
- <de-button icon="loading">默认</de-button>
- <de-button type="primary" icon="info"></de-button>
- <de-button type="warning" icon="star">警告</de-button>
- <de-button type="danger" icon="bell">危险</de-button>
- <de-button type="success" icon="success">成功</de-button>
+ <m-button icon="loading">默认</m-button>
+ <m-button type="primary" icon="info"></m-button>
+ <m-button type="warning" icon="star">警告</m-button>
+ <m-button type="danger" icon="bell">危险</m-button>
+ <m-button type="success" icon="success">成功</m-button>
  ```
  
  </template>
@@ -102,11 +102,11 @@
 <template>
 
 ```vue
-<de-button round>默认圆角</de-button>
-<de-button type="warning" round>警告圆角</de-button>
-<de-button type="danger" round>危险圆角</de-button>
-<de-button type="primary" round>默认圆角</de-button>
-<de-button type="success" round>成功圆角</de-button>
+<m-button round>默认圆角</m-button>
+<m-button type="warning" round>警告圆角</m-button>
+<m-button type="danger" round>危险圆角</m-button>
+<m-button type="primary" round>默认圆角</m-button>
+<m-button type="success" round>成功圆角</m-button>
 ```
 
 </template>
@@ -134,10 +134,14 @@
   
   
   ```vue
-  <de-button type="primary" round>默认按钮</de-button>
-  <de-button type="primary" size="medium" round>中型按钮</de-button>
-  <de-button type="primary" size="small" round>小型按钮</de-button>
-  <de-button type="primary" size="mini" round>超小按钮</de-button>
+ <m-button type="primary">默认按钮</m-button>
+ <m-button type="primary" round>默认按钮</m-button>
+ <m-button type="primary" size="medium">中型按钮</m-button>
+ <m-button type="primary" size="medium" round>中型按钮</m-button>
+ <m-button type="primary" size="small" round>小型按钮</m-button>
+ <m-button type="primary" size="small">小型按钮</m-button>
+ <m-button type="primary" size="mini" round>超小</m-button>
+ <m-button type="primary" size="mini">超小</m-button>
   ```
   
   </template>
@@ -161,7 +165,7 @@
 <template>
 
 ```vue
-<de-button type="primary" @click="handleClick">默认按钮</de-button>
+<m-button type="primary" @click="handleClick">默认按钮</m-button>
 ```
 
 </template>
