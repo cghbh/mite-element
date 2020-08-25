@@ -1,3 +1,4 @@
+const path = require('path')
 module.exports = {
 	title: "Mite-Element",
 	description: 'Vue Components Library || Similar ElementUI',
@@ -118,5 +119,10 @@ module.exports = {
 		],
 		displayAllHeaders: true,
 		sidebarDepth: 0
+	},
+	chainWebpack: (config, isServer) => {
+	    config.resolveLoader
+	    .modules
+	    .add(path.resolve(__dirname, '../../../node_modules'))
 	}
 }

@@ -81,38 +81,6 @@ export default {
 }
 </script>
 
-<style scoped>
-.de-form-item {
-	display: flex;
-	align-items: center;
-	margin-bottom: 24px;
-}
-
-.de-form-item >>> .de-input {
-	max-width: 400px;
-}
-.de-form-item >>>  .de-textarea {
-	max-width: 400px;
-}
-.de-form-item .de-form-item-label {
-	width: 60px;
-	margin: 0!important;
-	line-height: 40px;
-	text-align: right;
-	font-size: 14px;
-	text-align: right;
-	margin-right: 15px!important;
-}
-.de-form-item .de-form-item-container {
-	position: relative;
-	flex: 1;
-}
-.de-form-item .de-form-item-container-warning {
-	position: absolute;
-	font-size: 12px;
-	top: 42px;
-	left: 5px;
-	color: #E92322;
-	margin: 0;
-}
+<style scoped lang="scss">
+@import './style.scss'
 </style>

@@ -131,14 +131,6 @@ export default {
 }
 </script>
 
-<style scoped>
-@import './style.css';
-.close-btn >>> .icon {
-	width: 16px;
-	height: 16px;
-}
-.de-info-icon >>> .icon svg {
-	width: 100%;
-	height: 100%;
-}
+<style scoped lang="scss">
+@import './style.scss';
 </style>

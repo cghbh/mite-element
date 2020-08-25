@@ -1,0 +1,29 @@
+.is-disabled {
+	cursor: not-allowed!important;
+	color: #dcdfe6;
+}
+
+.is-disabled svg {
+	opacity: .5;
+}
+
+.lay-input.is-disabled:hover {
+  border-color: #dcdfe6;
+}
+
+.icon-containe {
+	height: 16px;
+	width: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.icon-sub,
+.icon-plus {
+	width: 100%;
+	height: 100%;
+}
+.de-input-number >>> .de-input {
+	width: 50px!important;
+}

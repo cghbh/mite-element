@@ -36,65 +36,6 @@ export default {
 }
 </script>
 
-<style scoped>
-@import './style.css';
-.de-swiper-item {
-	width: 100%;
-}
-
-/* 动画 */
-.left-enter-active,
-.left-leave-active {
-    transition:all .5s;
-}
-
-.left-leave-to {
-    transform: translateX(-100%)
-}
-
-.left-enter{
-    transform: translateX(100%);
-}
-
-.left-leave-to{
-    transform: translateX(100%)
-}
-
-.left-enter{
-    transform: translateX(-100%);
-}
-
-.left-enter-active{
-   position:absolute;
-    width:100%;
-    top:0;
-    left:0;
-}
-
-.right-enter-active,
-.right-leave-active {
-    transition:all .5s;
-}
-
-.right-leave-to {
-    transform: translateX(100%)
-}
-
-.right-enter{
-    transform: translateX(-100%);
-}
-
-.right-leave-to{
-    transform: translateX(-100%)
-}
-.right-enter{
-    transform: translateX(100%);
-}
-
-.right-enter-active{
-    position:absolute;
-    width:100%;
-    top:0;
-    left:0;
-}
+<style scoped lang="scss">
+@import './style.scss';
 </style>

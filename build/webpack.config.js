@@ -25,7 +25,22 @@ module.exports = {
     publicPath: '/',
   },
   module: {
+	  // jsx文件解析
     rules: [
+	  {
+		test: /\.scss$/,
+		use: [
+		{
+		  loader: "style-loader" // 将 JS 字符串生成为 style 节点
+		}, 
+		{
+		  loader: "css-loader" // 将 CSS 转化成 CommonJS 模块
+		},
+		{
+		  loader: "sass-loader" // 将 Sass 编译成 CSS
+		},
+	]
+	  },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
@@ -39,6 +54,7 @@ module.exports = {
           },
         ],
       },
+	  // css解析
       {
         test: /\.css$/,
         // 这儿组件库的css一般都是处理过的，我们使用一般的loader即可
@@ -51,6 +67,7 @@ module.exports = {
           },
         ],
       },
+	  // 指定大小的图片解析
       {
         test: /\.(jpe?g|png|gif)$/i,
         use: [
@@ -65,6 +82,7 @@ module.exports = {
           },
         ],
       },
+	  // url地址解析
       {
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
         use: [
@@ -79,6 +97,7 @@ module.exports = {
           },
         ],
       },
+	  // 字体文件解析
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/i,
         use: [
@@ -93,6 +112,7 @@ module.exports = {
           },
         ],
       },
+	  // 针对Vue文件的解析
       {
         test: /\.vue$/,
         use: [

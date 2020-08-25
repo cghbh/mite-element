@@ -202,3 +202,17 @@ input:-webkit-autofill {
 	-webkit-box-shadow: 0 0 0px 1000px white inset !important;
 	border: 1px solid #409eff !important;
 }
+
+.hide-password {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 10px;
+	cursor: pointer;
+}
+.hide-password .icon {
+	width: 100%;
+	height: 100%;
+}

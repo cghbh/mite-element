@@ -161,6 +161,25 @@ import 'animate.css'
 - [ ] DateTimePicker日期时间选择器
 - [ ] Toast轻提示组件
 
+
+
+#### 7.开发问题记录
+
+- 在组件中使用的scss文件在vuepress中无法解析，解决办法如下：
+
+```js
+// 在vuepress的config.js配置文件中加入如下内容进行scss的解析，前提是要按照sass-loader各node-sass
+const path = require('path')
+chainWebpack: (config, isServer) => {
+	 config.resolveLoader
+	 .modules
+   // 路径视具体的安装路径决定
+	 .add(path.resolve(__dirname, '../../../node_modules'))
+}
+```
+
+
+
 ### LICENSE
 
 [MIT](https://github.com/cghbh/lay-ui/blob/master/LICENSE)

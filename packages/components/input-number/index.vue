@@ -91,22 +91,6 @@ export default {
 }
 </script>
 
-<style scoped>
-@import './style.css';
-.icon-containe {
-	height: 16px;
-	width: 16px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-}
-.icon-sub,
-.icon-plus {
-	width: 100%;
-	height: 100%;
-}
-.de-input-number >>> .de-input {
-	width: 50px!important;
-}
+<style scoped lang="scss">
+@import './style.scss';
 </style>

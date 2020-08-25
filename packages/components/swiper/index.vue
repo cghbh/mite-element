@@ -170,8 +170,8 @@ export default {
 }
 </script>
 
-<style scoped>
-@import './style.css';
+<style scoped lang="scss">
+@import './style.scss';
 .de-swiper {
 	/* width: 100%; */
 	position: relative;

@@ -187,19 +187,6 @@ export default {
 }
 </script>
 
-<style scoped>
-@import './style.css';
-.hide-password {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	top: 50%;
-	transform: translateY(-50%);
-	right: 10px;
-	cursor: pointer;
-}
-.hide-password .icon {
-	width: 100%;
-	height: 100%;
-}
+<style scoped lang="scss">
+@import './style.scss';
 </style>

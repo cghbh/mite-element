@@ -62,37 +62,6 @@ export default {
 }
 </script>
 
-<style scoped>
-.de-cascader {
-	display: inline-block;
-}
-.de-cascader-head {
-	width: 222px;
-	height: 40px;
-	border: none;
-	/* cursor: pointer; */
-	border-radius: 4px;
-}
-.de-cascader-head .de-cascader-head-input {
-	width: 100%;
-	height: 100%;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	outline: none;
-	box-sizing: border-box;
-	cursor: pointer;
-}
-
-.de-cascader-head .de-cascader-head-input:hover {
-	outline: none;
-	border: 1px solid #409EFF;
-}
-
-.de-cascader-head .de-cascader-head-input:focus {
-	outline: none;
-	border: 1px solid #409EFF;
-}
-.de-cascader-content {
-	display: inline-flex;
-}
+<style scoped lang="scss">
+@import './style.scss'
 </style>

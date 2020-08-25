@@ -56,6 +56,6 @@ export default {
 }
 </script>
 
-<style>
-@import './style.css'
+<style lang="scss" scoped>
+@import './style.scss'
 </style>
