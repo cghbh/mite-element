@@ -128,22 +128,22 @@ import 'animate.css'
 
 #### 6.进度表
 
-- [ ] Icon图标组件
-- [ ] Button按钮组件
-- [ ] Radio单选框组件
-- [ ] Checkbox复选框组件
-- [ ] Input输入框组件
-- [ ] InputNumber计数器组件
-- [ ] Form表单组件
+- [x] Icon图标组件
+- [x] Button按钮组件
+- [x] Radio单选框组件
+- [x] Checkbox复选框组件
+- [x] Input输入框组件
+- [x] InputNumber计数器组件
+- [x] Form表单组件
 - [ ] Table表格组件
 - [ ] Pagination分页器组件
 - [ ] Cascader组件
-- [ ] MessageBox消息提示组件
-- [ ] Message消息弹框组件
-- [ ] Modal消息组件
-- [ ] Swiper轮播图组件
-- [ ] Tabs切换组件
-- [ ] Collapse折叠面板组件
+- [x] MessageBox消息提示组件
+- [x] Message消息弹框组件
+- [x] Modal消息组件
+- [x] Swiper轮播图组件
+- [x] Tabs切换组件
+- [x] Collapse折叠面板组件
 - [ ] Badge徽标组件
 - [ ] Affix固定组件
 - [ ] Tree树形控件组件
