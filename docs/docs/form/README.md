@@ -8,7 +8,7 @@
  
  <template slot="display">
  
- <form-display></form-display>
+ <form-exam1></form-exam1>
  
  </template>
  
@@ -17,36 +17,36 @@
  ```vue
  <template>
  	<div class="form-container">
- 		<de-form :modal="users" :rules="rules" ref="ruleForm">
- 			<de-form-item label="活动名称" prop="name">
- 				<de-input v-model="users.name" placeholder="请输入活动名称"></de-input>
- 			</de-form-item>
- 			<de-form-item label="活动形式" prop="desc">
- 				<de-input v-model="users.desc" placeholder="请输入活动形式"></de-input>
- 			</de-form-item>
- 			<de-form-item label="活动人数">
- 				<de-input-number :step="1" :max="20" :min="1" v-model="users.number"></de-input-number>
- 			</de-form-item>
- 			<de-form-item label="个人爱好">
- 				<de-checkbox-group v-model="users.hobby">
- 					<de-checkbox label="羽毛球">羽毛球</de-checkbox>
- 					<de-checkbox label="游泳">游泳</de-checkbox>
- 					<de-checkbox label="篮球">篮球</de-checkbox>
- 					<de-checkbox label="足球">足球</de-checkbox>
- 				</de-checkbox-group>
- 			</de-form-item>
- 			<de-form-item label="你的选择">
- 				<de-radio-group v-model="users.selectOnly">
- 				  <de-radio label="选项一">选项一</de-radio>
- 				  <de-radio label="选项二">选项二</de-radio>
- 				  <de-radio label="选项三">选项三</de-radio>
- 				</de-radio-group>
- 			</de-form-item>
- 			<de-form-item>
- 				<de-button type="primary" @click="submit">立即创建</de-button>
- 				<de-button @click="reset">取消</de-button>
- 			</de-form-item>
- 		</de-form>
+ 		<m-form :modal="users" :rules="rules" ref="ruleForm">
+ 			<m-form-item label="活动名称" prop="name">
+ 				<m-input v-model="users.name" placeholder="请输入活动名称"></m-input>
+ 			</m-form-item>
+ 			<m-form-item label="活动形式" prop="desc">
+ 				<m-input v-model="users.desc" placeholder="请输入活动形式"></m-input>
+ 			</m-form-item>
+ 			<m-form-item label="活动人数">
+ 				<m-input-number :step="1" :max="20" :min="1" v-model="users.number"></m-input-number>
+ 			</m-form-item>
+ 			<m-form-item label="个人爱好">
+ 				<m-checkbox-group v-model="users.hobby">
+ 					<m-checkbox label="羽毛球">羽毛球</m-checkbox>
+ 					<m-checkbox label="游泳">游泳</m-checkbox>
+ 					<m-checkbox label="篮球">篮球</m-checkbox>
+ 					<m-checkbox label="足球">足球</m-checkbox>
+ 				</m-checkbox-group>
+ 			</m-form-item>
+ 			<m-form-item label="你的选择">
+ 				<m-radio-group v-model="users.selectOnly">
+ 				  <m-radio label="选项一">选项一</m-radio>
+ 				  <m-radio label="选项二">选项二</m-radio>
+ 				  <m-radio label="选项三">选项三</m-radio>
+ 				</m-radio-group>
+ 			</m-form-item>
+ 			<m-form-item>
+ 				<m-button type="primary" @click="submit">立即创建</m-button>
+ 				<m-button @click="reset">取消</m-button>
+ 			</m-form-item>
+ 		</m-form>
  	</div>
  </template>
  
@@ -121,7 +121,7 @@
 
 <template slot="display">
 
-<form-self></form-self>
+<form-exam2></form-exam2>
 
 </template>
 
@@ -130,24 +130,24 @@
 ```vue
 <template>
 	<div class="form-container-self">
-		<de-form :modal="users" :rules="rules" ref="ruleForm">
-			<de-form-item label="用户名" prop="username">
-				<de-input v-model="users.username" placeholder="请输入用户名"></de-input>
-			</de-form-item>
-			<de-form-item label="邮箱" prop="email">
-				<de-input v-model="users.email" placeholder="请输入邮箱"></de-input>
-			</de-form-item>
-			<de-form-item label="密码" prop="password">
-				<de-input v-model="users.password" type="password" placeholder="请输入密码"></de-input>
-			</de-form-item>
-			<de-form-item label="确认密码" prop="againPassword">
-				<de-input type="password" v-model="users.againPassword" placeholder="请再次确认密码"></de-input>
-			</de-form-item>
-			<de-form-item>
-				<de-button type="primary" @click="submit">提交</de-button>
-				<de-button @click="reset">重置</de-button>
-			</de-form-item>
-		</de-form>
+		<m-form :modal="users" :rules="rules" ref="ruleForm">
+			<m-form-item label="用户名" prop="username">
+				<m-input v-model="users.username" placeholder="请输入用户名"></m-input>
+			</m-form-item>
+			<m-form-item label="邮箱" prop="email">
+				<m-input v-model="users.email" placeholder="请输入邮箱"></m-input>
+			</m-form-item>
+			<m-form-item label="密码" prop="password">
+				<m-input v-model="users.password" type="password" placeholder="请输入密码"></m-input>
+			</m-form-item>
+			<m-form-item label="确认密码" prop="againPassword">
+				<m-input type="password" v-model="users.againPassword" placeholder="请再次确认密码"></m-input>
+			</m-form-item>
+			<m-form-item>
+				<m-button type="primary" @click="submit">提交</m-button>
+				<m-button @click="reset">重置</m-button>
+			</m-form-item>
+		</m-form>
 	</div>
 </template>
 

@@ -8,7 +8,7 @@
 // 导入iconfont的js文件
 import '../../assets/js/iconfont.js'
 export default {
-	name: 'de-icon',
+	name: 'm-icon',
 	props: {
 		icon: {
 			type: String,

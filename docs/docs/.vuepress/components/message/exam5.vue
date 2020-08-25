@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import DeButton from '../../../../packages/components/button/index.js'
+import DeButton from '../../../../../packages/components/button/index.js'
 import Vue from 'vue'
-import DeMessage from '../../../../packages/components/message/index.js'
+import DeMessage from '../../../../../packages/components/message/index.js'
 Vue.use(DeMessage)
 export default {
 	components: {
@@ -23,7 +23,6 @@ export default {
 	},
 	methods: {
 		showMessagePosition(position) {
-			console.log(this.getMessageClass(), 'getMessageClass')
 			this.$message({
 				position: position,
 				message: `我是消息提示弹框，我在${this.getPositionBy(position)}展示`,

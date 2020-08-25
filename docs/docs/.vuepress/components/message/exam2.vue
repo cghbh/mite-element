@@ -1,16 +1,16 @@
 <template>
 	<div class="message-status">
-		<de-button @click="showDefaultMessage" icon="info">消息</de-button>
+		<de-button @click="showDefaultMessage" icon="info-circle">消息</de-button>
 		<de-button @click="showSuccessMessage" type="success" icon="success">成功</de-button>
-		<de-button @click="showWarningMessage" type="warning" icon="warning">警告</de-button>
-		<de-button @click="showErrorMessage" type="danger" icon="error">错误</de-button>
+		<de-button @click="showWarningMessage" type="warning" icon="error1">警告</de-button>
+		<de-button @click="showErrorMessage" type="danger" icon="error1">错误</de-button>
 	</div>
 </template>
 
 <script>
-import DeButton from '../../../../packages/components/button/index.js'
+import DeButton from '../../../../../packages/components/button/index.js'
 import Vue from 'vue'
-import DeMessage from '../../../../packages/components/message/index.js'
+import DeMessage from '../../../../../packages/components/message/index.js'
 Vue.use(DeMessage)
 export default {
 	components: {

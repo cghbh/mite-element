@@ -180,6 +180,34 @@ chainWebpack: (config, isServer) => {
 
 
 
+#### 8.任务划分
+
+- 首批完成下面的这些组件：
+
+  Icon、Button、Radio、Checkbox、Input、InputNumber、Form、Table、Pagination、Message、MessageBox、Modal、Swiper、Tabs、Collapse、Tag、Toast、Badge、Affix、Switch
+
+- 第二批完成：
+
+  Table、Cascader、Tree、DatePicker、Popover、Select、Step、Tooltip、NavMenu、Uploader、TimePicker、DateTimePicker
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 ### LICENSE
 
 [MIT](https://github.com/cghbh/lay-ui/blob/master/LICENSE)

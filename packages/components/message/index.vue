@@ -3,10 +3,10 @@
 		<div class="de-message" v-if="visible" :class="{'is-content-center': center, 'is-message-center': isCenter, 'is-message-right': isRight, 'is-message-left': isLeft }" :style="computedStyle">
 			<div class="de-message-content" :class="{'is-success-message': isSuccessMessage, 'is-error-message': isErrorMessage, 'is-warning-message': isWarningMessage }">
 				<span class="de-info-icon" :class="{'is-success-message': isSuccessMessage, 'is-error-message': isErrorMessage, 'is-warning-message': isWarningMessage }">
-					<de-icon icon="error" v-if="isErrorMessage"></de-icon>
-					<de-icon icon="success" v-else-if="isSuccessMessage"></de-icon>
-					<de-icon icon="warning" v-else-if="isWarningMessage"></de-icon>
-					<de-icon icon="info" v-else></de-icon>
+					<de-icon icon="error1" v-if="isErrorMessage"></de-icon>
+					<de-icon icon="success1" v-else-if="isSuccessMessage"></de-icon>
+					<de-icon icon="error1" v-else-if="isWarningMessage"></de-icon>
+					<de-icon icon="error1" v-else></de-icon>
 				</span>
 				{{ message }}
 				<!-- 如果自动关闭功能关闭的话，那么showClose就该开启 -->

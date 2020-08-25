@@ -5,9 +5,9 @@
 </template>
 
 <script>
-import DeButton from '../../../../packages/components/button/index.js'
+import DeButton from '../../../../../packages/components/button/index.js'
 import Vue from 'vue'
-import DeMessageBox from '../../../../packages/components/message-box/index.js'
+import DeMessageBox from '../../../../../packages/components/message-box/index.js'
 Vue.use(DeMessageBox)
 export default {
 	components: {

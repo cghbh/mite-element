@@ -34,17 +34,17 @@
 </template>
 
 <script>
-import DeForm from '../../../../packages/components/form/index.js'
-import DeFormItem from '../../../../packages/components/form-item/index.js'
-import DeInput from '../../../../packages/components/input/index.js'
-import DeInputNumber from '../../../../packages/components/input-number/index.js'
-import DeRadio from '../../../../packages/components/radio/index.js'
-import DeRadioGroup from '../../../../packages/components/radio-group/index.js'
-import DeCheckbox from '../../../../packages/components/checkbox/index.js'
-import DeCheckboxGroup from '../../../../packages/components/checkbox-group/index.js'
-import DeButton from '../../../../packages/components/button/index.js'
+import DeForm from '../../../../../packages/components/form/index.js'
+import DeFormItem from '../../../../../packages/components/form-item/index.js'
+import DeInput from '../../../../../packages/components/input/index.js'
+import DeInputNumber from '../../../../../packages/components/input-number/index.js'
+import DeRadio from '../../../../../packages/components/radio/index.js'
+import DeRadioGroup from '../../../../../packages/components/radio-group/index.js'
+import DeCheckbox from '../../../../../packages/components/checkbox/index.js'
+import DeCheckboxGroup from '../../../../../packages/components/checkbox-group/index.js'
+import DeButton from '../../../../../packages/components/button/index.js'
 import Vue from 'vue'
-import DeMessage from '../../../../packages/components/message/index.js'
+import DeMessage from '../../../../../packages/components/message/index.js'
 Vue.use(DeMessage)
 export default {
 	data() {

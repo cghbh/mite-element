@@ -6,10 +6,10 @@
 </template>
 
 <script>
-import DeButton from '../../../../packages/components/button/index.js'
+import DeButton from '../../../../../packages/components/button/index.js'
 import Vue from 'vue'
-import DeMessage from '../../../../packages/components/message/index.js'
-import DeModal from '../../../../packages/components/modal/index.js'
+import DeMessage from '../../../../../packages/components/message/index.js'
+import DeModal from '../../../../../packages/components/modal/index.js'
 import ModalTest from './modaltest.vue'
 Vue.use(DeMessage).use(DeModal)
 export default {

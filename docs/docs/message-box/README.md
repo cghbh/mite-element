@@ -8,14 +8,14 @@
  
  <template slot="display">
  
- <message-box-one></message-box-one>
+ <messagebox-exam1></messagebox-exam1>
  
  </template>
  
  <template>
  
  ```vue
- <lay-button @click="showMessageBox" type="primary">点击打开MessageBox</lay-button>
+ <m-button @click="showMessageBox" type="primary">点击打开MessageBox</m-button>
  
  <script>
  export default {
@@ -54,14 +54,14 @@
  
  <template slot="display">
  
- <message-box-two></message-box-two>
+ <messagebox-exam2></messagebox-exam2>
  
  </template>
  
  <template>
  
  ```vue
- <lay-button @click="showMessageBox" type="primary">确认消息框</lay-button>
+ <m-button @click="showMessageBox" type="primary">确认消息框</m-button>
  
  <script>
  export default {

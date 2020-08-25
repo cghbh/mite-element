@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import DeTabs from '../../../../packages/components/tabs/index.js'
-import DeTabsItem from '../../../../packages/components/tabs-item/index.js'
+import DeTabs from '../../../../../packages/components/tabs/index.js'
+import DeTabsItem from '../../../../../packages/components/tabs-item/index.js'
 export default {
 	components: {
 		DeTabs,

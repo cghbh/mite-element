@@ -16,6 +16,9 @@
 		<li class="list">
 			<de-icon icon="info-circle"></de-icon>
 		</li>
+		<li class="list">
+			<de-icon icon="search"></de-icon>
+		</li>
 	  </ul>
 	</div>
 </template>

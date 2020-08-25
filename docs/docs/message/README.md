@@ -10,14 +10,14 @@
  
  <template slot="display">
  
- <message-based></message-based>
+ <message-exam1></message-exam1>
  
  </template>
  
  <template>
  
  ```vue
- <de-button @click="showMessage" type="primary">打开消息提示</de-button>
+ <m-button @click="showMessage" type="primary">打开消息提示</m-button>
  
  <script>
  export default {
@@ -52,17 +52,17 @@
  
  <template slot="display">
  
- <message-status></message-status>
+ <message-exam2></message-exam2>
  
  </template>
  
  <template>
  
  ```vue
- <de-button @click="showDefaultMessage" icon="info">消息</de-button>
- <de-button @click="showSuccessMessage" type="success" icon="success">成功</de-button>
- <de-button @click="showWarningMessage" type="warning" icon="warning">警告</de-button>
- <de-button @click="showErrorMessage" type="danger" icon="error">错误</de-button>
+ <m-button @click="showDefaultMessage" icon="info">消息</m-button>
+ <m-button @click="showSuccessMessage" type="success" icon="success">成功</m-button>
+ <m-button @click="showWarningMessage" type="warning" icon="warning">警告</m-button>
+ <m-button @click="showErrorMessage" type="danger" icon="error">错误</m-button>
  
  <script>
  export default {
@@ -115,14 +115,14 @@
 
 <template slot="display">
 
-<message-close></message-close>
+<message-exam3></message-exam3>
 
 </template>
 
 <template>
 
 ```vue
-<de-button @click="showMessage" type="primary">可关闭</de-button>
+<m-button @click="showMessage" type="primary">可关闭</m-button>
 
 <script>
 
@@ -157,14 +157,14 @@ export default {
 
 <template slot="display">
 
-<message-one></message-one>
+<message-exam4></message-exam4>
 
 </template>
 
 <template>
 
 ```vue
-<de-button @click="showMessage" type="primary">不可自动关闭</de-button>
+<m-button @click="showMessage" type="primary">不可自动关闭</m-button>
 
 <script>
 export default {
@@ -198,16 +198,16 @@ export default {
 
 <template slot="display">
 
-<message4></message4>
+<message-exam5></message-exam5>
 
 </template>
 
 <template>
 
 ```vue
-<de-button @click="showMessagePosition('left')">左边</de-button>
-<de-button @click="showMessagePosition('center')">中间</de-button>
-<de-button @click="showMessagePosition('right')">右边</de-button>
+<m-button @click="showMessagePosition('left')">左边</m-button>
+<m-button @click="showMessagePosition('center')">中间</m-button>
+<m-button @click="showMessagePosition('right')">右边</m-button>
 
 <script>
 export default {
@@ -239,14 +239,14 @@ export default {
 
 <template slot="display">
 
-<message-center></message-center>
+<message-exam6></message-exam6>
 	
 </template>
 
 <template>
 
 ```vue
-<de-button @click="showMessage" type="primary">文字居中消息</de-button>
+<m-button @click="showMessage" type="primary">文字居中消息</m-button>
 
 <script>
 export default {

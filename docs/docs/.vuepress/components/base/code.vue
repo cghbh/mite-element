@@ -27,9 +27,9 @@
 </template>
 
 <script>
-import DeIcon from '../../../../packages/components/icon/index.js'
-import { CollapseTransition } from '../../../../packages/utils/collapseTransition.js'
-console.log(CollapseTransition, 'CollapseTransition')
+import DeIcon from '../../../../../packages/components/icon/index.js'
+// 代码的折叠与收起的功能实现
+import { CollapseTransition } from '../../../../../packages/utils/collapseTransition.js'
 export default {
 	data() {
 		return {

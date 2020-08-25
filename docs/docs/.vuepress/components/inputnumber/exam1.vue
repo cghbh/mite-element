@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import DeInputNumber from '../../../../packages/components/input-number/index.js'
+import DeInputNumber from '../../../../../packages/components/input-number/index.js'
 export default {
 	components: {
 		DeInputNumber

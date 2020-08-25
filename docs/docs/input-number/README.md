@@ -4,15 +4,14 @@
 <base-code>
 
 <template slot="display">
-
-<input-number1></input-number1>
+<inputnumber-exam1></inputnumber-exam1>
 
 </template>
 
 <template>
 
 ```vue
-<de-input-number v-model="value"></de-input-number>
+<m-input-number v-model="value"></m-input-number>
 
 <script>
 export default {
@@ -37,15 +36,14 @@ export default {
 <base-code>
 
 <template slot="display">
-
-<input-number2></input-number2>
+<inputnumber-exam2></inputnumber-exam2>
 
 </template>
 
 <template>
 
 ```vue
-<de-input-number v-model="value" disabled></de-input-number>
+<m-input-number v-model="value" disabled></m-input-number>
 
 <script>
 export default {
@@ -69,19 +67,19 @@ export default {
 #### 步进
 
  允许定义递增递减的步数控制。
- 
+
  <base-code>
- 
+
  <template slot="display">
- 
- <input-number3></input-number3>
- 
+
+ <inputnumber-exam3></inputnumber-exam3>
+
  </template>
- 
+
  <template>
- 
+
  ```vue
- <de-input-number v-model="value" :step="5"></de-input-number>
+ <m-input-number v-model="value" :step="5"></m-input-number>
  
  <script>
  export default {
@@ -93,9 +91,9 @@ export default {
  }
  </script>
  ```
- 
+
  </template>
- 
+
  </base-code>
 
 
@@ -110,15 +108,14 @@ export default {
 <base-code>
 
 <template slot="display">
-
-<input-number4></input-number4>
+<inputnumber-exam4></inputnumber-exam4>
 
 </template>
 
 <template>
 
 ```vue
-<de-input-number v-model="value" :max="30" :min="10"></de-input-number>
+<m-input-number v-model="value" :max="30" :min="10"></m-input-number>
 
 <script>
 export default {
@@ -147,14 +144,14 @@ export default {
 
 <template slot="display">
 
-<input-number5></input-number5>
+<inputnumber-exam5></inputnumber-exam5>
 
 </template>
 
 <template>
 
 ```vue
-<de-input-number v-model="value" :precision="2" :step="0.1"></de-input-number>
+<m-input-number v-model="value" :precision="2" :step="0.1"></m-input-number>
 
 <script>
 export default {
