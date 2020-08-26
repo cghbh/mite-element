@@ -1,0 +1,67 @@
+.m-pagination {
+	display: flex;
+	align-items: center;
+	&-item {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid #bbb;
+		border-radius: 4px;
+		cursor: pointer;
+		min-width: 32px;
+		user-select: none;
+		text-align: center;
+		background-color: #fff;
+		height: 32px;
+		box-sizing: border-box;
+		margin-right: 10px;
+	}
+	
+	&-item.forbid {
+		opacity: .8;
+		cursor: not-allowed;
+	}
+	
+	&-item-active {
+		border: 1px solid #409EFF;
+		color: #409EFF;
+	}
+	
+	.pagination-arrow-double-right,
+	.pagination-arrow-double-left{
+		border: none;
+		color: #409EFF;
+		color: #bbb;
+	}
+	
+	.pagination-arrow-double-right::v-deep .icon-self ,
+	.pagination-arrow-double-left::v-deep .icon-self  {
+		width: 18px;
+		height: 18px;
+	}
+	
+	.pagination-arrow-double-right:hover,
+	.pagination-arrow-double-left:hover {
+		color: #409EFF;
+	}
+	
+	.m-pagination-input-jump-set-number {
+		width: 50px;
+		height: 32px;
+		border: 1px solid #bbb;
+		box-sizing: border-box;
+		border-radius: 4px;
+		padding: 0 8px;
+	}
+	
+	.m-pagination-input-jump-set-number:focus {
+		outline: none;
+		border: 1px solid #409EFF;
+		cursor: pointer;
+	}
+}
+
+.m-pagination ::v-deep .icon-self {
+	width: 15px;
+	height: 15px;
+}
