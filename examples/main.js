@@ -23,26 +23,7 @@ import CollapseItem from 'UI/collapse-item/index'
 import Swiper from 'UI/swiper/index'
 import SwiperItem from 'UI/swiper-item/index'
 import Cascader from 'UI/cascader/index'
-
-// import '../lib/main.css'
-// import Ele from 'v-design-cg/lib/vdesign.js'
-// Vue.use(Ele)
-// import VDesign from 'v-design-cg'
-// Vue.use(VDesign)
-// import { Button,
-//          Icon,
-//          Radio,
-//          RadioGroup,
-//          Checkbox,
-//          CheckboxGroup,
-//          Message,
-//          MessageBox,
-//          Modal,
-//          Input,
-//          InputNumber,
-//          Form,
-//          FormItem
-//        } from 'v-design-cg'
+import Pagination from 'UI/pagination/index'
 
 Vue.use(Icon)
    .use(Button)
@@ -64,6 +45,7 @@ Vue.use(Icon)
    .use(Swiper)
    .use(SwiperItem)
    .use(Cascader)
+   .use(Pagination)
 
 new Vue ({
   router,

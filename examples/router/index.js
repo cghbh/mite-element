@@ -19,6 +19,7 @@ import Tabs from '../views/Tabs.vue'
 import Collapse from '../views/Collapse.vue'
 import Swiper from '../views/Swiper.vue'
 import Cascader from '../views/Cascader.vue'
+import Pagination from '../views/Pagination.vue'
 
 const routes = [
 	{
@@ -100,6 +101,11 @@ const routes = [
 		path: '/cascader',
 		component: Cascader,
 		name: 'cascader'
+	},
+	{
+		path: '/pagination',
+		component: Pagination,
+		name: 'pagination'
 	}
 ]
 
