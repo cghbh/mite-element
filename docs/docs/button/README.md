@@ -183,8 +183,8 @@
 |type | 类型 | string | primary / success / warning / danger / default | default |
 | size | 尺寸 | string | default / medium / small / mini | default |
 | icon | 图标 | string | 参考Icon组件部分所有列表 | — |
-| round | 是否圆角 | boolean | — | false |
-| disabled | 是否禁用 | boolean | — | false |
+| round | 是否圆角 | boolean | true / false | false |
+| disabled | 是否禁用 | boolean | true / false | false |
 
 ### Events
 

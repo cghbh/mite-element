@@ -29,9 +29,9 @@
 			<m-icon icon="right"></m-icon>
 		</span>
 		
-		<span class="m-pagination-item jump-container">
+		<span class="m-pagination-item jump-container" v-if="showQuickJump">
 			跳至
-			<input @keyup.enter="jumpToSetPage" v-if="showQuickJump" v-model="quickJumpPage" class="input-set-jump" type="text">
+			<input @keyup.enter="jumpToSetPage" v-model="quickJumpPage" class="input-set-jump" type="text">
 			页
 		</span>
 	</div>
@@ -44,7 +44,8 @@ export default {
 	props: {
 		// 分页的总数量
 		total: {
-			type: Number
+			type: Number,
+			required: true
 		},
 		// 是否为分页器的按钮添加active背景颜色
 		background: {
