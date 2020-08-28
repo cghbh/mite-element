@@ -1,5 +1,5 @@
 <template>
-	<div class="m-pagination">
+	<div class="m-pagination" v-if="!hideIfOnePage || total > 1">
 		<!-- 左箭头 -->
 		<!-- 在这里直接对currentPage加减并没有更改数据流，隔离操作 -->
 		<span @click="clickPageItem(currentPage - 1)" :class="{ 'forbid': currentPage === 1 }" class="m-pagination-item">

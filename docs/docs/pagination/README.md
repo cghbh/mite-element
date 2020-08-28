@@ -147,7 +147,40 @@
 
 
 
-#### 仅有一页的时候关闭分页-待Switch组件完成更新
+#### 仅有一页的时候关闭分页
+
+<base-code>
+
+ <template slot="display">
+
+ <pagination-exam5></pagination-exam5>
+
+ </template>
+
+ <template>
+
+ ```vue
+ <template>
+ 	<m-pagination :current-page.sync="currentPage" hide-if-one-page :total="1"></m-pagination>
+	 <m-switch v-model="show"></m-switch>
+ </template>
+ 
+ <script>
+ export default {
+ 	data() {
+ 		return {
+ 			currentPage: 1,
+				value: false
+ 		}
+ 	}
+ }
+ </script>
+ 
+ ```
+
+ </template>
+
+ </base-code>
 
 
 

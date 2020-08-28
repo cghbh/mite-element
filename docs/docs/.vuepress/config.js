@@ -51,7 +51,7 @@ module.exports = {
 				]
 			},
 			{
-				title: '数据组件',
+				title: '表单组件',
 				collapsable: false,
 				sidebarDepth: 0,
 				children: [
@@ -60,9 +60,9 @@ module.exports = {
 					{title: 'Input 输入框', path:'/input/'},
 					{title: 'InputNumber 计数器', path:'/input-number/'},
 					{title: 'Form表单', path: '/form/' },
-					{title: 'Table 表格-未完成', path:'/table/'},
 					{title: 'Pagination 分页', path:'/pagination/'},
-					{title: 'Cascader 级联选择-未完成', path:'/cascader/'}
+					{title: 'Swicth 开关', path:'/switch/'}
+					
 				]
 			},
 			{
@@ -81,13 +81,14 @@ module.exports = {
 				sidebarDepth: 0,
 				children: [
 					{title: 'Swiper 轮播图', path:'/swiper/'},
+					{title: 'Table 表格-未完成', path:'/table/'},
 					{title: 'Tabs 标签页', path:'/tabs/'},
 					{title: 'Collapse 折叠面板', path:'/collapse/'},
 					{title: 'Badge 标记-未完成', path:'/badge/'},
+					{title: 'Cascader 级联选择-未完成', path:'/cascader/'},
 					{title: 'Affix 图钉-未完成', path:'/affix/'},
 					{title: 'Tree 树形控件-未完成', path:'/tree/'},
 					{title: 'Datepicker 日期选择-未完成', path:'/datepicker/'},
-					{title: 'Swicth 开关-未完成', path:'/switch/'},
 					{title: 'Popover 气泡卡片-未完成', path:'/popover/'},
 					{title: 'Select 选择器-未完成', path:'/select/'},
 					{title: 'Step步骤条-未完成', path: '/'},
