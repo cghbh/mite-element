@@ -1,7 +1,7 @@
 <template>
 	<div id="views">
 		<div>
-			<router-link to="/pagination">Pagination分页器</router-link>
+			<router-link to="/switch">Switch分页器</router-link>
 		</div>
 		<router-view></router-view>
 	</div>

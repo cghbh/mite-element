@@ -61,7 +61,7 @@ module.exports = {
 					{title: 'InputNumber 计数器', path:'/input-number/'},
 					{title: 'Form表单', path: '/form/' },
 					{title: 'Table 表格-未完成', path:'/table/'},
-					{title: 'Pagination 分页-未完成', path:'/pagination/'},
+					{title: 'Pagination 分页', path:'/pagination/'},
 					{title: 'Cascader 级联选择-未完成', path:'/cascader/'}
 				]
 			},

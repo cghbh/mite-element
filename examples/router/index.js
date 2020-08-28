@@ -20,6 +20,7 @@ import Collapse from '../views/Collapse.vue'
 import Swiper from '../views/Swiper.vue'
 import Cascader from '../views/Cascader.vue'
 import Pagination from '../views/Pagination.vue'
+import Switch from '../views/Switch.vue'
 
 const routes = [
 	{
@@ -106,6 +107,11 @@ const routes = [
 		path: '/pagination',
 		component: Pagination,
 		name: 'pagination'
+	},
+	{
+		path: '/switch',
+		component: Switch,
+		name: 'switch'
 	}
 ]
 

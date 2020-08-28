@@ -24,6 +24,7 @@ import Swiper from 'UI/swiper/index'
 import SwiperItem from 'UI/swiper-item/index'
 import Cascader from 'UI/cascader/index'
 import Pagination from 'UI/pagination/index'
+import Switch from 'UI/switch/index'
 
 Vue.use(Icon)
    .use(Button)
@@ -46,6 +47,7 @@ Vue.use(Icon)
    .use(SwiperItem)
    .use(Cascader)
    .use(Pagination)
+   .use(Switch)
 
 new Vue ({
   router,
