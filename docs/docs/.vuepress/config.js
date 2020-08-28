@@ -61,7 +61,8 @@ module.exports = {
 					{title: 'InputNumber 计数器', path:'/input-number/'},
 					{title: 'Form表单', path: '/form/' },
 					{title: 'Pagination 分页', path:'/pagination/'},
-					{title: 'Swicth 开关', path:'/switch/'}
+					{title: 'Swicth 开关', path:'/switch/'},
+					{title: 'Spread 卷轴', path:'/spread/'}
 					
 				]
 			},

@@ -21,6 +21,7 @@ import Swiper from '../views/Swiper.vue'
 import Cascader from '../views/Cascader.vue'
 import Pagination from '../views/Pagination.vue'
 import Switch from '../views/Switch.vue'
+import Spread from '../views/Spread.vue'
 
 const routes = [
 	{
@@ -112,6 +113,11 @@ const routes = [
 		path: '/switch',
 		component: Switch,
 		name: 'switch'
+	},
+	{
+		path: '/spread',
+		component: Spread,
+		name: 'spread'
 	}
 ]
 

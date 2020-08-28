@@ -1,7 +1,7 @@
 <template>
 	<div id="views">
 		<div>
-			<router-link to="/switch">Switch分页器</router-link>
+			<router-link to="/spread">Spread卷轴动画</router-link>
 		</div>
 		<router-view></router-view>
 	</div>

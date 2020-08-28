@@ -6,11 +6,11 @@
 		</div>
 		
 		<div class="base-code-code" ref="code">
-			<collapse-transition>
-				<div v-if="showCodeText">
+			<m-spread :visible="showCodeText">
+				<!-- <div v-if="showCodeText"> -->
 					<slot name="default" ></slot>
-				</div>
-			</collapse-transition>
+				<!-- </div> -->
+			</m-spread>
 		</div>
 		
 		<div 
@@ -30,6 +30,7 @@
 import DeIcon from '../../../../../packages/components/icon/index.js'
 // 代码的折叠与收起的功能实现
 import { CollapseTransition } from '../../../../../packages/utils/collapseTransition.js'
+import MSpread from '../../../../../packages/components/spread/index.js'
 export default {
 	data() {
 		return {
@@ -40,7 +41,8 @@ export default {
 	},
 	components: {
 		DeIcon,
-		CollapseTransition
+		CollapseTransition,
+		MSpread
 	},
 	methods: {
 		add() {
