@@ -17,7 +17,7 @@ export default {
 		showMessageBox() {
 			this.$confirm({
 				title: '标题名称',
-				content: '这是一段内容',
+				content: '<h1>这是一段内容</h1>',
 				onOk: () => {
 					this.$message({
 						message: '用户已选择确定操作！',
