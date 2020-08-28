@@ -136,11 +136,11 @@ import 'animate.css'
 - [x] InputNumber计数器组件
 - [x] Form表单组件
 - [ ] Table表格组件
-- [ ] Pagination分页器组件
+- [x] Pagination分页器组件
 - [ ] Cascader组件
 - [x] MessageBox消息提示组件
 - [x] Message消息弹框组件
-- [x] Modal消息组件
+- [ ] Dialog对话框组件
 - [x] Swiper轮播图组件
 - [x] Tabs切换组件
 - [x] Collapse折叠面板组件
@@ -148,7 +148,7 @@ import 'animate.css'
 - [ ] Affix固定组件
 - [ ] Tree树形控件组件
 - [ ] DatePicker日期选择组件
-- [ ] Switch开关组件
+- [x] Switch开关组件
 - [ ] Popover气泡组件
 - [ ] Select选择器组件
 - [ ] Step步骤条组件
@@ -159,7 +159,13 @@ import 'animate.css'
 - [ ] Uploader上传组件
 - [ ] TimePicker时间选择组件
 - [ ] DateTimePicker日期时间选择器
-- [ ] Toast轻提示组件
+- [ ] Rate评分组件
+- [ ] Tag标签组件
+- [ ] Calendar日历组件
+- [x] Spread卷轴动画组件
+- [ ] Sketlon骨架屏组件
+- [ ] Layout布局组件
+- [ ] Container布局容器组件
 
 
 
