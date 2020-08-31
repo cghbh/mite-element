@@ -22,6 +22,7 @@ import Cascader from '../views/Cascader.vue'
 import Pagination from '../views/Pagination.vue'
 import Switch from '../views/Switch.vue'
 import Spread from '../views/Spread.vue'
+import Affix from '../views/Affix.vue'
 
 const routes = [
 	{
@@ -118,6 +119,11 @@ const routes = [
 		path: '/spread',
 		component: Spread,
 		name: 'spread'
+	},
+	{
+		path: '/affix',
+		component: Affix,
+		name: 'affix'
 	}
 ]
 

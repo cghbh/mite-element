@@ -1,0 +1,10 @@
+.m-affix-wrapper {
+	.m-affix-wrapper-container {
+		&.affix {
+			position: fixed;
+			width: 100%;
+			z-index: 99999;
+		}
+	}
+}
+

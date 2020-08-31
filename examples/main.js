@@ -26,6 +26,7 @@ import Cascader from 'UI/cascader/index'
 import Pagination from 'UI/pagination/index'
 import Switch from 'UI/switch/index'
 import Spread from 'UI/spread/index'
+import Affix from 'UI/affix/index'
 
 Vue.use(Icon)
    .use(Button)
@@ -50,6 +51,7 @@ Vue.use(Icon)
    .use(Pagination)
    .use(Switch)
    .use(Spread)
+   .use(Affix)
 
 new Vue ({
   router,
