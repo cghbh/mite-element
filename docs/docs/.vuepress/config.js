@@ -2,7 +2,7 @@ const path = require('path')
 module.exports = {
 	title: "Mite-Element",
 	description: 'Vue Components Library || Similar ElementUI',
-	base: '/ad-vue/',
+	base: '/mite-element/',
 	head: [
 		['link', {
 			rel: 'icon',
@@ -20,7 +20,7 @@ module.exports = {
 			},
 			{
 				text: 'GitHub',
-				link: 'https://github.com/cghbh/ad-vue'
+				link: 'https://github.com/cghbh/mite-element'
 			},
 		],
 		sidebar: [
