@@ -62,7 +62,8 @@ module.exports = {
 					{title: 'Form表单', path: '/form/' },
 					{title: 'Pagination 分页', path:'/pagination/'},
 					{title: 'Swicth 开关', path:'/switch/'},
-					{title: 'Spread 卷轴', path:'/spread/'}
+					{title: 'Spread 卷轴', path:'/spread/'},
+					{title: 'Affix 图钉', path:'/affix/'}
 					
 				]
 			},
@@ -87,7 +88,6 @@ module.exports = {
 					{title: 'Collapse 折叠面板', path:'/collapse/'},
 					{title: 'Badge 标记-未完成', path:'/badge/'},
 					{title: 'Cascader 级联选择-未完成', path:'/cascader/'},
-					{title: 'Affix 图钉-未完成', path:'/affix/'},
 					{title: 'Tree 树形控件-未完成', path:'/tree/'},
 					{title: 'Datepicker 日期选择-未完成', path:'/datepicker/'},
 					{title: 'Popover 气泡卡片-未完成', path:'/popover/'},

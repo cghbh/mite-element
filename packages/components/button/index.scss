@@ -1,10 +1,12 @@
+@import '../../assets/style/var';
+
 .m-button {
   display: inline-block;
   line-height: 1;
   white-space: nowrap;
   cursor: pointer;
   background: #fff;
-  border: 1px solid #dcdfe6;
+  border: 1px solid #CFD4DB;
   color: #606266;
   -webkit-appearance: none;
   text-align: center;
@@ -50,14 +52,14 @@
 
 .m-button:focus,
 .m-button:hover {
-  color: #409EFF;
+  color: $primary-color;
   border-color: #c6e2ff;
   background-color: #ecf5ff;
 }
 
 .m-button:active {
-  color: #3a8ee6;
-  border-color: #3a8ee6;
+  color: $primary-color;
+  border-color: $primary-color;
   outline: 0;
 }
 
@@ -67,14 +69,14 @@
   color: #c0c4cc;
   cursor: not-allowed;
   background-image: none;
-  background-color: #fff;
+  background-color: #eee;
   border-color: #ebeef5;
 }
 
 .m-button--primary {
   color: #fff;
-  background-color: #409eff;
-  border-color: #409eff;
+  background-color: $primary-color;
+  border-color: $primary-color;
 }
 
 .m-button--primary:focus,
@@ -96,21 +98,23 @@
 
 .m-button--success {
   color: #fff;
-  background-color: #67c23a;
-  border-color: #67c23a;
+  background-color: $success-color;
+  border-color: $success-color;
 }
 
 .m-button--success:focus,
 .m-button--success:hover {
-  background: #85ce61;
-  border-color: #85ce61;
+  background: $success-color;
+  border-color: $success-color;
+  opacity: .8;
   color: #fff;
 }
 
 .m-button--success.is-active,
 .m-button--success:active {
-  background: #5daf34;
-  border-color: #5daf34;
+  background: $success-color;
+  border-color: $success-color;
+  opacity: .8;
   color: #fff;
 }
 
@@ -162,8 +166,8 @@
 
 .m-button--danger {
   color: #fff;
-  background-color: #f56c6c;
-  border-color: #f56c6c;
+  background-color: $danger-color;
+  border-color: $danger-color;
 }
 
 .m-button--danger:focus,
@@ -196,8 +200,8 @@
 
 .m-button--info {
   color: #fff;
-  background-color: #909399;
-  border-color: #909399;
+  background-color: $info-color;
+  border-color: $info-color;
 }
 
 .m-button--info:focus,
@@ -253,6 +257,20 @@
   border-radius: 10px;
   padding: 6px 14px;
 }
+
+/* loading加载状态 */
+.m-button.loading {
+	cursor: auto;
+	opacity: .5;
+}
+
+.m-button.loading:hover,
+.m-button.loading:focus {
+	background-color: $primary-color;
+}
+
+
+
  /* 单独的图标大小设置 */
 .icon {
 	width: 18px;
@@ -260,4 +278,17 @@
 	vertical-align: -0.15em;
 	fill: currentColor;
 	overflow: hidden;
+}
+
+.icon.loading {
+	animation: turn 1s linear infinite;
+}
+
+@keyframes turn{
+    from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }

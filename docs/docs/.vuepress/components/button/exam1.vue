@@ -1,10 +1,11 @@
 <template>
 	<div class="button-exam1">
-		<m-button>默认按钮</m-button>
-		<m-button type="warning">warning按钮</m-button>
-		<m-button type="danger">danger按钮</m-button>
-		<m-button type="primary">primary按钮</m-button>
-		<m-button type="success">success按钮</m-button>
+		<m-button>默认</m-button>
+		<m-button type="info">信息</m-button>
+		<m-button type="warning">警告</m-button>
+		<m-button type="danger">危险</m-button>
+		<m-button type="primary">主要</m-button>
+		<m-button type="success">成功</m-button>
 	</div>
 </template>
 

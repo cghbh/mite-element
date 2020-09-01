@@ -116,7 +116,7 @@ pre,
 	height: 45px;
 	padding: 4px;
 	background-color: #fff;
-	color: #409eff;
+	color: #0376FF;
 	cursor: pointer;
 	display: flex;
 	justify-content: center;

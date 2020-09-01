@@ -48,7 +48,7 @@ export default {
 	cursor: pointer;
 }
 .list:hover {
-	color: #409fea;
+	color: #0376ff;
 }
 .list /deep/ .icon-self {
 	width: 28px;
