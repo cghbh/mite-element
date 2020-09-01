@@ -128,44 +128,49 @@ import 'animate.css'
 
 #### 6.进度表
 
-- [x] Icon图标组件
-- [x] Button按钮组件
-- [x] Radio单选框组件
-- [x] Checkbox复选框组件
-- [x] Input输入框组件
-- [x] InputNumber计数器组件
-- [x] Form表单组件
-- [ ] Table表格组件
-- [x] Pagination分页器组件
-- [ ] Cascader组件
-- [x] MessageBox消息提示组件
-- [x] Message消息弹框组件
-- [ ] Dialog对话框组件
-- [x] Swiper轮播图组件
-- [x] Tabs切换组件
-- [x] Collapse折叠面板组件
-- [ ] Badge徽标组件
-- [ ] Affix固定组件
-- [ ] Tree树形控件组件
-- [ ] DatePicker日期选择组件
-- [x] Switch开关组件
-- [ ] Popover气泡组件
-- [ ] Select选择器组件
-- [ ] Step步骤条组件
-- [ ] Card卡片视图组件
-- [ ] Tooltip文字提示组件
-- [ ] NavMenu导航菜单组件
-- [ ] Tag标签组件
-- [ ] Uploader上传组件
-- [ ] TimePicker时间选择组件
-- [ ] DateTimePicker日期时间选择器
-- [ ] Rate评分组件
-- [ ] Tag标签组件
-- [ ] Calendar日历组件
-- [x] Spread卷轴动画组件
-- [ ] Sketlon骨架屏组件
-- [ ] Layout布局组件
-- [ ] Container布局容器组件
+以当前组件各个设计方案不再变动为完成标准。
+
+- [x] 1.Affix固钉
+- [ ] 2.BackTop返回顶部
+- [ ] 3.Badge徽标
+- [ ] 4.Button 按钮
+- [ ] 5.Calendar日历
+- [ ] 6.Card卡片
+- [ ] 7.Cascader 级联选择器
+- [ ] 8.Checkbox 复选框
+- [ ] 9.Collapse 折叠面板
+- [ ] 10.Container 布局容器
+- [ ] 11.DatePicker 日期选择器
+- [ ] 12.DateTimePicker 日期时间选择器
+- [ ] 13.Dialog 对话框
+- [ ] 14.Form 表单
+- [ ] 15.Grid 网格
+- [ ] 16.Icon 图标
+- [ ] 17.InfiniteScroller 无限滚动
+- [ ] 18.Input 输入框
+- [ ] 19.InputNumber 计数器
+- [ ] 20.Layout 布局
+- [ ] 21.Message 消息提示
+- [ ] 22.MessageBox 消息盒子
+- [ ] 23.NavMenu 导航菜单
+- [x] 24.Pagination 分页器
+- [ ] 25.Popover 弹出框
+- [ ] 26.Progress 进度条
+- [ ] 27.Radio 单选框
+- [ ] 28.Rate 评分
+- [ ] 29.Select 选择器
+- [ ] 30.Skeleton 骨架屏
+- [ ] 31.Spread 卷轴
+- [ ] 32.Swiper 轮播图
+- [ ] 33.Switch 切换
+- [ ] 34.Table 表格
+- [ ] 35.Tabs切换栏
+- [ ] 36.Tag 标签
+- [ ] 37.TimePIcker时间选择器
+- [ ] 38.Tooltip 文字提示
+- [ ] 39。Tree 树形控件
+- [ ] 40.Upload 文件上传
+- [ ] 41.Waterfall 瀑布流
 
 
 
