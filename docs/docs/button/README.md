@@ -12,11 +12,12 @@
 <template>
 
 ```vue
-<m-button>默认按钮</m-button>
-<m-button type="warning">warning按钮</m-button>
-<m-button type="danger">danger按钮</m-button>
-<m-button type="primary">primary按钮</m-button>
-<m-button type="success">success按钮</m-button>
+<m-button>默认</m-button>
+<m-button type="info">信息</m-button>
+<m-button type="warning">警告</m-button>
+<m-button type="danger">危险</m-button>
+<m-button type="primary">主要</m-button>
+<m-button type="success">成功</m-button>
 ```
 
 </template>
@@ -41,11 +42,12 @@
 <template>
 
 ```vue
-<m-button disabled>默认按钮</m-button>
-<m-button disabled type="warning">warning按钮</m-button>
-<m-button disabled type="danger">danger按钮</m-button>
-<m-button disabled type="primary">primary按钮</m-button>
-<m-button disabled type="success">success按钮</m-button>
+<m-button disabled>默认</m-button>
+<m-button disabled type="info">信息</m-button>
+<m-button disabled type="warning">警告</m-button>
+<m-button disabled type="danger">危险</m-button>
+<m-button disabled type="primary">默认</m-button>
+<m-button disabled type="success">成功</m-button>
 ```
 
 </template>
@@ -71,11 +73,12 @@
  <template>
 
  ```vue
- <m-button icon="loading">默认</m-button>
- <m-button type="primary" icon="info"></m-button>
- <m-button type="warning" icon="star">警告</m-button>
- <m-button type="danger" icon="bell">危险</m-button>
- <m-button type="success" icon="success">成功</m-button>
+ <m-button icon="info-circle">默认</m-button>
+ <m-button type="primary" icon="info-circle">默认</m-button>
+ <m-button type="primary" icon="heart"></m-button>
+ <m-button type="warning" icon-left="star">警告</m-button>
+ <m-button type="danger" icon-right="close">危险</m-button>
+ <m-button type="success" icon-left="check">成功</m-button>
  ```
 
  </template>
@@ -104,6 +107,7 @@
 
 ```vue
 <m-button round>默认圆角</m-button>
+<m-button type="info" round>信息圆角</m-button>
 <m-button type="warning" round>警告圆角</m-button>
 <m-button type="danger" round>危险圆角</m-button>
 <m-button type="primary" round>默认圆角</m-button>
