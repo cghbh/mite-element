@@ -2,13 +2,13 @@
 
 ### 文档说明链接
 
-[Mite-Element组件库文档说明地址]( https://cghbh.github.io/ad-vue/)
+[Mite-Element组件库文档说明地址]( https://cghbh.github.io/mite-element/)
 
-[Github地址]( https://github.com/cghbh/ad-vue )
+[Github地址]( https://github.com/cghbh/mite-element )
 
 ### 安装
 
-npm installmite-element -S
+npm install mite-element -S
 
 ### 快速上手
 
@@ -200,16 +200,6 @@ chainWebpack: (config, isServer) => {
 - 第二批完成：
 
   Table、Cascader、Tree、DatePicker、Popover、Select、Step、Tooltip、NavMenu、Uploader、TimePicker、DateTimePicker
-
-  
-
-  
-
-  
-
-  
-
-  
 
   
 
