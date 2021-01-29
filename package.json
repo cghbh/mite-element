@@ -1,6 +1,6 @@
 {
   "name": "mite-element",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Vue Components Library",
   "main": "lib/vdesign.js",
   "scripts": {
