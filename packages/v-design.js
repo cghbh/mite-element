@@ -35,6 +35,11 @@ const componentsList = [
   TabsItem
 ]
 
+/* 支持使用标签的方式引入 Vue是全局变量时，自动install */
+//if (typeof window !== 'undefined' && window.Vue) {
+//  install(window.Vue);
+//}
+
 const install = function(Vue) {
   // 判断是否安装过
   if (install.installed) return

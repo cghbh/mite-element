@@ -5,7 +5,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+	name: 'm-modal'
+}
 </script>
 
 <style scoped lang="scss">

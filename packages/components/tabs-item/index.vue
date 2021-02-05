@@ -6,7 +6,7 @@
 
 <script>
 export default {
-	name: 'de-tabs-item',
+	name: 'm-tabs-item',
 	inject: {
 		Tabs: {
 			default: null
