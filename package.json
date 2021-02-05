@@ -54,7 +54,7 @@
   "dependencies": {
     "animate.css": "^3.7.2",
     "async-validator": "^3.3.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "core-js": "^2.6.10",
     "qiniu-js": "^2.5.5",
     "vue": "^2.6.11",
