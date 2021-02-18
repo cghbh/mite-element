@@ -120,57 +120,35 @@ Vue.use(TabsItem)
 import 'animate.css'
 ```
 #### 5.单独说明（重要）
-这是个人项目，目前代码还没有经过测试，建议慎重使用到生产环境。
-
-
+个人PC端组件库项目项目，建议慎重使用到生产环境。
 
 
 
 #### 6.进度表
 
-以当前组件各个设计方案不再变动为完成标准。
-
 - [x] 1.Affix固钉
-- [ ] 2.BackTop返回顶部
-- [ ] 3.Badge徽标
-- [x] 4.Button 按钮
-- [ ] 5.Calendar日历
-- [ ] 6.Card卡片
-- [ ] 7.Cascader 级联选择器
-- [ ] 8.Checkbox 复选框
-- [ ] 9.Collapse 折叠面板
-- [ ] 10.Container 布局容器
-- [ ] 11.DatePicker 日期选择器
-- [ ] 12.DateTimePicker 日期时间选择器
-- [ ] 13.Dialog 对话框
-- [ ] 14.Form 表单
-- [ ] 15.Grid 网格
-- [x] 16.Icon 图标
-- [ ] 17.InfiniteScroller 无限滚动
-- [ ] 18.Input 输入框
-- [ ] 19.InputNumber 计数器
-- [ ] 20.Layout 布局
-- [ ] 21.Message 消息提示
-- [ ] 22.MessageBox 消息盒子
-- [ ] 23.NavMenu 导航菜单
-- [x] 24.Pagination 分页器
-- [ ] 25.Popover 弹出框
-- [ ] 26.Progress 进度条
-- [ ] 27.Radio 单选框
-- [ ] 28.Rate 评分
-- [ ] 29.Select 选择器
-- [ ] 30.Skeleton 骨架屏
-- [ ] 31.Spread 卷轴
-- [ ] 32.Swiper 轮播图
-- [ ] 33.Switch 切换
-- [ ] 34.Table 表格
-- [ ] 35.Tabs切换栏
-- [ ] 36.Tag 标签
-- [ ] 37.TimePIcker时间选择器
-- [ ] 38.Tooltip 文字提示
-- [ ] 39。Tree 树形控件
-- [ ] 40.Upload 文件上传
-- [ ] 41.Waterfall 瀑布流
+- [x] 2.Button 按钮
+- [x] 3.Cascader 级联选择器
+- [x] 4.Checkbox 复选框
+- [x] 5.Collapse 折叠面板
+- [x] 6.Dialog 对话框
+- [x] 7.Form 表单
+- [x] 8.InfiniteScroller 无限滚动
+- [x] 9.Input 输入框
+- [x] 10.InputNumber 计数器
+- [x] 11.Message 消息提示
+- [x] 12.MessageBox 消息盒子
+- [x] 13.Pagination 分页器
+- [x] 14.Popover 弹出框
+- [x] 15.Radio 单选框
+- [x] 16.Spread 卷轴
+- [x] 17.Swiper 轮播图
+- [x] 18.Switch 切换
+- [x] 19.Table 表格
+- [x] 20.Tabs切换栏
+- [x] 21.TimePIcker时间选择器
+- [x] 22.Tree 树形控件
+- [x] 23.Upload 文件上传
 
 
 
@@ -190,24 +168,6 @@ chainWebpack: (config, isServer) => {
 ```
 
 
-
-#### 8.任务划分
-
-- 首批完成下面的这些组件：
-
-  Icon、Button、Radio、Checkbox、Input、InputNumber、Form、Table、Pagination、Message、MessageBox、Modal、Swiper、Tabs、Collapse、Tag、Toast、Badge、Affix、Switch
-
-- 第二批完成：
-
-  Table、Cascader、Tree、DatePicker、Popover、Select、Step、Tooltip、NavMenu、Uploader、TimePicker、DateTimePicker
-
-  
-
-  
-
-  
-
-  
 
 ### LICENSE
 
