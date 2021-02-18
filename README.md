@@ -2,9 +2,9 @@
 
 ### 文档说明链接
 
-[Mite-Element组件库文档说明地址]( https://cghbh.github.io/mite-element/)
+[文档说明在这里]( https://cghbh.github.io/mite-element/)
 
-[Github地址]( https://github.com/cghbh/mite-element )
+[源码地址在这里]( https://github.com/cghbh/mite-element )
 
 ### 安装
 
