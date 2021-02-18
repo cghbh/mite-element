@@ -74,7 +74,6 @@ new Vue({
 ```js
 import Vue from 'vue'
 import {
-	Button,
   Icon,
   Radio,
   RadioGroup,
@@ -88,7 +87,8 @@ import {
   MessageBox,
   Modal,
   Tabs,
-  TabsItem
+  TabsItem,
+  Button
 }
 
 Vue.use(Button)
