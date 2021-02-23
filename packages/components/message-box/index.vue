@@ -1,10 +1,10 @@
 <template>
 	 <!-- v-if="visible" -->
 	<div class="mask">
-		<transition name="message-fade">
+		<transition enter-active-class="bounceIn" leave-active-class="bounceIn">
 			<div class="m-message-box" v-if="visible">
 				<div class="m-message-box-title">{{ title }}</div>
-				<div class="m-message-box-content">{{ content }}</div>
+				<div class="m-message-box-content" v-html="content"></div>
 				<div class="m-message-box-footer">
 					<!-- <template v-if="isConfirm"> -->
 						<m-button v-if="isConfirm" @click="clickHandle('cancel')">取消</m-button>
@@ -54,7 +54,11 @@ export default {
 	components: {
 		MButton
 	},
+	created () {
+		console.log(this.$el, '$el')
+	},
 	mounted() {
+		console.log(this.$el, '$el')
 		this.visible = true
 		// 挂载
 		document.body.appendChild(this.$el)
@@ -74,7 +78,8 @@ export default {
 		}
 	},
 	beforeDestroy () {
-		const value = this.$el.parentNode.removeChild(this.$el)
+		console.log(this.$el.parentNode, 'parentNode')
+		this.$el.parentNode.removeChild(this.$el)
 	},
 	watch: {
 		visible(newVal) {

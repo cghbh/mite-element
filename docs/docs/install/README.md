@@ -4,6 +4,7 @@
 
 ```npm
 npm install mite-element -S
+npm install mite-element --save
 ```
 
 #### cnpm/yarn安装

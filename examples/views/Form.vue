@@ -65,16 +65,7 @@ export default {
 		submit() {
 			this.$refs.ruleForm.validate(validate => {
 				if(validate) {
-					this.$message({
-						message: '恭喜你，这是符合要求的表单，请继续！',
-						type: 'success'
-					})
 				} else {
-					this.$message({
-						message: '校验没有通过，请检查之后重试！',
-						type: 'warning'
-					})
-					return
 				}
 			})
 		}

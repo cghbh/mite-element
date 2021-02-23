@@ -60,12 +60,7 @@
 
 <script>
 export default {
-	mounted() {
-		// setTimeout(() => {
-		// 	this.$refs.cons.style.height = '200px'
-		// }, 2000)
-		
-	}
+	mounted() {}
 }
 </script>
 

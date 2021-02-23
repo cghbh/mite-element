@@ -78,42 +78,57 @@ import 'animate.css'
 ```js
 import Vue from 'vue'
 import {
-  Button,
   Icon,
+  Button,
   Radio,
   Checkbox,
   Input,
   InputNumber,
   Form,
   FormItem,
+  Pagination,
+  Switch,
   Message,
   MessageBox,
-  Modal,
+  Popover,
   Swiper,
   SwiperItem,
+  Table,
   Tabs,
   TabsItem,
   Collapse,
-  CollapseItem
+  CollapseItem,
+  Cascader,
+  Tree,
+  Uploader,
+  TimePicker,
+  Spread,
+  Affix
 } from 'mite-element'
 
-Vue.use(Button)
 Vue.use(Icon)
-Vue.use(Radio)
-Vue.use(Checkbox)
-Vue.use(Input)
-Vue.use(InputNumber)
-Vue.use(Form)
-Vue.use(FormItem)
-Vue.use(Message)
-Vue.use(MessageBox)
-Vue.use(Modal)
-Vue.use(Swiper)
-Vue.use(SwiperItem)
-Vue.use(Tabs)
-Vue.use(TabsItem)
-Vue.use(Collapse)
-Vue.use(CollapseItem)
+Vue.use(Button)
+	.use(Radio)
+	.use(Checkbox)	
+	.use(Input)	
+	.use(InputNumber)	
+	.use(Form)
+	.use(FormItem)
+	.use(Pagination)
+	.use(Switch)
+	.use(Message)	
+	.use(MessageBox)	
+	.use(Popover)
+	.use(Swiper)
+	.use(SwiperItem)
+	.use(Collapse)
+	.use(CollapseItem)	
+	.use(Cascader)	
+	.use(Tree)	
+	.use(Uploader)
+	.use(TimePicker)
+	.use(Spread)
+	.use(Affix)
 ```
 
 

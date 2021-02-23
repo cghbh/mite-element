@@ -2,7 +2,7 @@ const path = require('path')
 module.exports = {
 	title: "Mite-Element",
 	description: 'Vue Components Library || Similar ElementUI',
-	base: '/',
+	base: '/mite-element/',
 	head: [
 		['link', {
 			rel: 'icon',
@@ -16,7 +16,7 @@ module.exports = {
 			},
 			{
 				text: '组件',
-				link: '/install/'
+				link: '/front/'
 			},
 			{
 				text: 'GitHub',
@@ -61,10 +61,7 @@ module.exports = {
 					{title: 'InputNumber 计数器', path:'/input-number/'},
 					{title: 'Form表单', path: '/form/' },
 					{title: 'Pagination 分页', path:'/pagination/'},
-					{title: 'Swicth 开关', path:'/switch/'},
-					{title: 'Spread 卷轴', path:'/spread/'},
-					{title: 'Affix 图钉', path:'/affix/'}
-					
+					{title: 'Swicth 开关', path:'/switch/'}
 				]
 			},
 			{
@@ -74,7 +71,7 @@ module.exports = {
 				children: [
 					{title: 'Message 消息提示', path:'/message/'},
 					{title: 'MessageBox 弹框', path:'/message-box/'},
-					{title: 'Dialog 对话框-等待重构', path:'/dialog/'}
+					{title: 'Popover 气泡卡片', path:'/popover/'}
 				]
 			},
 			{
@@ -82,29 +79,16 @@ module.exports = {
 				collapsable: false,
 				sidebarDepth: 0,
 				children: [
-					{title: 'Swiper 轮播图-', path:'/swiper/'},
-					{title: 'Table 表格-未完成-', path:'/table/'},
-					{title: 'Tabs 标签页-', path:'/tabs/'},
-					{title: 'Collapse 折叠面板-', path:'/collapse/'},
-					{title: 'Badge 标记-未完成-', path:'/badge/'},
-					{title: 'Cascader 级联选择-未完成-', path:'/cascader/'},
-					{title: 'Tree 树形控件-未完成-', path:'/tree/'},
-					{title: 'Datepicker 日期选择-未完成-', path:'/datepicker/'},
-					{title: 'Popover 气泡卡片-未完成-', path:'/popover/'},
-					{title: 'Select 选择器-未完成-', path:'/select/'},
-					{title: 'Calendar日历-未完成-', path: '/calendar/'},
-					{title: 'Card卡片-未完成-', path: '/card/'},
-					{title: 'Tooltip文字提示-未完成-', path: '/tooltip/'},
-					{title: 'NavMenu导航菜单-未完成-', path: '/navmenu/'},
-					{title: 'Tag标签-未完成-', path: '/tag/'},
-					{title: 'Rate评分-', path: '/rate/'},
-					{title: 'Uploader上传-未完成-', path: '/uploader/'},
-					{title: 'TimePicker时间选择器-未完成-', path: '/timepicker/'},
-					{title: 'DateTimePicker日期时间选择器-未完成-', path: '/datetimepicker/'},
-					{title: 'Layout 布局-', path: '/layout/'},
-					{title: 'Container 布局容器', path: '/container/'},
-					{title: 'Skeleton骨架屏',path: '/skeleton/'},
-					{title: 'BackTop回到顶部', path: '/backtop/'}
+					{title: 'Swiper 轮播图', path:'/swiper/'},
+					{title: 'Table 表格', path:'/table/'},
+					{title: 'Tabs 标签页', path:'/tabs/'},
+					{title: 'Collapse 折叠面板', path:'/collapse/'},
+					{title: 'Cascader 级联选择', path:'/cascader/'},
+					{title: 'Tree 树形控件', path:'/tree/'},
+					{title: 'Uploader上传', path: '/uploader/'},
+					{title: 'TimePicker时间选择器', path: '/timepicker/'},
+					{title: 'Spread 卷轴', path:'/spread/'},
+					{title: 'Affix 图钉', path:'/affix/'}
 				]
 			}
 		],
