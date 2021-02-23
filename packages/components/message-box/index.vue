@@ -54,11 +54,7 @@ export default {
 	components: {
 		MButton
 	},
-	created () {
-		console.log(this.$el, '$el')
-	},
 	mounted() {
-		console.log(this.$el, '$el')
 		this.visible = true
 		// 挂载
 		document.body.appendChild(this.$el)
@@ -78,7 +74,6 @@ export default {
 		}
 	},
 	beforeDestroy () {
-		console.log(this.$el.parentNode, 'parentNode')
 		this.$el.parentNode.removeChild(this.$el)
 	},
 	watch: {

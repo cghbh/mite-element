@@ -26,7 +26,7 @@
 
 <script>
 export default {
-	name: 'de-swiper',
+	name: 'm-swiper',
 	// 构建子孙组件的通信
 	provide() {
 		return {

@@ -16,7 +16,7 @@
 
 <script>
 export default {
-	name: 'de-cascader',
+	name: 'm-cascader',
 	props: {
 		options: {
 			type: Array,

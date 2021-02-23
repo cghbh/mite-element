@@ -8,7 +8,7 @@
 
 <script>
 export default {
-	name: 'de-swiper-item',
+	name: 'm-swiper-item',
 	inject: {
 		Swiper: {
 			default: null

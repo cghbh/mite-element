@@ -3,7 +3,7 @@
 
 <script>
 export default {
-	name: 'de-table'
+	name: 'm-table'
 }
 </script>
 
