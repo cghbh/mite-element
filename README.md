@@ -2,7 +2,7 @@
 
 ### 文档说明链接
 
-[文档说明在这里]( https://www.cghbh.com/mite-element/)
+[文档说明在这里]( http://139.198.177.30)
 
 [源码地址在这里]( https://github.com/cghbh/mite-element )
 
